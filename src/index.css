@@ -1,0 +1,155 @@
+/* =============================================
+   POKEDEX ROGUELIKE — Global Styles
+   ============================================= */
+
+:root {
+  /* Pokemon Color Palette */
+  --red: #EE1515;
+  --red-dark: #B30E0E;
+  --yellow: #FFCB05;
+  --blue: #2A75BB;
+  --blue-dark: #1A3D7C;
+  --navy: #0B1B3A;
+  --white: #FFFFFF;
+  --ink: #1A1A2E;
+  --paper: #F5F7FB;
+  --gray: #5A6B85;
+  --green: #3BA55D;
+  --green-dark: #1E8449;
+
+  /* HP Bar Colors */
+  --hp-high: #3BA55D;
+  --hp-mid: #FFCB05;
+  --hp-low: #EE1515;
+
+  /* Type Colors */
+  --type-fire: #FD7D24;
+  --type-water: #4592C4;
+  --type-grass: #9BCC50;
+  --type-electric: #EED535;
+  --type-ice: #51C4E7;
+  --type-fighting: #D56723;
+  --type-poison: #B97FC9;
+  --type-ground: #F7DE3F;
+  --type-flying: #3DC7EF;
+  --type-psychic: #F366B9;
+  --type-bug: #729F3F;
+  --type-rock: #A38C21;
+  --type-ghost: #7B62A3;
+  --type-dragon: #53A4CF;
+  --type-dark: #707070;
+  --type-steel: #9EB7B8;
+  --type-normal: #A4ACAF;
+  --type-fairy: #FDB9E9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--navy);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utility classes */
+.pixel-font {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--navy);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn:active {
+  transform: translateY(0px);
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+  border: 3px solid var(--yellow);
+}
+
+.btn-secondary {
+  background: var(--blue);
+  color: var(--white);
+  border: 2px solid var(--blue-dark);
+}
+
+.btn-disabled {
+  background: var(--gray);
+  color: rgba(255,255,255,0.4);
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  transform: none;
+  filter: none;
+}
+
+/* Animated HP Bar */
+.hp-bar-container {
+  width: 100%;
+  height: 12px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hp-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.5s ease, background-color 0.3s ease;
+}
+
+/* Type badge */
+.type-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
