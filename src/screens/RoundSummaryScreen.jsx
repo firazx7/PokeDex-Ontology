@@ -1,27 +1,40 @@
 // =============================================
-// RoundSummaryScreen.jsx — TODO: Build This Screen
+// RoundSummaryScreen.jsx (FULLY BUILT)
 // =============================================
-// See README.md for full instructions on what
-// this screen needs to do, which SPARQL queries
-// to use, and how to transition to the next screen.
-//
-// The README has step-by-step instructions for
-// each screen with code examples.
-
-import { PHASES } from '../state/gameState'
-import { useSparql } from '../hooks/useSparql'
-import { QUERIES } from '../hooks/queries'
+import { PHASES, getSpriteUrl } from '../state/gameState'
+import PokemonCard from '../components/PokemonCard'
 
 export default function RoundSummaryScreen({ gameState, setGameState }) {
+  const s = gameState.roundSummary || {}
+  const next = () => setGameState(prev => ({ ...prev, phase: PHASES.EVOLUTION }))
+  const living = gameState.team.filter(p => !p.fainted).length
+
   return (
-    <div className="screen">
-      <h2 style={{ color: '#FFCB05' }}>RoundSummaryScreen</h2>
-      <p style={{ color: 'rgba(255,255,255,0.6)', marginTop: '16px' }}>
-        TODO: Build this screen. See README.md for instructions.
+    <div className="screen gap16">
+      <div className="round-pill">ROUND {s.round} CLEAR</div>
+      <h2 className="game-title" style={{ fontSize: 18, color: s.wasBoss ? 'var(--yellow)' : '#fff' }}>
+        {s.wasBoss ? 'BOSS DEFEATED!' : 'VICTORY'}
+      </h2>
+
+      {s.opponentNum && (
+        <div className="stack center gap8">
+          <img src={getSpriteUrl(s.opponentNum, false)} alt={s.opponentName}
+               width={96} height={96} style={{ imageRendering: 'pixelated', filter: 'grayscale(55%)' }} />
+          <p className="mono" style={{ fontSize: 22, color: '#8fb4e8' }}>{s.opponentName} fainted</p>
+        </div>
+      )}
+
+      <p className="pixel" style={{ fontSize: 10, color: living <= 2 ? '#f85838' : '#58d858' }}>
+        {living} / 6 POKEMON STANDING
       </p>
-      <pre style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', marginTop: '24px', maxWidth: '600px' }}>
-        {JSON.stringify({ phase: gameState.phase, round: gameState.round, team: gameState.team?.length }, null, 2)}
-      </pre>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, width: '100%', maxWidth: 680 }}>
+        {gameState.team.map((p, i) => <PokemonCard key={p.iri + i} pokemon={p} />)}
+      </div>
+
+      <button className="btn btn-primary" style={{ fontSize: 12, padding: '16px 30px' }} onClick={next}>
+        CONTINUE
+      </button>
     </div>
   )
 }

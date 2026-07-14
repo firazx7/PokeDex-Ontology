@@ -1,559 +1,169 @@
-# Pokedex Roguelike — Developer Guide
+# Pokédex Roguelike 🔴⚪
 
-**For: Prakhar Rajput**  
-**Stack: React + Vite + SPARQL (Fuseki)**  
-**Ontology: akr_ontology_kilic_rajput_v8.ttl**
+A turn-based **Pokémon battle roguelike** played in the browser, where the entire
+game — team building, opponents, type effectiveness, enemy AI, and evolutions — is
+driven by **live SPARQL queries against an OWL knowledge graph** of the Pokémon world
+(Generations 1–3).
+
+Built as a project for the *Actionable Knowledge Representation* course at the
+**University of Bremen**.
+
+![Battle screenshot](docs/screenshot-battle.png)
 
 ---
 
-## Quick Start
+## What is this?
+
+Most games hard-code their data. This one doesn't. Every fact the game needs —
+a Pokémon's stats, its types, the moves it can learn, which type beats which,
+what it evolves into — lives in a formal **OWL ontology** (35,174 triples) and is
+fetched at runtime with **SPARQL**.
+
+The result is a small but complete roguelike: pick a starter, build a team of six,
+and fight through ten rounds of increasingly tough opponents, evolving your Pokémon
+along the way. Lose your whole team and the run is over.
+
+The project has two halves:
+
+1. **The knowledge graph** — a Pokédex ontology covering all 386 Pokémon of
+   Generations 1–3, their types, abilities, 864 moves, level-up learnsets, the full
+   18×18 type-effectiveness matrix, and evolution chains. Grounded in the
+   **SOMA/DUL** upper ontology.
+2. **The game** — a React app that queries the ontology over SPARQL and turns it
+   into a playable Game Boy Advance–style battle experience.
+
+---
+
+## Play it
+
+### Option A — Instant play (no setup)
+
+The game ships with a bundled offline copy of the ontology data, so it runs
+immediately with no database required:
 
 ```bash
-# 1. Install dependencies
 npm install
-
-# 2. Start the dev server
 npm run dev
-
-# 3. Open in browser
-http://localhost:5173
 ```
 
-> ⚠️ You also need Fuseki running locally. See Section 3.
+Open the printed URL (usually `http://localhost:5173`) and play.
+
+> When no SPARQL endpoint is reachable, the game automatically falls back to the
+> bundled data. This is the fastest way to try it.
+
+### Option B — The real thing (live SPARQL)
+
+To run it the way it's designed — with queries hitting a live triple store:
+
+1. Install **[Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/)**.
+2. Start Fuseki and create a dataset named `pokedex`.
+3. Upload the ontology file `akr_ontology_kilic_rajput_v8.ttl` to that dataset.
+4. Confirm the endpoint is live at `http://localhost:3030/pokedex/sparql`.
+5. Run the app:
+
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+The endpoint URL can be changed at the top of `src/hooks/useSparql.js`
+(for example to point at a hosted TriplyDB endpoint instead).
 
 ---
 
-## Project Structure
+## How to play
+
+| | |
+|---|---|
+| **Goal** | Survive all 10 rounds. |
+| **Lose** | Your whole team of 6 faints. |
+| **Team** | 1 starter you pick + 5 random Pokémon from your chosen region. |
+| **Rounds** | 1–3 easy · 4–6 medium · 7–9 hard · 10 = a Legendary boss. |
+| **Battles** | Choose which Pokémon fights, then a move. The enemy AI answers with its most effective move. |
+| **Type matchups** | Damage uses the real Gen-3 formula and the ontology's effectiveness matrix (dual types stack — Rock hits Fire/Flying for 4×). |
+| **PP** | Every move has limited uses. Out of PP → Struggle. |
+| **Permadeath** | A fainted Pokémon is gone for the rest of the run, and HP doesn't regenerate… |
+| **Evolution** | …except evolving between rounds, which restores full HP and boosts stats. |
+
+<p align="center">
+  <img src="docs/screenshot-start.png" width="45%" alt="Title screen">
+  <img src="docs/screenshot-starter.png" width="45%" alt="Starter selection">
+</p>
+
+---
+
+## How it works
+
+```
+ React UI  ──►  SPARQL query strings  ──►  Fuseki / triple store  ──►  ontology
+    ▲                                                                      │
+    └───────────────  parsed results (Pokémon, moves, effectiveness)  ◄────┘
+```
+
+Everything the game does maps to a SPARQL query. A few examples:
+
+- **Pick a starter** → fetch the three starters of a generation.
+- **Fill the team** → fetch five random non-legendary Pokémon from that generation.
+- **A move connects** → look up its type's effectiveness against the target's types.
+- **Enemy's turn** → query for the opponent's strongest *super-effective* move; if
+  none exists, its strongest move overall.
+- **After a round** → ask whether each surviving Pokémon has an evolution.
+
+All queries live in `src/hooks/queries.js`, and all battle math (damage,
+dual-type effectiveness, AI choice, Struggle) lives in `src/utils/battle.js`.
+
+---
+
+## Tech
+
+- **Frontend:** React + Vite
+- **Data:** OWL / Turtle ontology, queried via SPARQL (Apache Jena Fuseki)
+- **Upper ontology:** SOMA / DUL
+- **Sprites:** [PokeAPI](https://pokeapi.co) (front & back, animated)
+- **Styling:** hand-written CSS in an authentic Gen-3 (Ruby/Sapphire/Emerald) battle style
+
+### Project layout
 
 ```
 src/
-├── App.jsx                    ← Main router — DO NOT edit the routing logic
-├── main.jsx                   ← Entry point — DO NOT touch
-├── index.css                  ← Global styles + CSS variables
-│
-├── screens/                   ← YOUR MAIN WORK IS HERE
-│   ├── StartScreen.jsx        ✅ Done — name + gen selection
-│   ├── StarterScreen.jsx      ✅ Done — starter selection + team build
-│   ├── TeamPreviewScreen.jsx  🔨 TODO
-│   ├── BattleScreen.jsx       🔨 TODO (most complex)
-│   ├── RoundSummaryScreen.jsx 🔨 TODO
-│   ├── EvolutionScreen.jsx    🔨 TODO
-│   ├── WinScreen.jsx          🔨 TODO
-│   └── LoseScreen.jsx         🔨 TODO
-│
-├── components/                ← Reusable UI pieces (already built)
-│   ├── PokemonCard.jsx        ✅ Done
-│   ├── HPBar.jsx              ✅ Done
-│   ├── MoveButton.jsx         ✅ Done
-│   └── TypeBadge.jsx          ✅ Done
-│
+├── App.jsx                 Screen router (state-driven, no external router)
+├── index.css               Full GBA battle theme + animations
+├── screens/                Title, starter, team, battle, summary, evolution, win, lose
+├── components/             HP box, HP bar, Pokémon card, move button, type badge
 ├── hooks/
-│   ├── useSparql.js           ✅ Done — sends queries to Fuseki
-│   └── queries.js             ✅ Done — all SPARQL query strings
-│
-├── state/
-│   └── gameState.js           ✅ Done — state shape + helper functions
-│
-└── utils/
-    ├── damage.js              ✅ Done — damage formula
-    └── typeColors.js          ✅ Done — type → color mapping
+│   ├── useSparql.js        Sends queries to the endpoint (with offline fallback)
+│   └── queries.js          All 11 SPARQL queries
+├── state/gameState.js      State shape, result parsing, sprite URLs, helpers
+├── utils/battle.js         Damage formula, effectiveness, enemy AI, Struggle
+└── mock/                   Bundled ontology data for offline play
 ```
 
 ---
 
-## Section 1: How React Works Here (Quick Primer)
+## About the ontology
 
-### State
-The entire game lives in one state object in `App.jsx`:
-```jsx
-const [gameState, setGameState] = useState(INITIAL_STATE)
-```
+The knowledge graph was built from several sources and merged into a single
+consistent file (`akr_ontology_kilic_rajput_v8.ttl`, 35,174 triples):
 
-Every screen receives `gameState` and `setGameState` as props.
+- **Base Pokémon data** (stats, types, dimensions) via a SPARQL `CONSTRUCT` from a
+  public TriplyDB dataset.
+- **Evolutions, abilities, moves and Gen-3 learnsets** scraped from *pokemondb.net*
+  with Python (`BeautifulSoup` + `rdflib`).
+- **The 18×18 type-effectiveness matrix**, modelled by hand.
 
-### Navigating between screens
-There is no React Router. Navigation works by changing the `phase` field:
-```jsx
-// To go to the Battle screen:
-setGameState(prev => ({
-  ...prev,           // keep everything else
-  phase: PHASES.BATTLE,  // change only the phase
-}))
-```
-
-### Updating state correctly
-Always use the function form of setGameState to avoid stale state:
-```jsx
-// ✅ Correct
-setGameState(prev => ({
-  ...prev,
-  round: prev.round + 1,
-}))
-
-// ❌ Wrong — can cause bugs
-setGameState({ ...gameState, round: gameState.round + 1 })
-```
-
-### useEffect — running code on load
-Use `useEffect` to load data when a screen first appears:
-```jsx
-useEffect(() => {
-  const loadData = async () => {
-    const results = await query(QUERIES.getOpponent('easy'))
-    // do something with results
-  }
-  loadData()
-}, [])  // empty array = run only once on mount
-```
+Domain classes are grounded in the SOMA/DUL upper ontology (Pokémon and Trainers as
+agents, moves as actions, types and abilities as concepts, learnsets reified as
+situations), and the ontology passes the HermiT reasoner as consistent.
 
 ---
 
-## Section 2: How SPARQL Works Here
+## Authors
 
-### The useSparql hook
-Import it in any screen that needs data:
-```jsx
-import { useSparql } from '../hooks/useSparql'
-const { query, loading, error } = useSparql()
-```
+**Firaz Kılıç** & **Prakhar Rajput** — University of Bremen,
+*Actionable Knowledge Representation*.
 
-`query(queryString)` sends the query to Fuseki and returns an array of result rows.
+## Credits & notes
 
-### The QUERIES object
-All queries are pre-written in `queries.js`. Just call them:
-```jsx
-import { QUERIES } from '../hooks/queries'
-
-// Get easy opponent:
-const rows = await query(QUERIES.getOpponent('easy'))
-
-// Get moves for Charizard:
-const rows = await query(QUERIES.getMoves(':Charizard'))
-```
-
-### Parsing results
-SPARQL returns raw objects. Use the helper functions from `gameState.js`:
-```jsx
-import { parsePokemon, parseMove } from '../state/gameState'
-
-// Parse a Pokemon:
-const pokemon = parsePokemon(rows[0])
-// → { name: 'Charizard', currentHP: 78, maxHP: 78, types: ['Fire','Flying'], ... }
-
-// Parse moves:
-const moves = rows.map(parseMove)
-// → [{ name: 'Flamethrower', power: 90, currentPP: 15, maxPP: 15, ... }]
-```
-
-### Raw value access (if you need it)
-```jsx
-const name = rows[0].name.value          // string
-const hp   = parseInt(rows[0].hp.value)  // number (always parse!)
-```
-
----
-
-## Section 3: Fuseki Setup
-
-Firaz will run Fuseki and tell you the endpoint URL.
-The default is: `http://localhost:3030/pokedex/sparql`
-
-If the URL changes, update it in one place:
-```
-src/hooks/useSparql.js  →  line: const SPARQL_ENDPOINT = '...'
-```
-
-To test if Fuseki is running, open this in your browser:
-```
-http://localhost:3030
-```
-You should see the Fuseki admin panel.
-
----
-
-## Section 4: Screen Instructions
-
-### 🔨 TeamPreviewScreen.jsx
-**Purpose:** Show the player their full team of 6 before the run starts.
-
-**What to show:**
-- "Your Team, [trainerName]!" heading
-- 6 PokemonCard components from `gameState.team`
-- Each card shows sprite, name, types (HP bar not needed here, they are all full)
-- A "Start Run!" button
-
-**Transition:**
-```jsx
-setGameState(prev => ({
-  ...prev,
-  phase: PHASES.BATTLE,
-}))
-```
-
-**No SPARQL queries needed on this screen.**
-
----
-
-### 🔨 BattleScreen.jsx
-**Purpose:** The main game loop. Most complex screen.
-
-**On load (useEffect):**
-1. Determine difficulty from `gameState.round`:
-   - round 1-3 → `'easy'`, 4-6 → `'medium'`, 7-9 → `'hard'`, 10 → boss
-2. Load opponent: `QUERIES.getOpponent(difficulty)` or `QUERIES.getLegendaryBoss()`
-3. Parse opponent with `parsePokemon(rows[0])`
-4. Load opponent moves: `QUERIES.getMoves(opponent.iriShort)`
-5. Save opponent to state: `setGameState(prev => ({ ...prev, currentOpponent: opponent }))`
-
-**What to show:**
-- Top half: opponent Pokemon (large sprite, name, types, HP bar)
-- Round indicator: "Round X / 10"
-- Player's active Pokemon (show HP bar, PP on moves)
-- Move selection buttons using `MoveButton` component
-- "Fainted" banner if current Pokemon is at 0 HP
-
-**When player selects a move:**
-```jsx
-const handlePlayerAttack = async (move) => {
-  // 1. Reduce move PP by 1
-  // 2. Get type effectiveness (Q6)
-  const effRows = await query(QUERIES.getTypeEffectiveness(
-    `:${move.type}`,
-    `:${opponent.types[0]}`
-  ))
-  const effectiveness = effRows[0]?.result?.value || 'normal'
-
-  // 3. Calculate damage
-  const multiplier = getMultiplier(effectiveness)
-  const dmg = calculateDamage(activePokemon, opponent, move.power, multiplier)
-
-  // 4. Apply damage to opponent
-  // 5. Show effectiveness message
-
-  // 6. If opponent still alive → opponent attacks back (see below)
-  // 7. If opponent fainted → end round
-}
-```
-
-**Opponent AI attack:**
-```jsx
-const handleOpponentAttack = async () => {
-  // Step 1: try super effective move (Q7)
-  const seRows = await query(
-    QUERIES.getSuperEffectiveMove(opponent.iriShort, `:${activePokemon.types[0]}`)
-  )
-
-  let moveRow = seRows[0]
-
-  // Step 2: fallback to strongest move (Q8)
-  if (!moveRow) {
-    const fbRows = await query(QUERIES.getBestMove(opponent.iriShort))
-    moveRow = fbRows[0]
-  }
-
-  if (!moveRow) {
-    // Opponent uses Struggle
-    const { damageToPlayer } = { damageToPlayer: 50 }
-    // apply 50 damage to active player Pokemon
-    return
-  }
-
-  // Calculate damage and apply
-  const power = parseInt(moveRow.power?.value || '0')
-  const moveType = `:${moveRow.moveName?.value?.split(' ')[0] || 'Normal'}`
-  // ... get effectiveness, calculate damage, apply
-}
-```
-
-**When round ends (opponent at 0 HP):**
-```jsx
-setGameState(prev => ({
-  ...prev,
-  roundSummary: {
-    round: prev.round,
-    opponentName: prev.currentOpponent.name,
-    // add any other summary data
-  },
-  phase: PHASES.ROUND_SUMMARY,
-}))
-```
-
-**Check for loss (all Pokemon fainted):**
-```jsx
-const allFainted = gameState.team.every(p => p.fainted)
-if (allFainted) {
-  setGameState(prev => ({ ...prev, phase: PHASES.LOSE }))
-}
-```
-
-**Struggle (all PP = 0):**
-```jsx
-import { hasUsableMoves, calculateStruggle } from '../utils/damage'
-
-if (!hasUsableMoves(activePokemon)) {
-  const { damageToOpponent, recoilToSelf } = calculateStruggle()
-  // apply damageToOpponent to opponent
-  // apply recoilToSelf to active player Pokemon
-}
-```
-
----
-
-### 🔨 RoundSummaryScreen.jsx
-**Purpose:** Show what happened in the round before evolution.
-
-**What to show:**
-- "Round X Complete!" heading
-- Opponent defeated: name + sprite
-- Team HP overview (all 6 cards with current HP)
-- "Continue" button
-
-**Transition:**
-```jsx
-setGameState(prev => ({
-  ...prev,
-  phase: PHASES.EVOLUTION,
-}))
-```
-
-**No SPARQL queries needed.**
-
----
-
-### 🔨 EvolutionScreen.jsx
-**Purpose:** After each round, check all 6 Pokemon for evolution.
-
-**On load (useEffect):**
-For each surviving team member, check evolution:
-```jsx
-const evolutionChecks = await Promise.all(
-  gameState.team
-    .filter(p => !p.fainted)
-    .map(async p => {
-      const rows = await query(QUERIES.checkEvolution(p.iriShort))
-      return {
-        pokemon: p,
-        canEvolve: rows.length > 0,
-        evolvedIRI: rows[0]?.evolved?.value,
-        evolvedName: rows[0]?.evolvedName?.value,
-      }
-    })
-)
-```
-
-**What to show:**
-- All 6 team slots
-- Pokemon that CAN evolve: show "Evolve → EvolvedName" button
-- Pokemon that cannot evolve: show "No evolution" label
-- Fainted Pokemon: greyed out, no button
-- "Continue to Round X" button at bottom
-
-**When player clicks Evolve:**
-```jsx
-const handleEvolve = async (pokemon, evolvedIRI) => {
-  const iriShort = `:${evolvedIRI.split('#')[1]}`
-
-  // Load evolved stats (Q10)
-  const statsRows = await query(QUERIES.getEvolvedStats(iriShort))
-  const evolvedPokemon = parsePokemon({ ...statsRows[0], pokemon: { value: evolvedIRI } })
-
-  // Load evolved moves (Q11)
-  const moveRows = await query(QUERIES.getEvolvedMoves(iriShort))
-  evolvedPokemon.moves = moveRows.map(parseMove)
-
-  // Full HP heal on evolution
-  evolvedPokemon.currentHP = evolvedPokemon.maxHP
-
-  // Replace in team
-  setGameState(prev => ({
-    ...prev,
-    team: prev.team.map(p => p.iri === pokemon.iri ? evolvedPokemon : p)
-  }))
-}
-```
-
-**Continue button transition:**
-```jsx
-// Check if game is won (round 10 was just completed)
-if (gameState.round >= 10) {
-  setGameState(prev => ({ ...prev, phase: PHASES.WIN }))
-} else {
-  setGameState(prev => ({
-    ...prev,
-    round: prev.round + 1,
-    currentOpponent: null,
-    phase: PHASES.BATTLE,
-  }))
-}
-```
-
----
-
-### 🔨 WinScreen.jsx
-**Purpose:** Victory screen after surviving all 10 rounds.
-
-**What to show:**
-- "YOU WIN!" in big text
-- Trainer name
-- Surviving team members with their current HP
-- "Play Again" button
-
-**Play Again:**
-```jsx
-import { INITIAL_STATE } from '../state/gameState'
-setGameState(INITIAL_STATE)
-```
-
----
-
-### 🔨 LoseScreen.jsx
-**Purpose:** Game over screen when all Pokemon faint.
-
-**What to show:**
-- "GAME OVER" text
-- Round reached: `gameState.round`
-- All 6 fainted Pokemon
-- "Try Again" button
-
-**Try Again:**
-```jsx
-setGameState(INITIAL_STATE)
-```
-
----
-
-## Section 5: Available Components
-
-### PokemonCard
-```jsx
-import PokemonCard from '../components/PokemonCard'
-
-<PokemonCard
-  pokemon={pokemonObject}   // required
-  selected={false}          // blue border if true
-  onClick={() => {}}        // makes it clickable
-  large={false}             // bigger sprite
-  showHP={true}             // show HP bar
-/>
-```
-
-### HPBar
-```jsx
-import HPBar from '../components/HPBar'
-
-<HPBar currentHP={45} maxHP={100} />
-// Automatically changes color: green → yellow → red
-```
-
-### TypeBadge
-```jsx
-import TypeBadge from '../components/TypeBadge'
-
-<TypeBadge type="Fire" />
-<TypeBadge type="Water" small />
-```
-
-### MoveButton
-```jsx
-import MoveButton from '../components/MoveButton'
-
-<MoveButton
-  move={moveObject}         // required
-  onClick={handleMove}      // called with the move object
-  disabled={false}          // force disable
-/>
-// Automatically disabled and greyed out if PP = 0
-```
-
----
-
-## Section 6: CSS Variables
-
-Use these in inline styles or in CSS:
-
-```css
-var(--red)       /* #EE1515 — main red */
-var(--yellow)    /* #FFCB05 — logo yellow */
-var(--blue)      /* #2A75BB — logo blue */
-var(--navy)      /* #0B1B3A — dark background */
-var(--green)     /* #3BA55D — green */
-var(--white)     /* #FFFFFF */
-var(--gray)      /* #5A6B85 */
-```
-
----
-
-## Section 7: Pokemon Sprites
-
-Sprites come from PokeAPI via the `nationalNum` field on every Pokemon object.
-The `getSpriteUrl()` function handles this automatically inside `PokemonCard`.
-
-If a GIF is not available, `PokemonCard` automatically falls back to a static PNG.
-
-Manual use:
-```jsx
-import { getSpriteUrl } from '../state/gameState'
-
-const url = getSpriteUrl(6)          // Charizard animated GIF
-const url = getSpriteUrl(6, false)   // Charizard static PNG
-```
-
----
-
-## Section 8: Common Mistakes
-
-**1. Forgetting parseInt()**
-SPARQL always returns strings. Numbers must be parsed:
-```jsx
-// ❌ Wrong
-const hp = rows[0].hp.value         // "78" (string)
-
-// ✅ Correct
-const hp = parseInt(rows[0].hp.value) // 78 (number)
-```
-
-**2. Mutating state directly**
-```jsx
-// ❌ Wrong — React won't re-render
-gameState.team[0].currentHP = 50
-
-// ✅ Correct — create new array/object
-setGameState(prev => ({
-  ...prev,
-  team: prev.team.map((p, i) =>
-    i === 0 ? { ...p, currentHP: 50 } : p
-  )
-}))
-```
-
-**3. Calling query() without await**
-```jsx
-// ❌ Wrong
-const rows = query(QUERIES.getMoves(':Charizard'))
-// rows is a Promise, not an array!
-
-// ✅ Correct (inside async function)
-const rows = await query(QUERIES.getMoves(':Charizard'))
-```
-
-**4. Type IRI format**
-Types in SPARQL queries need the colon prefix:
-```jsx
-// ✅ Correct — for SPARQL queries
-QUERIES.getTypeEffectiveness(':Fire', ':Water')
-
-// The type on a Pokemon object is just the name:
-pokemon.types[0]  // 'Fire'
-`:${pokemon.types[0]}`  // ':Fire' — add the colon when needed for queries
-```
-
----
-
-## Questions?
-
-Contact Firaz for:
-- Ontology questions (what data is available, property names)
-- SPARQL query help
-- Fuseki endpoint issues
-
-You handle everything in `src/screens/` and visual design.
+Pokémon and all related names are trademarks of Nintendo / Game Freak / The Pokémon
+Company. This is a non-commercial student project for educational purposes. Sprites
+are served from PokeAPI.

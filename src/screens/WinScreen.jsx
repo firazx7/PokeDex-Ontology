@@ -1,27 +1,28 @@
 // =============================================
-// WinScreen.jsx — TODO: Build This Screen
+// WinScreen.jsx (FULLY BUILT)
 // =============================================
-// See README.md for full instructions on what
-// this screen needs to do, which SPARQL queries
-// to use, and how to transition to the next screen.
-//
-// The README has step-by-step instructions for
-// each screen with code examples.
-
-import { PHASES } from '../state/gameState'
-import { useSparql } from '../hooks/useSparql'
-import { QUERIES } from '../hooks/queries'
+import { INITIAL_STATE } from '../state/gameState'
+import PokemonCard from '../components/PokemonCard'
 
 export default function WinScreen({ gameState, setGameState }) {
+  const again = () => setGameState(INITIAL_STATE)
+  const survivors = gameState.team.filter(p => !p.fainted).length
+
   return (
-    <div className="screen">
-      <h2 style={{ color: '#FFCB05' }}>WinScreen</h2>
-      <p style={{ color: 'rgba(255,255,255,0.6)', marginTop: '16px' }}>
-        TODO: Build this screen. See README.md for instructions.
+    <div className="screen gap24">
+      <h1 className="game-title" style={{ fontSize: 28 }}>YOU WIN!</h1>
+      <p className="mono" style={{ fontSize: 24, color: '#fff' }}>
+        Champion {gameState.trainerName} cleared all 10 rounds
       </p>
-      <pre style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', marginTop: '24px', maxWidth: '600px' }}>
-        {JSON.stringify({ phase: gameState.phase, round: gameState.round, team: gameState.team?.length }, null, 2)}
-      </pre>
+      <p className="pixel" style={{ fontSize: 10, color: '#58d858' }}>
+        {survivors} / 6 POKEMON SURVIVED
+      </p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, width: '100%', maxWidth: 680 }}>
+        {gameState.team.map((p, i) => <PokemonCard key={p.iri + i} pokemon={p} />)}
+      </div>
+      <button className="btn btn-primary" style={{ fontSize: 12, padding: '16px 30px' }} onClick={again}>
+        PLAY AGAIN
+      </button>
     </div>
   )
 }

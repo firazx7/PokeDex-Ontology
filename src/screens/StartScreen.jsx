@@ -1,117 +1,80 @@
 // =============================================
-// StartScreen.jsx — Start Screen
+// StartScreen.jsx — Title + trainer setup (FULLY BUILT)
 // =============================================
-// WHAT THIS SCREEN DOES:
-// 1. Shows the game title
-// 2. Player enters their trainer name
-// 3. Player selects a generation (1, 2, or 3)
-// 4. Player clicks Start → goes to StarterScreen
-//
-// NO SPARQL QUERIES needed on this screen.
-// All data is just user input.
-//
-// WHEN DONE, transition to next screen like this:
-//
-//   setGameState(prev => ({
-//     ...prev,
-//     trainerName: name,       // string from input
-//     generation: generation,  // number 1, 2, or 3
-//     phase: PHASES.STARTER,
-//   }))
-
 import { useState } from 'react'
 import { PHASES } from '../state/gameState'
 
-export default function StartScreen({ gameState, setGameState }) {
+const GENS = [
+  { num: 1, label: 'KANTO', sub: 'Gen I', starters: 'Bulbasaur · Charmander · Squirtle' },
+  { num: 2, label: 'JOHTO', sub: 'Gen II', starters: 'Chikorita · Cyndaquil · Totodile' },
+  { num: 3, label: 'HOENN', sub: 'Gen III', starters: 'Treecko · Torchic · Mudkip' },
+]
+
+export default function StartScreen({ setGameState }) {
   const [name, setName] = useState('')
-  const [generation, setGeneration] = useState(null)
+  const [gen, setGen] = useState(null)
+  const canStart = name.trim().length > 0 && gen !== null
 
-  const canStart = name.trim().length > 0 && generation !== null
-
-  const handleStart = () => {
+  const start = () => {
     if (!canStart) return
-    setGameState(prev => ({
-      ...prev,
-      trainerName: name.trim(),
-      generation,
-      phase: PHASES.STARTER,
-    }))
+    setGameState(prev => ({ ...prev, trainerName: name.trim(), generation: gen, phase: PHASES.STARTER }))
   }
 
   return (
     <div className="screen">
-      <h1 style={{ fontFamily: "'Press Start 2P'", color: '#EE1515', fontSize: '32px', marginBottom: '8px' }}>
-        POKEDEX
-      </h1>
-      <h2 style={{ fontFamily: "'Press Start 2P'", color: '#FFCB05', fontSize: '18px', marginBottom: '40px' }}>
-        ROGUELIKE
-      </h2>
+      <h1 className="game-title" style={{ fontSize: 30, marginBottom: 6 }}>POKEDEX</h1>
+      <h2 className="game-title" style={{ fontSize: 18, marginBottom: 8, color: '#fff' }}>ROGUELIKE</h2>
+      <p className="mono" style={{ fontSize: 22, color: '#8fb4e8', marginBottom: 32 }}>
+        A SPARQL-powered battle run
+      </p>
 
-      {/* TODO: Prakhar — build the full design here */}
-      {/* This is just a minimal working placeholder */}
-
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '400px' }}>
-        
-        {/* Name input */}
+      <div className="stack gap16" style={{ width: '100%', maxWidth: 460 }}>
         <div>
-          <label style={{ color: 'rgba(255,255,255,0.7)', fontSize: '14px', display: 'block', marginBottom: '8px' }}>
-            Your name, trainer:
-          </label>
+          <label className="pk-label">TRAINER NAME</label>
           <input
-            type="text"
+            className="pk-input"
             value={name}
             onChange={e => setName(e.target.value)}
-            placeholder="Enter your name..."
-            maxLength={20}
-            style={{
-              width: '100%',
-              padding: '12px 16px',
-              borderRadius: '8px',
-              border: '2px solid rgba(255,255,255,0.2)',
-              background: 'rgba(255,255,255,0.1)',
-              color: 'white',
-              fontSize: '16px',
-            }}
+            placeholder="Type your name"
+            maxLength={16}
           />
         </div>
 
-        {/* Generation selection */}
         <div>
-          <label style={{ color: 'rgba(255,255,255,0.7)', fontSize: '14px', display: 'block', marginBottom: '8px' }}>
-            Choose your generation:
-          </label>
-          <div style={{ display: 'flex', gap: '8px' }}>
-            {[
-              { num: 1, label: 'Gen 1', sub: 'Kanto' },
-              { num: 2, label: 'Gen 2', sub: 'Johto' },
-              { num: 3, label: 'Gen 3', sub: 'Hoenn' },
-            ].map(gen => (
+          <label className="pk-label">CHOOSE YOUR REGION</label>
+          <div className="stack gap8">
+            {GENS.map(g => (
               <button
-                key={gen.num}
-                onClick={() => setGeneration(gen.num)}
-                className="btn"
+                key={g.num}
+                onClick={() => setGen(g.num)}
+                className="pcard pcard-click"
                 style={{
-                  flex: 1,
-                  background: generation === gen.num ? '#2A75BB' : 'rgba(255,255,255,0.1)',
-                  border: generation === gen.num ? '2px solid #FFCB05' : '2px solid rgba(255,255,255,0.2)',
-                  color: 'white',
-                  padding: '12px 8px',
+                  flexDirection: 'row',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  borderColor: gen === g.num ? 'var(--yellow)' : '#ffffff1a',
+                  background: gen === g.num ? '#1d3768' : 'var(--menu-panel)',
+                  boxShadow: gen === g.num ? '0 0 0 2px var(--yellow)' : 'none',
+                  cursor: 'pointer',
+                  padding: '12px 16px',
                 }}
               >
-                <div style={{ fontWeight: 700 }}>{gen.label}</div>
-                <div style={{ fontSize: '11px', opacity: 0.7 }}>{gen.sub}</div>
+                <div style={{ textAlign: 'left' }}>
+                  <div className="pixel" style={{ fontSize: 12, color: '#fff' }}>{g.label}</div>
+                  <div className="mono" style={{ fontSize: 16, color: '#8fb4e8' }}>{g.starters}</div>
+                </div>
+                <div className="pixel" style={{ fontSize: 9, color: 'var(--yellow)' }}>{g.sub}</div>
               </button>
             ))}
           </div>
         </div>
 
-        {/* Start button */}
         <button
-          onClick={handleStart}
+          onClick={start}
           className={`btn ${canStart ? 'btn-primary' : 'btn-disabled'}`}
-          style={{ marginTop: '8px', padding: '16px', fontSize: '18px', width: '100%' }}
+          style={{ marginTop: 8, width: '100%', fontSize: 13, padding: '16px' }}
         >
-          START GAME
+          {canStart ? 'START ADVENTURE' : 'ENTER NAME & REGION'}
         </button>
       </div>
     </div>

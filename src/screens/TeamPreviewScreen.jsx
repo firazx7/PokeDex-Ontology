@@ -1,27 +1,23 @@
 // =============================================
-// TeamPreviewScreen.jsx — TODO: Build This Screen
+// TeamPreviewScreen.jsx (FULLY BUILT)
 // =============================================
-// See README.md for full instructions on what
-// this screen needs to do, which SPARQL queries
-// to use, and how to transition to the next screen.
-//
-// The README has step-by-step instructions for
-// each screen with code examples.
-
 import { PHASES } from '../state/gameState'
-import { useSparql } from '../hooks/useSparql'
-import { QUERIES } from '../hooks/queries'
+import PokemonCard from '../components/PokemonCard'
 
 export default function TeamPreviewScreen({ gameState, setGameState }) {
+  const start = () => setGameState(prev => ({ ...prev, phase: PHASES.BATTLE }))
   return (
-    <div className="screen">
-      <h2 style={{ color: '#FFCB05' }}>TeamPreviewScreen</h2>
-      <p style={{ color: 'rgba(255,255,255,0.6)', marginTop: '16px' }}>
-        TODO: Build this screen. See README.md for instructions.
+    <div className="screen gap24">
+      <h2 className="game-title" style={{ fontSize: 16 }}>YOUR TEAM</h2>
+      <p className="mono" style={{ fontSize: 22, color: '#8fb4e8' }}>
+        Ready for the run, {gameState.trainerName}?
       </p>
-      <pre style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', marginTop: '24px', maxWidth: '600px' }}>
-        {JSON.stringify({ phase: gameState.phase, round: gameState.round, team: gameState.team?.length }, null, 2)}
-      </pre>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, width: '100%', maxWidth: 680 }}>
+        {gameState.team.map((p, i) => <PokemonCard key={p.iri + i} pokemon={p} showHP={false} />)}
+      </div>
+      <button className="btn btn-primary" style={{ fontSize: 13, padding: '16px 30px' }} onClick={start}>
+        BEGIN — ROUND 1
+      </button>
     </div>
   )
 }

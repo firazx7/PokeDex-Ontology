@@ -1,27 +1,29 @@
 // =============================================
-// useSparql.js — Core SPARQL Hook
+// useSparql.js — Query hook (SPARQL + offline fallback)
 // =============================================
-// This hook sends queries to your Fuseki endpoint
-// and returns the parsed results.
+// Sends the game's queries to a SPARQL endpoint (Fuseki/TriplyDB)
+// and returns parsed result rows.
 //
-// HOW TO USE:
-//   const { query, loading, error } = useSparql()
-//   const results = await query(myQueryString)
-//   // results is an array of objects
-//   // e.g. results[0].name.value, results[0].hp.value
+//   const { query, loading, error, usingMock } = useSparql()
+//   const rows = await query(someQueryString)
+//   // rows[0].name.value, parseInt(rows[0].hp.value), ...
 //
-// NOTE: All values from SPARQL come back as strings.
-// Use parseInt() or parseFloat() for numbers.
+// OFFLINE FALLBACK:
+// If the endpoint is unreachable (not configured, not running, CORS,
+// offline), the hook automatically answers from bundled ontology data
+// so the game stays playable. Set USE_MOCK = true to force offline mode.
+// The real, intended data path is live SPARQL.
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef } from 'react'
+import { mockQuery } from '../mock/mockEngine'
 
-// ⚙️ CHANGE THIS to your Fuseki endpoint URL
-// When running Fuseki locally: http://localhost:3030/pokedex/sparql
-// When using TriplyDB: paste your TriplyDB SPARQL endpoint here
+// ⚙️ Your SPARQL endpoint. Fuseki default shown.
 const SPARQL_ENDPOINT = 'http://localhost:3030/pokedex/sparql'
 
-// These prefixes are added to EVERY query automatically.
-// You do NOT need to add them manually in your query strings.
+// ⚙️ Force offline mode (skip the network entirely) by setting this true.
+const USE_MOCK = false
+
+// Prefixes prepended to every query (so query strings stay clean).
 const PREFIXES = `
 PREFIX : <http://www.uni-bremen.de/akr/pokedex#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -30,38 +32,44 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 export function useSparql() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  const [usingMock, setUsingMock] = useState(USE_MOCK)
+  // Once we've decided the endpoint is unreachable, stay in mock mode
+  const forcedMock = useRef(USE_MOCK)
 
   const query = useCallback(async (sparqlQuery) => {
     setLoading(true)
     setError(null)
 
-    try {
-      const fullQuery = PREFIXES + sparqlQuery
+    // Offline mode (forced or previously detected)
+    if (forcedMock.current) {
+      const rows = mockQuery(sparqlQuery)
+      setLoading(false)
+      return rows
+    }
 
-      const response = await fetch(SPARQL_ENDPOINT, {
+    try {
+      const res = await fetch(SPARQL_ENDPOINT, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/sparql-query',
           'Accept': 'application/sparql-results+json',
         },
-        body: fullQuery,
+        body: PREFIXES + sparqlQuery,
       })
-
-      if (!response.ok) {
-        throw new Error(`SPARQL endpoint error: ${response.status} ${response.statusText}`)
-      }
-
-      const json = await response.json()
+      if (!res.ok) throw new Error(`Endpoint ${res.status} ${res.statusText}`)
+      const json = await res.json()
       return json.results.bindings
-
     } catch (err) {
-      setError(err.message)
-      console.error('SPARQL Query Error:', err)
-      return []
+      // First failure → switch to offline mock for the rest of the session
+      console.warn('[useSparql] Endpoint unreachable, switching to offline data.', err.message)
+      forcedMock.current = true
+      setUsingMock(true)
+      const rows = mockQuery(sparqlQuery)
+      return rows
     } finally {
       setLoading(false)
     }
   }, [])
 
-  return { query, loading, error }
+  return { query, loading, error, usingMock }
 }

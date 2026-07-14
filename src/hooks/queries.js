@@ -144,6 +144,7 @@ export const QUERIES = {
       ?typeEntity rdfs:label ?moveType .
     }
     ORDER BY DESC(?power)
+    LIMIT 4
   `,
 
   // ─────────────────────────────────────────
@@ -243,5 +244,6 @@ export const QUERIES = {
       ?typeEntity rdfs:label ?moveType .
     }
     ORDER BY DESC(?power)
+    LIMIT 4
   `,
 }

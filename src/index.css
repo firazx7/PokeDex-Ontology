@@ -1,155 +1,451 @@
-/* =============================================
-   POKEDEX ROGUELIKE — Global Styles
-   ============================================= */
+/* ============================================================
+   POKEDEX ROGUELIKE — Game Boy Advance Battle Aesthetic
+   Inspired by Pokemon Ruby / Sapphire / Emerald (Gen 3)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 :root {
-  /* Pokemon Color Palette */
-  --red: #EE1515;
-  --red-dark: #B30E0E;
-  --yellow: #FFCB05;
-  --blue: #2A75BB;
-  --blue-dark: #1A3D7C;
-  --navy: #0B1B3A;
-  --white: #FFFFFF;
-  --ink: #1A1A2E;
-  --paper: #F5F7FB;
-  --gray: #5A6B85;
-  --green: #3BA55D;
-  --green-dark: #1E8449;
+  /* ---- Core Pokemon palette ---- */
+  --red:        #EE1515;
+  --red-dark:   #B30E0E;
+  --yellow:     #FFCB05;
+  --gold:       #DAA520;
+  --blue:       #2A75BB;
+  --blue-dark:  #1A3D7C;
 
-  /* HP Bar Colors */
-  --hp-high: #3BA55D;
-  --hp-mid: #FFCB05;
-  --hp-low: #EE1515;
+  /* ---- GBA battle UI ---- */
+  --box-cream:  #F8F8E8;   /* HP box background */
+  --box-border: #384860;   /* dark navy box outline */
+  --box-shadow: #A8B0C0;   /* inner shadow line */
+  --text-dark:  #384860;   /* text inside cream boxes */
 
-  /* Type Colors */
-  --type-fire: #FD7D24;
-  --type-water: #4592C4;
-  --type-grass: #9BCC50;
-  --type-electric: #EED535;
-  --type-ice: #51C4E7;
-  --type-fighting: #D56723;
-  --type-poison: #B97FC9;
-  --type-ground: #F7DE3F;
-  --type-flying: #3DC7EF;
-  --type-psychic: #F366B9;
-  --type-bug: #729F3F;
-  --type-rock: #A38C21;
-  --type-ghost: #7B62A3;
-  --type-dragon: #53A4CF;
-  --type-dark: #707070;
-  --type-steel: #9EB7B8;
-  --type-normal: #A4ACAF;
-  --type-fairy: #FDB9E9;
+  /* ---- HP bar segments ---- */
+  --hp-green:   #58D858;
+  --hp-yellow:  #F8D030;
+  --hp-red:     #F85838;
+  --hp-track:   #607890;
+
+  /* ---- Battle scene ---- */
+  --sky-top:    #6DB4E8;
+  --sky-bot:    #B8E4F8;
+  --grass:      #78C850;
+  --grass-dark: #588838;
+  --platform:   #C8A860;
+  --platform-2: #B09048;
+
+  /* ---- Menu / navigation ---- */
+  --menu-navy:  #0B1B3A;
+  --menu-panel: #14264d;
+  --paper:      #F5F7FB;
+  --white:      #FFFFFF;
+  --ink:        #1A1A2E;
+  --gray:       #6B7A99;
+
+  /* ---- Type colors ---- */
+  --type-fire: #F08030;  --type-water: #6890F0;  --type-grass: #78C850;
+  --type-electric: #F8D030; --type-ice: #98D8D8; --type-fighting: #C03028;
+  --type-poison: #A040A0; --type-ground: #E0C068; --type-flying: #A890F0;
+  --type-psychic: #F85888; --type-bug: #A8B820; --type-rock: #B8A038;
+  --type-ghost: #705898; --type-dragon: #7038F8; --type-dark: #705848;
+  --type-steel: #B8B8D0; --type-normal: #A8A878; --type-fairy: #EE99AC;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root { height: 100%; }
 
 body {
-  background-color: var(--navy);
+  background: var(--menu-navy);
   color: var(--white);
-  font-family: 'Inter', sans-serif;
-  min-height: 100vh;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
 }
 
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+#root { display: flex; flex-direction: column; min-height: 100vh; }
 
-/* Utility classes */
-.pixel-font {
-  font-family: 'Press Start 2P', monospace;
-}
+/* ---- Fonts ---- */
+.pixel { font-family: 'Press Start 2P', monospace; }
+.mono  { font-family: 'VT323', monospace; }
 
+/* ============================================================
+   GENERIC SCREEN (menu screens: start, team, win, lose)
+   ============================================================ */
 .screen {
+  flex: 1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  background-color: var(--navy);
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.btn {
-  cursor: pointer;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  transition: all 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.1);
-}
-
-.btn:active {
-  transform: translateY(0px);
-}
-
-.btn-primary {
-  background: var(--red);
-  color: var(--white);
-  border: 3px solid var(--yellow);
-}
-
-.btn-secondary {
-  background: var(--blue);
-  color: var(--white);
-  border: 2px solid var(--blue-dark);
-}
-
-.btn-disabled {
-  background: var(--gray);
-  color: rgba(255,255,255,0.4);
-  cursor: not-allowed;
-}
-
-.btn-disabled:hover {
-  transform: none;
-  filter: none;
-}
-
-/* Animated HP Bar */
-.hp-bar-container {
-  width: 100%;
-  height: 12px;
-  background: rgba(0,0,0,0.3);
-  border-radius: 6px;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at 50% 0%, #16305e 0%, var(--menu-navy) 70%);
+  position: relative;
   overflow: hidden;
 }
 
-.hp-bar-fill {
-  height: 100%;
-  border-radius: 6px;
-  transition: width 0.5s ease, background-color 0.3s ease;
+/* Faint pokeball watermark behind menu screens */
+.screen::before {
+  content: '';
+  position: absolute;
+  width: 480px; height: 480px;
+  border: 28px solid rgba(255,255,255,0.03);
+  border-radius: 50%;
+  top: -140px; right: -140px;
+  pointer-events: none;
+}
+.screen::after {
+  content: '';
+  position: absolute;
+  width: 360px; height: 360px;
+  border: 22px solid rgba(255,255,255,0.03);
+  border-radius: 50%;
+  bottom: -120px; left: -120px;
+  pointer-events: none;
 }
 
-/* Type badge */
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  cursor: pointer;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 22px;
+  transition: transform 0.08s ease, filter 0.15s ease;
+  position: relative;
+}
+.btn:hover { filter: brightness(1.12); transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background: var(--red);
+  color: #fff;
+  border-bottom: 4px solid var(--red-dark);
+  box-shadow: 0 0 0 3px var(--yellow), 0 0 0 5px var(--box-border);
+}
+.btn-secondary {
+  background: var(--blue);
+  color: #fff;
+  border-bottom: 4px solid var(--blue-dark);
+  box-shadow: 0 0 0 3px #fff3, 0 0 0 5px var(--box-border);
+}
+.btn-ghost {
+  background: var(--menu-panel);
+  color: #fff;
+  border: 2px solid #ffffff22;
+}
+.btn-disabled {
+  background: #33405c;
+  color: #ffffff44;
+  cursor: not-allowed;
+  border-bottom: 4px solid #26314a;
+}
+.btn-disabled:hover { filter: none; transform: none; }
+
+/* ============================================================
+   GBA HP BOX  (the signature element)
+   ============================================================ */
+.hpbox {
+  background: var(--box-cream);
+  border: 3px solid var(--box-border);
+  border-radius: 4px 12px 4px 12px;
+  padding: 8px 12px 10px;
+  box-shadow: inset -2px -2px 0 var(--box-shadow), 3px 3px 0 rgba(0,0,0,0.25);
+  color: var(--text-dark);
+  min-width: 220px;
+}
+.hpbox-name {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.hpbox-lv { font-size: 9px; color: #58607a; }
+
+/* HP label + track */
+.hp-row { display: flex; align-items: center; gap: 6px; }
+.hp-label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: var(--gold);
+  background: var(--box-border);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+.hp-track {
+  flex: 1;
+  height: 9px;
+  background: var(--hp-track);
+  border: 2px solid var(--box-border);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.hp-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease, background-color 0.3s ease;
+}
+.hpbox-num {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  text-align: right;
+  margin-top: 4px;
+  color: var(--text-dark);
+}
+
+/* ============================================================
+   BATTLE SCENE
+   ============================================================ */
+.battle-scene {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 10;
+  position: relative;
+  border: 4px solid var(--box-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bot) 60%, var(--grass) 60%, var(--grass-dark) 100%);
+  box-shadow: 0 8px 0 rgba(0,0,0,0.3);
+}
+
+/* platforms */
+.platform {
+  position: absolute;
+  width: 190px; height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, var(--platform) 0%, var(--platform-2) 70%, transparent 72%);
+}
+.platform-opp { top: 30%; right: 6%; }
+.platform-ply { bottom: 12%; left: 4%; }
+
+/* sprites */
+.sprite {
+  position: absolute;
+  image-rendering: pixelated;
+}
+.sprite-opp {
+  top: 12%; right: 12%;
+  width: 128px; height: 128px;
+  object-fit: contain;
+}
+.sprite-ply {
+  bottom: 16%; left: 10%;
+  width: 140px; height: 140px;
+  object-fit: contain;
+}
+
+/* HP box positions in scene */
+.hpbox-opp { position: absolute; top: 8%; left: 5%; }
+.hpbox-ply { position: absolute; bottom: 26%; right: 5%; }
+
+/* attack shake + flash */
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+.shake { animation: shake 0.4s ease; }
+
+@keyframes flash {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+.flash { animation: flash 0.3s ease 2; }
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-40px); opacity: 0; }
+}
+.dmg-float {
+  position: absolute;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 2px 0 var(--red-dark);
+  animation: floatUp 1s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes faintDrop {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(60px); opacity: 0; }
+}
+.faint { animation: faintDrop 0.7s ease forwards; }
+
+/* wild appear */
+@keyframes slideInRight {
+  from { transform: translateX(80px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.appear { animation: slideInRight 0.5s ease; }
+
+/* ============================================================
+   MESSAGE BOX (below the scene)
+   ============================================================ */
+.msgbox {
+  width: 100%;
+  max-width: 720px;
+  min-height: 72px;
+  margin-top: 10px;
+  background: var(--box-cream);
+  border: 4px solid var(--box-border);
+  border-radius: 8px;
+  box-shadow: inset -3px -3px 0 var(--box-shadow), 0 4px 0 rgba(0,0,0,0.3);
+  padding: 14px 18px;
+  color: var(--text-dark);
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+/* ============================================================
+   MOVE MENU (2x2 grid)
+   ============================================================ */
+.move-menu {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.move-btn {
+  cursor: pointer;
+  border: 3px solid var(--box-border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  background: var(--box-cream);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.08s ease, filter 0.12s ease;
+  box-shadow: inset -2px -2px 0 var(--box-shadow);
+}
+.move-btn:hover { filter: brightness(1.05); transform: translateY(-2px); }
+.move-btn-name { font-family: 'Press Start 2P', monospace; font-size: 10px; }
+.move-btn-meta { text-align: right; font-family: 'VT323'; font-size: 18px; line-height: 1.1; }
+.move-btn-disabled { opacity: 0.45; cursor: not-allowed; }
+.move-btn-disabled:hover { filter: none; transform: none; }
+
+/* ============================================================
+   TYPE BADGE
+   ============================================================ */
 .type-badge {
   display: inline-block;
-  padding: 3px 10px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: 700;
-  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.35);
+  border: 1px solid rgba(0,0,0,0.25);
+}
+
+/* ============================================================
+   POKEMON PICKER CARD (menu screens)
+   ============================================================ */
+.pcard {
+  background: var(--menu-panel);
+  border: 3px solid #ffffff1a;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.1s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.pcard-click { cursor: pointer; }
+.pcard-click:hover { transform: translateY(-3px); border-color: var(--yellow); }
+.pcard-selected { border-color: var(--yellow); background: #1d3768; box-shadow: 0 0 0 2px var(--yellow); }
+.pcard-fainted { opacity: 0.4; }
+.pcard-name { font-family: 'Press Start 2P'; font-size: 10px; text-align: center; }
+.pcard-sprite { image-rendering: pixelated; }
+
+/* ============================================================
+   TITLE
+   ============================================================ */
+.game-title {
+  font-family: 'Press Start 2P', monospace;
+  color: var(--yellow);
+  text-shadow: 3px 3px 0 var(--blue-dark), 6px 6px 0 rgba(0,0,0,0.3);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Blinking "press start" style prompt */
+@keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0.25; } }
+.blink { animation: blink 1s steps(1) infinite; }
+
+/* Inputs */
+.pk-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 3px solid var(--box-border);
+  border-radius: 6px;
+  background: var(--box-cream);
+  color: var(--text-dark);
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  box-shadow: inset -2px -2px 0 var(--box-shadow);
+}
+.pk-input:focus { outline: 3px solid var(--yellow); }
+
+.pk-label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: #cdd7ee;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* round pill */
+.round-pill {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  color: var(--menu-navy);
+  background: var(--yellow);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 2px solid var(--box-border);
+  box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+}
+
+/* Utility */
+.stack { display: flex; flex-direction: column; }
+.row { display: flex; }
+.center { align-items: center; justify-content: center; }
+.gap8 { gap: 8px; } .gap12 { gap: 12px; } .gap16 { gap: 16px; } .gap24 { gap: 24px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .sprite-opp { width: 90px; height: 90px; }
+  .sprite-ply { width: 100px; height: 100px; }
+  .hpbox { min-width: 150px; padding: 6px 8px; }
+  .hpbox-name { font-size: 9px; }
+  .msgbox { font-size: 20px; }
+  .move-btn-name { font-size: 8px; }
 }

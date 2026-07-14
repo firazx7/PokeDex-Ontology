@@ -1,30 +1,14 @@
 // =============================================
-// typeColors.js — Type to Color Mapping
+// typeColors.js — Authentic Gen-3 type colors
 // =============================================
-// Returns the background color for each Pokemon type.
-// Used in TypeBadge component.
-
 export const TYPE_COLORS = {
-  Fire:     '#FD7D24',
-  Water:    '#4592C4',
-  Grass:    '#9BCC50',
-  Electric: '#EED535',
-  Ice:      '#51C4E7',
-  Fighting: '#D56723',
-  Poison:   '#B97FC9',
-  Ground:   '#F7DE3F',
-  Flying:   '#3DC7EF',
-  Psychic:  '#F366B9',
-  Bug:      '#729F3F',
-  Rock:     '#A38C21',
-  Ghost:    '#7B62A3',
-  Dragon:   '#53A4CF',
-  Dark:     '#707070',
-  Steel:    '#9EB7B8',
-  Normal:   '#A4ACAF',
-  Fairy:    '#FDB9E9',
+  Fire: '#F08030', Water: '#6890F0', Grass: '#78C850',
+  Electric: '#F8D030', Ice: '#98D8D8', Fighting: '#C03028',
+  Poison: '#A040A0', Ground: '#E0C068', Flying: '#A890F0',
+  Psychic: '#F85888', Bug: '#A8B820', Rock: '#B8A038',
+  Ghost: '#705898', Dragon: '#7038F8', Dark: '#705848',
+  Steel: '#B8B8D0', Normal: '#A8A878', Fairy: '#EE99AC',
 }
-
 export function getTypeColor(typeName) {
-  return TYPE_COLORS[typeName] || '#A4ACAF'
+  return TYPE_COLORS[typeName] || '#A8A878'
 }
