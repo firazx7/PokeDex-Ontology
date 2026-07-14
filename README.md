@@ -1,4 +1,4 @@
-# Pokédex Roguelike 🔴⚪
+# Pokédex Ontology Game 🔴⚪
 
 A turn-based **Pokémon battle roguelike** played in the browser, where the entire
 game — team building, opponents, type effectiveness, enemy AI, and evolutions — is
@@ -159,7 +159,7 @@ situations), and the ontology passes the HermiT reasoner as consistent.
 
 ## Authors
 
-**Firaz Kılıç** & **Prakhar Rajput** — University of Bremen,
+**Firaz Kilic** & **Prakhar Rajput** — University of Bremen,
 *Actionable Knowledge Representation*.
 
 ## Credits & notes
