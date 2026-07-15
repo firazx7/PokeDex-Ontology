@@ -250,4 +250,5 @@ situations), and the ontology passes the HermiT reasoner as consistent.
 Pokémon and all related names are trademarks of Nintendo / Game Freak / The Pokémon
 Company. This is a non-commercial student project for educational purposes. Sprites
 are served from PokeAPI.
+
 Shout-outs go to our teacher Dr. Michaela Kümpel!
