@@ -83,7 +83,7 @@ The endpoint URL can be changed at the top of `src/hooks/useSparql.js`
 | **Type matchups** | Damage uses the real Gen-3 formula and the ontology's effectiveness matrix (dual types stack — Rock hits Fire/Flying for 4×). |
 | **PP** | Every move has limited uses. Out of PP → Struggle. |
 | **Permadeath** | A fainted Pokémon is gone for the rest of the run, and HP doesn't regenerate… |
-| **Evolution** | …except evolving between rounds, which restores full HP and boosts stats. |
+| **Evolution** | …except evolving. Between rounds you may evolve **one** Pokémon, which restores its full HP and boosts its stats. |
 
 <p align="center">
   <img src="docs/screenshot-start.png" width="45%" alt="Title screen">

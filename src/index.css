@@ -209,7 +209,7 @@ body {
    ============================================================ */
 .battle-scene {
   width: 100%;
-  max-width: 720px;
+  max-width: 100%;
   aspect-ratio: 16 / 10;
   position: relative;
   border: 4px solid var(--box-border);
@@ -297,9 +297,8 @@ body {
    ============================================================ */
 .msgbox {
   width: 100%;
-  max-width: 720px;
-  min-height: 72px;
-  margin-top: 10px;
+  min-height: 96px;
+  margin-top: 0;
   background: var(--box-cream);
   border: 4px solid var(--box-border);
   border-radius: 8px;
@@ -448,4 +447,87 @@ body {
   .hpbox-name { font-size: 9px; }
   .msgbox { font-size: 20px; }
   .move-btn-name { font-size: 8px; }
+}
+
+
+/* ============================================================
+   BATTLE SCREEN LAYOUT — scene left, controls right
+   Fits the viewport: no page scrolling during a battle.
+   ============================================================ */
+.battle-screen {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  gap: 18px;
+  padding: 18px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 0%, #16305e 0%, var(--menu-navy) 70%);
+}
+
+.battle-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.battle-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  min-height: 0;
+}
+
+/* The panel that holds the move menu / team picker */
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.panel-label {
+  font-size: 10px;
+  color: #cdd7ee;
+}
+
+/* Moves stack vertically in the side panel (4 moves = 4 rows) */
+.move-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Team picker: 2 columns inside the side panel */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.team-grid .pcard { padding: 8px; gap: 5px; }
+.team-grid .pcard-name { font-size: 8px; }
+.team-grid .pcard-sprite { width: 52px; height: 52px; }
+
+/* Shorter viewports: shrink the scene so nothing is cut off */
+@media (max-height: 780px) {
+  .msgbox { min-height: 78px; font-size: 20px; padding: 10px 14px; }
+  .team-grid .pcard-sprite { width: 44px; height: 44px; }
+}
+
+/* Narrow screens: stack scene above controls, allow scrolling again */
+@media (max-width: 980px) {
+  .battle-screen {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+  }
+  .battle-left { justify-content: flex-start; }
+  .battle-right { justify-content: flex-start; }
+  .move-list { display: grid; grid-template-columns: 1fr 1fr; }
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
 }

@@ -1,16 +1,13 @@
 // =============================================
 // BattleScreen.jsx — GBA Battle Scene (FULLY BUILT)
 // =============================================
-// Authentic Gen-3 battle layout:
-//   - opponent sprite top-right on a platform, HP box top-left
-//   - player sprite bottom-left (back sprite), HP box bottom-right
-//   - message box + move menu below the scene
-//   - attack shake / flash / floating damage animations
+// Layout: battle scene on the LEFT, message box + controls on the
+// RIGHT, so everything fits on screen without scrolling.
 //
 // All battle logic lives in utils/battle.js. This file is
 // presentation + orchestration only.
 
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import {
   PHASES, parsePokemon, parseMove, getDifficulty, isTeamWiped,
   getSpriteUrl, getBackSpriteUrl,
@@ -25,7 +22,16 @@ import {
 import HPBox from '../components/HPBox'
 import MoveButton from '../components/MoveButton'
 import PokemonCard from '../components/PokemonCard'
-import TypeBadge from '../components/TypeBadge'
+
+// ─────────────────────────────────────────────
+// MESSAGE TIMING (ms) — tune the pacing here
+// ─────────────────────────────────────────────
+const T = {
+  announce: 1100,  // how long "X used Y!" stays before the hit resolves
+  impact:    450,  // pause right after the sprite gets hit
+  effect:   1500,  // how long "It's super effective!" stays on screen
+  faint:     900,  // pause after a Pokemon faints
+}
 
 const STEP = {
   LOADING: 'LOADING',
@@ -47,7 +53,7 @@ export default function BattleScreen({ gameState, setGameState }) {
   const [oppHit, setOppHit] = useState(false)
   const [plyHit, setPlyHit] = useState(false)
   const [oppFaint, setOppFaint] = useState(false)
-  const [dmgFloat, setDmgFloat] = useState(null) // { side:'opp'|'ply', value }
+  const [dmgFloat, setDmgFloat] = useState(null)
 
   const active = activeIndex !== null ? team[activeIndex] : null
   const isBoss = getDifficulty(gameState.round) === 'boss'
@@ -100,15 +106,17 @@ export default function BattleScreen({ gameState, setGameState }) {
   const useMove = async (move) => {
     if (step !== STEP.CHOOSE_MOVE || !active || !opponent) return
     setStep(STEP.ANIMATING)
+
+    // 1. Announce the move and let the player read it
     setMessage(`${active.name} used ${move.name}!`)
+    await wait(T.announce)
 
     const { multiplier, label } = await getEffectiveness(query, move.typeIRI, opponent.types)
     const dmg = calculateDamage(active, opponent, move.power, multiplier)
 
-    // opponent takes the hit
+    // 2. Impact
     setOppHit(true); setTimeout(() => setOppHit(false), 400)
     showDamage('opp', dmg)
-    await wait(250)
 
     const newTeam = team.map((p, i) =>
       i !== activeIndex ? p : {
@@ -117,19 +125,21 @@ export default function BattleScreen({ gameState, setGameState }) {
       })
     const newHP = Math.max(0, opponent.currentHP - dmg)
     const newOpp = { ...opponent, currentHP: newHP, fainted: newHP <= 0 }
-
     setTeam(newTeam)
     setOpponent(newOpp)
-    await wait(300)
-    setMessage(effMsg(label))
+    await wait(T.impact)
+
+    // 3. Effectiveness message, held long enough to read
+    setMessage(effMsg(label, dmg))
+    await wait(T.effect)
 
     if (newOpp.fainted) {
       setOppFaint(true)
-      await wait(700)
+      setMessage(`${newOpp.name} fainted!`)
+      await wait(T.faint)
       endRound(newTeam, newOpp)
       return
     }
-    await wait(700)
     await opponentTurn(newTeam, newOpp)
   }
 
@@ -137,7 +147,9 @@ export default function BattleScreen({ gameState, setGameState }) {
   const struggle = async () => {
     if (step !== STEP.CHOOSE_MOVE || !active || !opponent) return
     setStep(STEP.ANIMATING)
+
     setMessage(`${active.name} has no moves left and used Struggle!`)
+    await wait(T.announce)
 
     setOppHit(true); setTimeout(() => setOppHit(false), 400)
     showDamage('opp', STRUGGLE.damageToTarget)
@@ -149,10 +161,17 @@ export default function BattleScreen({ gameState, setGameState }) {
     showDamage('ply', STRUGGLE.recoilToSelf)
 
     setTeam(newTeam); setOpponent(newOpp)
-    await wait(700)
+    await wait(T.impact)
+    setMessage(`${active.name} is hurt by recoil!`)
+    await wait(T.effect)
 
-    if (newOpp.fainted) { setOppFaint(true); await wait(700); endRound(newTeam, newOpp); return }
-    if (newTeam[activeIndex].fainted) { await wait(300); activeFainted(newTeam); return }
+    if (newOpp.fainted) {
+      setOppFaint(true)
+      setMessage(`${newOpp.name} fainted!`)
+      await wait(T.faint)
+      endRound(newTeam, newOpp); return
+    }
+    if (newTeam[activeIndex].fainted) { activeFainted(newTeam); return }
     await opponentTurn(newTeam, newOpp)
   }
 
@@ -162,29 +181,35 @@ export default function BattleScreen({ gameState, setGameState }) {
 
     if (choice.kind === 'struggle') {
       setMessage(`${workingOpp.name} used Struggle!`)
+      await wait(T.announce)
       setPlyHit(true); setTimeout(() => setPlyHit(false), 400)
       showDamage('ply', STRUGGLE.damageToTarget)
       const nt = applyDamage(workingTeam, activeIndex, STRUGGLE.damageToTarget)
       setTeam(nt)
-      await wait(800)
+      await wait(T.impact + T.effect)
       finishOppTurn(nt)
       return
     }
 
-    setMessage(`${workingOpp.name} used ${choice.move.name}!`)
+    // 1. Announce which move the OPPONENT is using — held so it's readable
     const moveTypeIRI = resolveOpponentMoveType(workingOpp.moves, choice.move.name)
+    const typeName = moveTypeIRI.replace(':', '')
+    setMessage(`Foe ${workingOpp.name} used ${choice.move.name}!`)
+    await wait(T.announce)
+
     const { multiplier, label } = await getEffectiveness(query, moveTypeIRI, active.types)
     const dmg = calculateDamage(workingOpp, active, choice.move.power, multiplier)
 
+    // 2. Impact
     setPlyHit(true); setTimeout(() => setPlyHit(false), 400)
     showDamage('ply', dmg)
-    await wait(250)
-
     const nt = applyDamage(workingTeam, activeIndex, dmg)
     setTeam(nt)
-    await wait(300)
-    setMessage(effMsg(label))
-    await wait(700)
+    await wait(T.impact)
+
+    // 3. Effectiveness
+    setMessage(effMsg(label, dmg))
+    await wait(T.effect)
     finishOppTurn(nt)
   }
 
@@ -193,8 +218,9 @@ export default function BattleScreen({ gameState, setGameState }) {
     else setStep(STEP.CHOOSE_MOVE)
   }
 
-  const activeFainted = (workingTeam) => {
+  const activeFainted = async (workingTeam) => {
     setMessage(`${team[activeIndex].name} fainted!`)
+    await wait(T.faint)
     if (isTeamWiped(workingTeam)) {
       setGameState(prev => ({ ...prev, team: workingTeam, phase: PHASES.LOSE }))
       return
@@ -219,7 +245,7 @@ export default function BattleScreen({ gameState, setGameState }) {
     }))
   }
 
-  // ── Render ──────────────────────────────────────
+  // ── Render: loading ─────────────────────────────
   if (step === STEP.LOADING || !opponent) {
     return (
       <div className="screen">
@@ -231,105 +257,102 @@ export default function BattleScreen({ gameState, setGameState }) {
     )
   }
 
+  // ── Render: battle ──────────────────────────────
   return (
-    <div className="screen" style={{ justifyContent: 'flex-start', paddingTop: 20, gap: 0 }}>
+    <div className="battle-screen">
 
-      {/* Round pill */}
-      <div className="round-pill" style={{ marginBottom: 12 }}>
-        ROUND {gameState.round} / 10{isBoss ? ' — BOSS' : ''}
-      </div>
-
-      {/* ---- BATTLE SCENE ---- */}
-      <div className="battle-scene">
-        {/* opponent HP box */}
-        <div className="hpbox-opp">
-          <HPBox pokemon={opponent} showNumbers={false} />
+      {/* ================= LEFT: the battle scene ================= */}
+      <div className="battle-left">
+        <div className="round-pill" style={{ alignSelf: 'center' }}>
+          ROUND {gameState.round} / 10{isBoss ? ' — BOSS' : ''}
         </div>
 
-        {/* opponent platform + sprite */}
-        <div className="platform platform-opp" />
-        <img
-          className={`sprite sprite-opp appear ${oppHit ? 'shake flash' : ''} ${oppFaint ? 'faint' : ''}`}
-          src={getSpriteUrl(opponent.nationalNum, true)}
-          alt={opponent.name}
-          onError={(e) => { e.target.src = getSpriteUrl(opponent.nationalNum, false) }}
-        />
-        {dmgFloat?.side === 'opp' && (
-          <div className="dmg-float" style={{ top: '18%', right: '20%' }}>-{dmgFloat.value}</div>
-        )}
+        <div className="battle-scene">
+          <div className="hpbox-opp">
+            <HPBox pokemon={opponent} showNumbers={false} />
+          </div>
 
-        {/* player platform + sprite (back sprite) */}
-        <div className="platform platform-ply" />
-        {active && (
+          <div className="platform platform-opp" />
           <img
-            className={`sprite sprite-ply ${plyHit ? 'shake flash' : ''}`}
-            src={getBackSpriteUrl(active.nationalNum, true)}
-            alt={active.name}
-            onError={(e) => {
-              // fall back: static back → animated front → static front
-              e.target.onerror = () => { e.target.src = getSpriteUrl(active.nationalNum, false) }
-              e.target.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${active.nationalNum}.png`
-            }}
+            className={`sprite sprite-opp appear ${oppHit ? 'shake flash' : ''} ${oppFaint ? 'faint' : ''}`}
+            src={getSpriteUrl(opponent.nationalNum, true)}
+            alt={opponent.name}
+            onError={(e) => { e.target.src = getSpriteUrl(opponent.nationalNum, false) }}
           />
-        )}
-        {dmgFloat?.side === 'ply' && (
-          <div className="dmg-float" style={{ bottom: '30%', left: '18%' }}>-{dmgFloat.value}</div>
+          {dmgFloat?.side === 'opp' && (
+            <div className="dmg-float" style={{ top: '18%', right: '20%' }}>-{dmgFloat.value}</div>
+          )}
+
+          <div className="platform platform-ply" />
+          {active && (
+            <img
+              className={`sprite sprite-ply ${plyHit ? 'shake flash' : ''}`}
+              src={getBackSpriteUrl(active.nationalNum, true)}
+              alt={active.name}
+              onError={(e) => {
+                e.target.onerror = () => { e.target.src = getSpriteUrl(active.nationalNum, false) }
+                e.target.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${active.nationalNum}.png`
+              }}
+            />
+          )}
+          {dmgFloat?.side === 'ply' && (
+            <div className="dmg-float" style={{ bottom: '30%', left: '18%' }}>-{dmgFloat.value}</div>
+          )}
+
+          {active && (
+            <div className="hpbox-ply">
+              <HPBox pokemon={active} showNumbers={true} />
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* ================= RIGHT: message + controls ================= */}
+      <div className="battle-right">
+        <div className="msgbox">{message}</div>
+
+        {step === STEP.CHOOSE_POKEMON && (
+          <div className="control-panel">
+            <div className="pixel panel-label">CHOOSE YOUR POKEMON</div>
+            <div className="team-grid">
+              {team.map((p, i) => (
+                <PokemonCard key={p.iri + i} pokemon={p} onClick={() => choosePokemon(i)} />
+              ))}
+            </div>
+          </div>
         )}
 
-        {/* player HP box */}
-        {active && (
-          <div className="hpbox-ply">
-            <HPBox pokemon={active} showNumbers={true} />
+        {step === STEP.CHOOSE_MOVE && active && (
+          <div className="control-panel">
+            <div className="pixel panel-label">CHOOSE A MOVE</div>
+            {hasUsableMoves(active) ? (
+              <div className="move-list">
+                {active.moves.map((m, i) => (
+                  <MoveButton key={m.iri + i} move={m} onClick={useMove} />
+                ))}
+              </div>
+            ) : (
+              <button className="btn btn-primary" style={{ width: '100%' }} onClick={struggle}>
+                STRUGGLE (OUT OF PP)
+              </button>
+            )}
+          </div>
+        )}
+
+        {step === STEP.ANIMATING && (
+          <div className="control-panel center" style={{ justifyContent: 'center' }}>
+            <div className="pixel blink" style={{ fontSize: 12, color: '#8896b8' }}>▼</div>
           </div>
         )}
       </div>
-
-      {/* ---- MESSAGE BOX ---- */}
-      <div className="msgbox">{message}</div>
-
-      {/* ---- CHOOSE POKEMON ---- */}
-      {step === STEP.CHOOSE_POKEMON && (
-        <div style={{ width: '100%', maxWidth: 720, marginTop: 10 }}>
-          <div className="pixel" style={{ fontSize: 10, color: '#cdd7ee', marginBottom: 8 }}>
-            CHOOSE YOUR POKEMON
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
-            {team.map((p, i) => (
-              <PokemonCard key={p.iri + i} pokemon={p} onClick={() => choosePokemon(i)} />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* ---- CHOOSE MOVE ---- */}
-      {step === STEP.CHOOSE_MOVE && active && (
-        hasUsableMoves(active) ? (
-          <div className="move-menu">
-            {active.moves.map((m, i) => (
-              <MoveButton key={m.iri + i} move={m} onClick={useMove} />
-            ))}
-          </div>
-        ) : (
-          <div style={{ width: '100%', maxWidth: 720, marginTop: 10 }}>
-            <button className="btn btn-primary" style={{ width: '100%' }} onClick={struggle}>
-              STRUGGLE (OUT OF PP)
-            </button>
-          </div>
-        )
-      )}
-
-      {/* ---- ANIMATING ---- */}
-      {step === STEP.ANIMATING && (
-        <div className="pixel blink" style={{ fontSize: 10, color: '#8896b8', marginTop: 14 }}>▼</div>
-      )}
     </div>
   )
 }
 
-// message helper
-function effMsg(label) {
-  if (label === 'super') return "It's super effective!"
-  if (label === 'half') return "It's not very effective..."
+// message helper — now also reports the damage dealt
+function effMsg(label, dmg) {
+  if (label === 'super') return `It's super effective! (${dmg} dmg)`
+  if (label === 'half') return `It's not very effective... (${dmg} dmg)`
   if (label === 'none') return 'It had no effect...'
-  return 'A solid hit!'
+  return `A solid hit! (${dmg} dmg)`
 }
