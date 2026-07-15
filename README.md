@@ -53,21 +53,104 @@ Open the printed URL (usually `http://localhost:5173`) and play.
 
 ### Option B — The real thing (live SPARQL)
 
-To run it the way it's designed — with queries hitting a live triple store:
+This is how the game is *meant* to run: every action in the game sends a live
+SPARQL query to a real triple store (a small database built specifically for
+ontologies), which answers by querying the actual `.ttl` ontology file. Option A
+above is just a convenience fallback — this is the real deal, and it's what you
+should use if you want to see the ontology actually being queried while you play.
 
-1. Install **[Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/)**.
-2. Start Fuseki and create a dataset named `pokedex`.
-3. Upload the ontology file `akr_ontology_kilic_rajput_v8.ttl` to that dataset.
-4. Confirm the endpoint is live at `http://localhost:3030/pokedex/sparql`.
-5. Run the app:
+You do **not** need any programming experience for this. It's mostly
+copy-pasting a few commands into a terminal window. It takes about 10 minutes
+the first time.
 
-   ```bash
-   npm install
-   npm run dev
-   ```
+#### Step 1 — Check that Java is installed
 
-The endpoint URL can be changed at the top of `src/hooks/useSparql.js`
-(for example to point at a hosted TriplyDB endpoint instead).
+The triple store we use (Apache Jena Fuseki) is a Java program, so Java needs
+to be on your computer first.
+
+- **Windows:** press `Win + R`, type `cmd`, press Enter. A black window opens.
+- **Mac:** open the **Terminal** app (search for it with Spotlight, `Cmd + Space`).
+
+In that window, type:
+
+```
+java -version
+```
+
+- If you see a version number (anything like `java version "17..."` or
+  `"21..."` or `"23..."`), you're good — skip to Step 2.
+- If you see an error like "command not found" or "not recognized", install
+  Java first from **[adoptium.net](https://adoptium.net)** (pick the recommended
+  download for your operating system, run the installer, click through with
+  the defaults). Then close and reopen your terminal window and try
+  `java -version` again to confirm it worked.
+
+#### Step 2 — Download and unzip Fuseki
+
+1. Go to **[jena.apache.org/download](https://jena.apache.org/download/)**.
+2. Download **Apache Jena Fuseki** (look for a file like
+   `apache-jena-fuseki-X.X.X.zip`).
+3. Unzip it somewhere easy to find, like your Downloads folder or Desktop.
+   Right-click the `.zip` file → "Extract All" (Windows) or just double-click
+   it (Mac).
+
+#### Step 3 — Start Fuseki
+
+In your terminal window, navigate into the folder you just unzipped. You'll
+need to adjust the path below to match where you put it — for example:
+
+```
+cd Downloads/apache-jena-fuseki-6.1.0
+```
+
+Then start the server with this command:
+
+**Windows (PowerShell):**
+```
+.\fuseki-server.bat --update --mem /pokedex
+```
+
+**Mac/Linux (Terminal):**
+```
+./fuseki-server --update --mem /pokedex
+```
+
+You should see several lines of text appear, ending with something like
+`Start Fuseki`. **Leave this window open** — as long as it's running, the
+database is alive. If you close it, the server stops.
+
+#### Step 4 — Upload the ontology file
+
+Open a normal web browser and go to:
+
+```
+http://localhost:3030
+```
+
+You'll see the Fuseki web interface with a dataset called `pokedex` already
+listed (because we created it with `/pokedex` in Step 3). Click on it, then
+look for an **"add data"** or **"upload files"** option. Select the ontology
+file from this project, `akr_ontology_kilic_rajput_v8.ttl`, and upload it.
+
+#### Step 5 — Start the game
+
+Open a **second, new** terminal window (leave the Fuseki one running in the
+background). Navigate into this project's folder, for example:
+
+```
+cd Documents/GitHub/PokeDex-Ontology
+```
+
+Then run:
+
+```
+npm install
+npm run dev
+```
+
+The first command installs everything the game needs (only required once).
+The second one starts the game itself and prints a URL, usually
+`http://localhost:5173` — open that in your browser and play.
 
 ---
 
