@@ -1,0 +1,1114 @@
+@prefix : <http://www.uni-bremen.de/akr/pokedex#> .
+
+:Abra :hasAbility :Synchronize .
+:Abra :hasAbility :InnerFocus .
+:Abra :hasHiddenAbility :MagicGuard .
+:Absol :hasAbility :Pressure .
+:Absol :hasAbility :SuperLuck .
+:Absol :hasHiddenAbility :Justified .
+:Aerodactyl :hasAbility :RockHead .
+:Aerodactyl :hasAbility :Pressure .
+:Aerodactyl :hasHiddenAbility :Unnerve .
+:Aggron :hasAbility :Sturdy .
+:Aggron :hasAbility :RockHead .
+:Aggron :hasHiddenAbility :HeavyMetal .
+:Aipom :hasAbility :RunAway .
+:Aipom :hasAbility :Pickup .
+:Aipom :hasHiddenAbility :SkillLink .
+:Alakazam :hasAbility :Synchronize .
+:Alakazam :hasAbility :InnerFocus .
+:Alakazam :hasHiddenAbility :MagicGuard .
+:Altaria :hasAbility :NaturalCure .
+:Altaria :hasHiddenAbility :CloudNine .
+:Ampharos :hasAbility :Static .
+:Ampharos :hasHiddenAbility :Plus .
+:Anorith :hasAbility :BattleArmor .
+:Anorith :hasHiddenAbility :SwiftSwim .
+:Arbok :hasAbility :Intimidate .
+:Arbok :hasAbility :ShedSkin .
+:Arbok :hasHiddenAbility :Unnerve .
+:Arcanine :hasAbility :Intimidate .
+:Arcanine :hasAbility :FlashFire .
+:Arcanine :hasHiddenAbility :Justified .
+:Ariados :hasAbility :Swarm .
+:Ariados :hasAbility :Insomnia .
+:Ariados :hasHiddenAbility :Sniper .
+:Armaldo :hasAbility :BattleArmor .
+:Armaldo :hasHiddenAbility :SwiftSwim .
+:Aron :hasAbility :Sturdy .
+:Aron :hasAbility :RockHead .
+:Aron :hasHiddenAbility :HeavyMetal .
+:Articuno :hasAbility :Pressure .
+:Articuno :hasHiddenAbility :SnowCloak .
+:Azumarill :hasAbility :ThickFat .
+:Azumarill :hasAbility :HugePower .
+:Azumarill :hasHiddenAbility :SapSipper .
+:Azurill :hasAbility :ThickFat .
+:Azurill :hasAbility :HugePower .
+:Azurill :hasHiddenAbility :SapSipper .
+:Bagon :hasAbility :RockHead .
+:Bagon :hasHiddenAbility :SheerForce .
+:Baltoy :hasAbility :Levitate .
+:Banette :hasAbility :Insomnia .
+:Banette :hasAbility :Frisk .
+:Banette :hasHiddenAbility :CursedBody .
+:Barboach :hasAbility :Oblivious .
+:Barboach :hasAbility :Anticipation .
+:Barboach :hasHiddenAbility :Hydration .
+:Bayleef :hasAbility :Overgrow .
+:Bayleef :hasHiddenAbility :LeafGuard .
+:Beautifly :hasAbility :Swarm .
+:Beautifly :hasHiddenAbility :Rivalry .
+:Beedrill :hasAbility :Swarm .
+:Beedrill :hasHiddenAbility :Sniper .
+:Beldum :hasAbility :ClearBody .
+:Beldum :hasHiddenAbility :LightMetal .
+:Bellossom :hasAbility :Chlorophyll .
+:Bellossom :hasHiddenAbility :Healer .
+:Bellsprout :hasAbility :Chlorophyll .
+:Bellsprout :hasHiddenAbility :Gluttony .
+:Blastoise :hasAbility :Torrent .
+:Blastoise :hasHiddenAbility :RainDish .
+:Blaziken :hasAbility :Blaze .
+:Blaziken :hasHiddenAbility :SpeedBoost .
+:Blissey :hasAbility :NaturalCure .
+:Blissey :hasAbility :SereneGrace .
+:Blissey :hasHiddenAbility :Healer .
+:Breloom :hasAbility :EffectSpore .
+:Breloom :hasAbility :PoisonHeal .
+:Breloom :hasHiddenAbility :Technician .
+:Bulbasaur :hasAbility :Overgrow .
+:Bulbasaur :hasHiddenAbility :Chlorophyll .
+:Butterfree :hasAbility :CompoundEyes .
+:Butterfree :hasHiddenAbility :TintedLens .
+:Cacnea :hasAbility :SandVeil .
+:Cacnea :hasHiddenAbility :WaterAbsorb .
+:Cacturne :hasAbility :SandVeil .
+:Cacturne :hasHiddenAbility :WaterAbsorb .
+:Camerupt :hasAbility :MagmaArmor .
+:Camerupt :hasAbility :SolidRock .
+:Camerupt :hasHiddenAbility :AngerPoint .
+:Carvanha :hasAbility :RoughSkin .
+:Carvanha :hasHiddenAbility :SpeedBoost .
+:Cascoon :hasAbility :ShedSkin .
+:Castform :hasAbility :Forecast .
+:Caterpie :hasAbility :ShieldDust .
+:Caterpie :hasHiddenAbility :RunAway .
+:Celebi :hasAbility :NaturalCure .
+:Chansey :hasAbility :NaturalCure .
+:Chansey :hasAbility :SereneGrace .
+:Chansey :hasHiddenAbility :Healer .
+:Charizard :hasAbility :Blaze .
+:Charizard :hasHiddenAbility :SolarPower .
+:Charmander :hasAbility :Blaze .
+:Charmander :hasHiddenAbility :SolarPower .
+:Charmeleon :hasAbility :Blaze .
+:Charmeleon :hasHiddenAbility :SolarPower .
+:Chikorita :hasAbility :Overgrow .
+:Chikorita :hasHiddenAbility :LeafGuard .
+:Chimecho :hasAbility :Levitate .
+:Chinchou :hasAbility :VoltAbsorb .
+:Chinchou :hasAbility :Illuminate .
+:Chinchou :hasHiddenAbility :WaterAbsorb .
+:Clamperl :hasAbility :ShellArmor .
+:Clamperl :hasHiddenAbility :Rattled .
+:Claydol :hasAbility :Levitate .
+:Clefable :hasAbility :CuteCharm .
+:Clefable :hasAbility :MagicGuard .
+:Clefable :hasHiddenAbility :Unaware .
+:Clefairy :hasAbility :CuteCharm .
+:Clefairy :hasAbility :MagicGuard .
+:Clefairy :hasHiddenAbility :FriendGuard .
+:Cleffa :hasAbility :CuteCharm .
+:Cleffa :hasAbility :MagicGuard .
+:Cleffa :hasHiddenAbility :FriendGuard .
+:Cloyster :hasAbility :ShellArmor .
+:Cloyster :hasAbility :SkillLink .
+:Cloyster :hasHiddenAbility :Overcoat .
+:Combusken :hasAbility :Blaze .
+:Combusken :hasHiddenAbility :SpeedBoost .
+:Corphish :hasAbility :HyperCutter .
+:Corphish :hasAbility :ShellArmor .
+:Corphish :hasHiddenAbility :Adaptability .
+:Corsola :hasAbility :Hustle .
+:Corsola :hasAbility :NaturalCure .
+:Corsola :hasHiddenAbility :Regenerator .
+:Cradily :hasAbility :SuctionCups .
+:Cradily :hasHiddenAbility :StormDrain .
+:Crawdaunt :hasAbility :HyperCutter .
+:Crawdaunt :hasAbility :ShellArmor .
+:Crawdaunt :hasHiddenAbility :Adaptability .
+:Crobat :hasAbility :InnerFocus .
+:Crobat :hasHiddenAbility :Infiltrator .
+:Croconaw :hasAbility :Torrent .
+:Croconaw :hasHiddenAbility :SheerForce .
+:Cubone :hasAbility :RockHead .
+:Cubone :hasAbility :LightningRod .
+:Cubone :hasHiddenAbility :BattleArmor .
+:Cyndaquil :hasAbility :Blaze .
+:Cyndaquil :hasHiddenAbility :FlashFire .
+:Delcatty :hasAbility :CuteCharm .
+:Delcatty :hasAbility :Normalize .
+:Delcatty :hasHiddenAbility :WonderSkin .
+:Delibird :hasAbility :VitalSpirit .
+:Delibird :hasAbility :Hustle .
+:Delibird :hasHiddenAbility :Insomnia .
+:Deoxys :hasAbility :Pressure .
+:Dewgong :hasAbility :ThickFat .
+:Dewgong :hasAbility :Hydration .
+:Dewgong :hasHiddenAbility :IceBody .
+:Diglett :hasAbility :SandVeil .
+:Diglett :hasAbility :ArenaTrap .
+:Diglett :hasHiddenAbility :SandForce .
+:Ditto :hasAbility :Limber .
+:Ditto :hasHiddenAbility :Imposter .
+:Dodrio :hasAbility :RunAway .
+:Dodrio :hasAbility :EarlyBird .
+:Dodrio :hasHiddenAbility :TangledFeet .
+:Doduo :hasAbility :RunAway .
+:Doduo :hasAbility :EarlyBird .
+:Doduo :hasHiddenAbility :TangledFeet .
+:Donphan :hasAbility :Sturdy .
+:Donphan :hasHiddenAbility :SandVeil .
+:Dragonair :hasAbility :ShedSkin .
+:Dragonair :hasHiddenAbility :MarvelScale .
+:Dragonite :hasAbility :InnerFocus .
+:Dragonite :hasHiddenAbility :Multiscale .
+:Dratini :hasAbility :ShedSkin .
+:Dratini :hasHiddenAbility :MarvelScale .
+:Drowzee :hasAbility :Insomnia .
+:Drowzee :hasAbility :Forewarn .
+:Drowzee :hasHiddenAbility :InnerFocus .
+:Dugtrio :hasAbility :SandVeil .
+:Dugtrio :hasAbility :ArenaTrap .
+:Dugtrio :hasHiddenAbility :SandForce .
+:Dunsparce :hasAbility :SereneGrace .
+:Dunsparce :hasAbility :RunAway .
+:Dunsparce :hasHiddenAbility :Rattled .
+:Dusclops :hasAbility :Pressure .
+:Dusclops :hasHiddenAbility :Frisk .
+:Duskull :hasAbility :Levitate .
+:Duskull :hasHiddenAbility :Frisk .
+:Dustox :hasAbility :ShieldDust .
+:Dustox :hasHiddenAbility :CompoundEyes .
+:Eevee :hasAbility :RunAway .
+:Eevee :hasAbility :Adaptability .
+:Eevee :hasHiddenAbility :Anticipation .
+:Ekans :hasAbility :Intimidate .
+:Ekans :hasAbility :ShedSkin .
+:Ekans :hasHiddenAbility :Unnerve .
+:Electabuzz :hasAbility :Static .
+:Electabuzz :hasHiddenAbility :VitalSpirit .
+:Electrike :hasAbility :Static .
+:Electrike :hasAbility :LightningRod .
+:Electrike :hasHiddenAbility :Minus .
+:Electrode :hasAbility :Soundproof .
+:Electrode :hasAbility :Static .
+:Electrode :hasHiddenAbility :Aftermath .
+:Elekid :hasAbility :Static .
+:Elekid :hasHiddenAbility :VitalSpirit .
+:Entei :hasAbility :Pressure .
+:Entei :hasHiddenAbility :InnerFocus .
+:Espeon :hasAbility :Synchronize .
+:Espeon :hasHiddenAbility :MagicBounce .
+:Exeggcute :hasAbility :Chlorophyll .
+:Exeggcute :hasHiddenAbility :Harvest .
+:Exeggutor :hasAbility :Chlorophyll .
+:Exeggutor :hasHiddenAbility :Harvest .
+:Exploud :hasAbility :Soundproof .
+:Exploud :hasHiddenAbility :Scrappy .
+:Farfetch'd :hasAbility :KeenEye .
+:Farfetch'd :hasAbility :InnerFocus .
+:Farfetch'd :hasHiddenAbility :Defiant .
+:Fearow :hasAbility :KeenEye .
+:Fearow :hasHiddenAbility :Sniper .
+:Feebas :hasAbility :SwiftSwim .
+:Feebas :hasAbility :Oblivious .
+:Feebas :hasHiddenAbility :Adaptability .
+:Feraligatr :hasAbility :Torrent .
+:Feraligatr :hasHiddenAbility :SheerForce .
+:Flaaffy :hasAbility :Static .
+:Flaaffy :hasHiddenAbility :Plus .
+:Flareon :hasAbility :FlashFire .
+:Flareon :hasHiddenAbility :Guts .
+:Flygon :hasAbility :Levitate .
+:Forretress :hasAbility :Sturdy .
+:Forretress :hasHiddenAbility :Overcoat .
+:Furret :hasAbility :RunAway .
+:Furret :hasAbility :KeenEye .
+:Furret :hasHiddenAbility :Frisk .
+:Gardevoir :hasAbility :Synchronize .
+:Gardevoir :hasAbility :Trace .
+:Gardevoir :hasHiddenAbility :Telepathy .
+:Gastly :hasAbility :Levitate .
+:Gengar :hasAbility :CursedBody .
+:Geodude :hasAbility :RockHead .
+:Geodude :hasAbility :Sturdy .
+:Geodude :hasHiddenAbility :SandVeil .
+:Girafarig :hasAbility :InnerFocus .
+:Girafarig :hasAbility :EarlyBird .
+:Girafarig :hasHiddenAbility :SapSipper .
+:Glalie :hasAbility :InnerFocus .
+:Glalie :hasAbility :IceBody .
+:Glalie :hasHiddenAbility :Moody .
+:Gligar :hasAbility :HyperCutter .
+:Gligar :hasAbility :SandVeil .
+:Gligar :hasHiddenAbility :Immunity .
+:Gloom :hasAbility :Chlorophyll .
+:Gloom :hasHiddenAbility :Stench .
+:Golbat :hasAbility :InnerFocus .
+:Golbat :hasHiddenAbility :Infiltrator .
+:Goldeen :hasAbility :SwiftSwim .
+:Goldeen :hasAbility :WaterVeil .
+:Goldeen :hasHiddenAbility :LightningRod .
+:Golduck :hasAbility :Damp .
+:Golduck :hasAbility :CloudNine .
+:Golduck :hasHiddenAbility :SwiftSwim .
+:Golem :hasAbility :RockHead .
+:Golem :hasAbility :Sturdy .
+:Golem :hasHiddenAbility :SandVeil .
+:Gorebyss :hasAbility :SwiftSwim .
+:Gorebyss :hasHiddenAbility :Hydration .
+:Granbull :hasAbility :Intimidate .
+:Granbull :hasAbility :QuickFeet .
+:Granbull :hasHiddenAbility :Rattled .
+:Graveler :hasAbility :RockHead .
+:Graveler :hasAbility :Sturdy .
+:Graveler :hasHiddenAbility :SandVeil .
+:Grimer :hasAbility :Stench .
+:Grimer :hasAbility :StickyHold .
+:Grimer :hasHiddenAbility :PoisonTouch .
+:Groudon :hasAbility :Drought .
+:Grovyle :hasAbility :Overgrow .
+:Grovyle :hasHiddenAbility :Unburden .
+:Growlithe :hasAbility :Intimidate .
+:Growlithe :hasAbility :FlashFire .
+:Growlithe :hasHiddenAbility :Justified .
+:Grumpig :hasAbility :ThickFat .
+:Grumpig :hasAbility :OwnTempo .
+:Grumpig :hasHiddenAbility :Gluttony .
+:Gulpin :hasAbility :LiquidOoze .
+:Gulpin :hasAbility :StickyHold .
+:Gulpin :hasHiddenAbility :Gluttony .
+:Gyarados :hasAbility :Intimidate .
+:Gyarados :hasHiddenAbility :Moxie .
+:Hariyama :hasAbility :ThickFat .
+:Hariyama :hasAbility :Guts .
+:Hariyama :hasHiddenAbility :SheerForce .
+:Haunter :hasAbility :Levitate .
+:Heracross :hasAbility :Swarm .
+:Heracross :hasAbility :Guts .
+:Heracross :hasHiddenAbility :Moxie .
+:Hitmonchan :hasAbility :KeenEye .
+:Hitmonchan :hasAbility :IronFist .
+:Hitmonchan :hasHiddenAbility :InnerFocus .
+:Hitmonlee :hasAbility :Limber .
+:Hitmonlee :hasAbility :Reckless .
+:Hitmonlee :hasHiddenAbility :Unburden .
+:Hitmontop :hasAbility :Intimidate .
+:Hitmontop :hasAbility :Technician .
+:Hitmontop :hasHiddenAbility :Steadfast .
+:Ho-oh :hasAbility :Pressure .
+:Ho-oh :hasHiddenAbility :Regenerator .
+:Hoothoot :hasAbility :Insomnia .
+:Hoothoot :hasAbility :KeenEye .
+:Hoothoot :hasHiddenAbility :TintedLens .
+:Hoppip :hasAbility :Chlorophyll .
+:Hoppip :hasAbility :LeafGuard .
+:Hoppip :hasHiddenAbility :Infiltrator .
+:Horsea :hasAbility :SwiftSwim .
+:Horsea :hasAbility :Sniper .
+:Horsea :hasHiddenAbility :Damp .
+:Houndoom :hasAbility :EarlyBird .
+:Houndoom :hasAbility :FlashFire .
+:Houndoom :hasHiddenAbility :Unnerve .
+:Houndour :hasAbility :EarlyBird .
+:Houndour :hasAbility :FlashFire .
+:Houndour :hasHiddenAbility :Unnerve .
+:Huntail :hasAbility :SwiftSwim .
+:Huntail :hasHiddenAbility :WaterVeil .
+:Hypno :hasAbility :Insomnia .
+:Hypno :hasAbility :Forewarn .
+:Hypno :hasHiddenAbility :InnerFocus .
+:Igglybuff :hasAbility :CuteCharm .
+:Igglybuff :hasAbility :Competitive .
+:Igglybuff :hasHiddenAbility :FriendGuard .
+:Illumise :hasAbility :Oblivious .
+:Illumise :hasAbility :TintedLens .
+:Illumise :hasHiddenAbility :Prankster .
+:Ivysaur :hasAbility :Overgrow .
+:Ivysaur :hasHiddenAbility :Chlorophyll .
+:Jigglypuff :hasAbility :CuteCharm .
+:Jigglypuff :hasAbility :Competitive .
+:Jigglypuff :hasHiddenAbility :FriendGuard .
+:Jirachi :hasAbility :SereneGrace .
+:Jolteon :hasAbility :VoltAbsorb .
+:Jolteon :hasHiddenAbility :QuickFeet .
+:Jumpluff :hasAbility :Chlorophyll .
+:Jumpluff :hasAbility :LeafGuard .
+:Jumpluff :hasHiddenAbility :Infiltrator .
+:Jynx :hasAbility :Oblivious .
+:Jynx :hasAbility :Forewarn .
+:Jynx :hasHiddenAbility :DrySkin .
+:Kabuto :hasAbility :SwiftSwim .
+:Kabuto :hasAbility :BattleArmor .
+:Kabuto :hasHiddenAbility :WeakArmor .
+:Kabutops :hasAbility :SwiftSwim .
+:Kabutops :hasAbility :BattleArmor .
+:Kabutops :hasHiddenAbility :WeakArmor .
+:Kadabra :hasAbility :Synchronize .
+:Kadabra :hasAbility :InnerFocus .
+:Kadabra :hasHiddenAbility :MagicGuard .
+:Kakuna :hasAbility :ShedSkin .
+:Kangaskhan :hasAbility :EarlyBird .
+:Kangaskhan :hasAbility :Scrappy .
+:Kangaskhan :hasHiddenAbility :InnerFocus .
+:Kecleon :hasAbility :ColorChange .
+:Kecleon :hasHiddenAbility :Protean .
+:Kingdra :hasAbility :SwiftSwim .
+:Kingdra :hasAbility :Sniper .
+:Kingdra :hasHiddenAbility :Damp .
+:Kingler :hasAbility :HyperCutter .
+:Kingler :hasAbility :ShellArmor .
+:Kingler :hasHiddenAbility :SheerForce .
+:Kirlia :hasAbility :Synchronize .
+:Kirlia :hasAbility :Trace .
+:Kirlia :hasHiddenAbility :Telepathy .
+:Koffing :hasAbility :Levitate .
+:Koffing :hasAbility :NeutralizingGas .
+:Koffing :hasHiddenAbility :Stench .
+:Krabby :hasAbility :HyperCutter .
+:Krabby :hasAbility :ShellArmor .
+:Krabby :hasHiddenAbility :SheerForce .
+:Kyogre :hasAbility :Drizzle .
+:Lairon :hasAbility :Sturdy .
+:Lairon :hasAbility :RockHead .
+:Lairon :hasHiddenAbility :HeavyMetal .
+:Lanturn :hasAbility :VoltAbsorb .
+:Lanturn :hasAbility :Illuminate .
+:Lanturn :hasHiddenAbility :WaterAbsorb .
+:Lapras :hasAbility :WaterAbsorb .
+:Lapras :hasAbility :ShellArmor .
+:Lapras :hasHiddenAbility :Hydration .
+:Larvitar :hasAbility :Guts .
+:Larvitar :hasHiddenAbility :SandVeil .
+:Latias :hasAbility :Levitate .
+:Latios :hasAbility :Levitate .
+:Ledian :hasAbility :Swarm .
+:Ledian :hasAbility :EarlyBird .
+:Ledian :hasHiddenAbility :IronFist .
+:Ledyba :hasAbility :Swarm .
+:Ledyba :hasAbility :EarlyBird .
+:Ledyba :hasHiddenAbility :Rattled .
+:Lickitung :hasAbility :OwnTempo .
+:Lickitung :hasAbility :Oblivious .
+:Lickitung :hasHiddenAbility :CloudNine .
+:Lileep :hasAbility :SuctionCups .
+:Lileep :hasHiddenAbility :StormDrain .
+:Linoone :hasAbility :Pickup .
+:Linoone :hasAbility :Gluttony .
+:Linoone :hasHiddenAbility :QuickFeet .
+:Lombre :hasAbility :SwiftSwim .
+:Lombre :hasAbility :RainDish .
+:Lombre :hasHiddenAbility :OwnTempo .
+:Lotad :hasAbility :SwiftSwim .
+:Lotad :hasAbility :RainDish .
+:Lotad :hasHiddenAbility :OwnTempo .
+:Loudred :hasAbility :Soundproof .
+:Loudred :hasHiddenAbility :Scrappy .
+:Ludicolo :hasAbility :SwiftSwim .
+:Ludicolo :hasAbility :RainDish .
+:Ludicolo :hasHiddenAbility :OwnTempo .
+:Lugia :hasAbility :Pressure .
+:Lugia :hasHiddenAbility :Multiscale .
+:Lunatone :hasAbility :Levitate .
+:Luvdisc :hasAbility :SwiftSwim .
+:Luvdisc :hasHiddenAbility :Hydration .
+:Machamp :hasAbility :Guts .
+:Machamp :hasAbility :NoGuard .
+:Machamp :hasHiddenAbility :Steadfast .
+:Machoke :hasAbility :Guts .
+:Machoke :hasAbility :NoGuard .
+:Machoke :hasHiddenAbility :Steadfast .
+:Machop :hasAbility :Guts .
+:Machop :hasAbility :NoGuard .
+:Machop :hasHiddenAbility :Steadfast .
+:Magby :hasAbility :FlameBody .
+:Magby :hasHiddenAbility :VitalSpirit .
+:Magcargo :hasAbility :MagmaArmor .
+:Magcargo :hasAbility :FlameBody .
+:Magcargo :hasHiddenAbility :WeakArmor .
+:Magikarp :hasAbility :SwiftSwim .
+:Magikarp :hasHiddenAbility :Rattled .
+:Magmar :hasAbility :FlameBody .
+:Magmar :hasHiddenAbility :VitalSpirit .
+:Magnemite :hasAbility :MagnetPull .
+:Magnemite :hasAbility :Sturdy .
+:Magnemite :hasHiddenAbility :Analytic .
+:Magneton :hasAbility :MagnetPull .
+:Magneton :hasAbility :Sturdy .
+:Magneton :hasHiddenAbility :Analytic .
+:Makuhita :hasAbility :ThickFat .
+:Makuhita :hasAbility :Guts .
+:Makuhita :hasHiddenAbility :SheerForce .
+:Manectric :hasAbility :Static .
+:Manectric :hasAbility :LightningRod .
+:Manectric :hasHiddenAbility :Minus .
+:Mankey :hasAbility :VitalSpirit .
+:Mankey :hasAbility :AngerPoint .
+:Mankey :hasHiddenAbility :Defiant .
+:Mantine :hasAbility :SwiftSwim .
+:Mantine :hasAbility :WaterAbsorb .
+:Mantine :hasHiddenAbility :WaterVeil .
+:Mareep :hasAbility :Static .
+:Mareep :hasHiddenAbility :Plus .
+:Marill :hasAbility :ThickFat .
+:Marill :hasAbility :HugePower .
+:Marill :hasHiddenAbility :SapSipper .
+:Marowak :hasAbility :RockHead .
+:Marowak :hasAbility :LightningRod .
+:Marowak :hasHiddenAbility :BattleArmor .
+:Marshtomp :hasAbility :Torrent .
+:Marshtomp :hasHiddenAbility :Damp .
+:Masquerain :hasAbility :Intimidate .
+:Masquerain :hasHiddenAbility :Unnerve .
+:Mawile :hasAbility :HyperCutter .
+:Mawile :hasAbility :Intimidate .
+:Mawile :hasHiddenAbility :SheerForce .
+:Medicham :hasAbility :PurePower .
+:Medicham :hasHiddenAbility :Telepathy .
+:Meditite :hasAbility :PurePower .
+:Meditite :hasHiddenAbility :Telepathy .
+:Meganium :hasAbility :Overgrow .
+:Meganium :hasHiddenAbility :LeafGuard .
+:Meowth :hasAbility :Pickup .
+:Meowth :hasAbility :Technician .
+:Meowth :hasHiddenAbility :Unnerve .
+:Metagross :hasAbility :ClearBody .
+:Metagross :hasHiddenAbility :LightMetal .
+:Metang :hasAbility :ClearBody .
+:Metang :hasHiddenAbility :LightMetal .
+:Metapod :hasAbility :ShedSkin .
+:Mew :hasAbility :Synchronize .
+:Mewtwo :hasAbility :Pressure .
+:Mewtwo :hasHiddenAbility :Unnerve .
+:Mightyena :hasAbility :Intimidate .
+:Mightyena :hasAbility :QuickFeet .
+:Mightyena :hasHiddenAbility :Moxie .
+:Milotic :hasAbility :MarvelScale .
+:Milotic :hasAbility :Competitive .
+:Milotic :hasHiddenAbility :CuteCharm .
+:Miltank :hasAbility :ThickFat .
+:Miltank :hasAbility :Scrappy .
+:Miltank :hasHiddenAbility :SapSipper .
+:Minun :hasAbility :Minus .
+:Minun :hasHiddenAbility :VoltAbsorb .
+:Misdreavus :hasAbility :Levitate .
+:Moltres :hasAbility :Pressure .
+:Moltres :hasHiddenAbility :FlameBody .
+:Mr.-mime :hasAbility :Soundproof .
+:Mr.-mime :hasAbility :Filter .
+:Mr.-mime :hasHiddenAbility :Technician .
+:Mudkip :hasAbility :Torrent .
+:Mudkip :hasHiddenAbility :Damp .
+:Muk :hasAbility :Stench .
+:Muk :hasAbility :StickyHold .
+:Muk :hasHiddenAbility :PoisonTouch .
+:Murkrow :hasAbility :Insomnia .
+:Murkrow :hasAbility :SuperLuck .
+:Murkrow :hasHiddenAbility :Prankster .
+:Natu :hasAbility :Synchronize .
+:Natu :hasAbility :EarlyBird .
+:Natu :hasHiddenAbility :MagicBounce .
+:Nidoking :hasAbility :PoisonPoint .
+:Nidoking :hasAbility :Rivalry .
+:Nidoking :hasHiddenAbility :SheerForce .
+:Nidoqueen :hasAbility :PoisonPoint .
+:Nidoqueen :hasAbility :Rivalry .
+:Nidoqueen :hasHiddenAbility :SheerForce .
+:Nidorina :hasAbility :PoisonPoint .
+:Nidorina :hasAbility :Rivalry .
+:Nidorina :hasHiddenAbility :Hustle .
+:Nidorino :hasAbility :PoisonPoint .
+:Nidorino :hasAbility :Rivalry .
+:Nidorino :hasHiddenAbility :Hustle .
+:Nincada :hasAbility :CompoundEyes .
+:Nincada :hasHiddenAbility :RunAway .
+:Ninetales :hasAbility :FlashFire .
+:Ninetales :hasHiddenAbility :Drought .
+:Ninjask :hasAbility :SpeedBoost .
+:Ninjask :hasHiddenAbility :Infiltrator .
+:Noctowl :hasAbility :Insomnia .
+:Noctowl :hasAbility :KeenEye .
+:Noctowl :hasHiddenAbility :TintedLens .
+:Nosepass :hasAbility :Sturdy .
+:Nosepass :hasAbility :MagnetPull .
+:Nosepass :hasHiddenAbility :SandForce .
+:Numel :hasAbility :Oblivious .
+:Numel :hasAbility :Simple .
+:Numel :hasHiddenAbility :OwnTempo .
+:Nuzleaf :hasAbility :Chlorophyll .
+:Nuzleaf :hasAbility :EarlyBird .
+:Nuzleaf :hasHiddenAbility :Pickpocket .
+:Octillery :hasAbility :SuctionCups .
+:Octillery :hasAbility :Sniper .
+:Octillery :hasHiddenAbility :Moody .
+:Oddish :hasAbility :Chlorophyll .
+:Oddish :hasHiddenAbility :RunAway .
+:Omanyte :hasAbility :SwiftSwim .
+:Omanyte :hasAbility :ShellArmor .
+:Omanyte :hasHiddenAbility :WeakArmor .
+:Omastar :hasAbility :SwiftSwim .
+:Omastar :hasAbility :ShellArmor .
+:Omastar :hasHiddenAbility :WeakArmor .
+:Onix :hasAbility :RockHead .
+:Onix :hasAbility :Sturdy .
+:Onix :hasHiddenAbility :WeakArmor .
+:Paras :hasAbility :EffectSpore .
+:Paras :hasAbility :DrySkin .
+:Paras :hasHiddenAbility :Damp .
+:Parasect :hasAbility :EffectSpore .
+:Parasect :hasAbility :DrySkin .
+:Parasect :hasHiddenAbility :Damp .
+:Pelipper :hasAbility :KeenEye .
+:Pelipper :hasAbility :Drizzle .
+:Pelipper :hasHiddenAbility :RainDish .
+:Persian :hasAbility :Limber .
+:Persian :hasAbility :Technician .
+:Persian :hasHiddenAbility :Unnerve .
+:Phanpy :hasAbility :Pickup .
+:Phanpy :hasHiddenAbility :SandVeil .
+:Pichu :hasAbility :Static .
+:Pichu :hasHiddenAbility :LightningRod .
+:Pidgeot :hasAbility :KeenEye .
+:Pidgeot :hasAbility :TangledFeet .
+:Pidgeot :hasHiddenAbility :BigPecks .
+:Pidgeotto :hasAbility :KeenEye .
+:Pidgeotto :hasAbility :TangledFeet .
+:Pidgeotto :hasHiddenAbility :BigPecks .
+:Pidgey :hasAbility :KeenEye .
+:Pidgey :hasAbility :TangledFeet .
+:Pidgey :hasHiddenAbility :BigPecks .
+:Pikachu :hasAbility :Static .
+:Pikachu :hasHiddenAbility :LightningRod .
+:Piloswine :hasAbility :Oblivious .
+:Piloswine :hasAbility :SnowCloak .
+:Piloswine :hasHiddenAbility :ThickFat .
+:Pineco :hasAbility :Sturdy .
+:Pineco :hasHiddenAbility :Overcoat .
+:Pinsir :hasAbility :HyperCutter .
+:Pinsir :hasAbility :MoldBreaker .
+:Pinsir :hasHiddenAbility :Moxie .
+:Plusle :hasAbility :Plus .
+:Plusle :hasHiddenAbility :LightningRod .
+:Politoed :hasAbility :WaterAbsorb .
+:Politoed :hasAbility :Damp .
+:Politoed :hasHiddenAbility :Drizzle .
+:Poliwag :hasAbility :WaterAbsorb .
+:Poliwag :hasAbility :Damp .
+:Poliwag :hasHiddenAbility :SwiftSwim .
+:Poliwhirl :hasAbility :WaterAbsorb .
+:Poliwhirl :hasAbility :Damp .
+:Poliwhirl :hasHiddenAbility :SwiftSwim .
+:Poliwrath :hasAbility :WaterAbsorb .
+:Poliwrath :hasAbility :Damp .
+:Poliwrath :hasHiddenAbility :SwiftSwim .
+:Ponyta :hasAbility :RunAway .
+:Ponyta :hasAbility :FlashFire .
+:Ponyta :hasHiddenAbility :FlameBody .
+:Poochyena :hasAbility :RunAway .
+:Poochyena :hasAbility :QuickFeet .
+:Poochyena :hasHiddenAbility :Rattled .
+:Porygon :hasAbility :Trace .
+:Porygon :hasAbility :Download .
+:Porygon :hasHiddenAbility :Analytic .
+:Porygon2 :hasAbility :Trace .
+:Porygon2 :hasAbility :Download .
+:Porygon2 :hasHiddenAbility :Analytic .
+:Primeape :hasAbility :VitalSpirit .
+:Primeape :hasAbility :AngerPoint .
+:Primeape :hasHiddenAbility :Defiant .
+:Psyduck :hasAbility :Damp .
+:Psyduck :hasAbility :CloudNine .
+:Psyduck :hasHiddenAbility :SwiftSwim .
+:Pupitar :hasAbility :ShedSkin .
+:Quagsire :hasAbility :Damp .
+:Quagsire :hasAbility :WaterAbsorb .
+:Quagsire :hasHiddenAbility :Unaware .
+:Quilava :hasAbility :Blaze .
+:Quilava :hasHiddenAbility :FlashFire .
+:Qwilfish :hasAbility :PoisonPoint .
+:Qwilfish :hasAbility :SwiftSwim .
+:Qwilfish :hasHiddenAbility :Intimidate .
+:Raichu :hasAbility :Static .
+:Raichu :hasHiddenAbility :LightningRod .
+:Raikou :hasAbility :Pressure .
+:Raikou :hasHiddenAbility :InnerFocus .
+:Ralts :hasAbility :Synchronize .
+:Ralts :hasAbility :Trace .
+:Ralts :hasHiddenAbility :Telepathy .
+:Rapidash :hasAbility :RunAway .
+:Rapidash :hasAbility :FlashFire .
+:Rapidash :hasHiddenAbility :FlameBody .
+:Raticate :hasAbility :RunAway .
+:Raticate :hasAbility :Guts .
+:Raticate :hasHiddenAbility :Hustle .
+:Rattata :hasAbility :RunAway .
+:Rattata :hasAbility :Guts .
+:Rattata :hasHiddenAbility :Hustle .
+:Rayquaza :hasAbility :AirLock .
+:Regice :hasAbility :ClearBody .
+:Regice :hasHiddenAbility :IceBody .
+:Regirock :hasAbility :ClearBody .
+:Regirock :hasHiddenAbility :Sturdy .
+:Registeel :hasAbility :ClearBody .
+:Registeel :hasHiddenAbility :LightMetal .
+:Relicanth :hasAbility :SwiftSwim .
+:Relicanth :hasAbility :RockHead .
+:Relicanth :hasHiddenAbility :Sturdy .
+:Remoraid :hasAbility :Hustle .
+:Remoraid :hasAbility :Sniper .
+:Remoraid :hasHiddenAbility :Moody .
+:Rhydon :hasAbility :LightningRod .
+:Rhydon :hasAbility :RockHead .
+:Rhydon :hasHiddenAbility :Reckless .
+:Rhyhorn :hasAbility :LightningRod .
+:Rhyhorn :hasAbility :RockHead .
+:Rhyhorn :hasHiddenAbility :Reckless .
+:Roselia :hasAbility :NaturalCure .
+:Roselia :hasAbility :PoisonPoint .
+:Roselia :hasHiddenAbility :LeafGuard .
+:Sableye :hasAbility :KeenEye .
+:Sableye :hasAbility :Stall .
+:Sableye :hasHiddenAbility :Prankster .
+:Salamence :hasAbility :Intimidate .
+:Salamence :hasHiddenAbility :Moxie .
+:Sandshrew :hasAbility :SandVeil .
+:Sandshrew :hasHiddenAbility :SandRush .
+:Sandslash :hasAbility :SandVeil .
+:Sandslash :hasHiddenAbility :SandRush .
+:Sceptile :hasAbility :Overgrow .
+:Sceptile :hasHiddenAbility :Unburden .
+:Scizor :hasAbility :Swarm .
+:Scizor :hasAbility :Technician .
+:Scizor :hasHiddenAbility :LightMetal .
+:Scyther :hasAbility :Swarm .
+:Scyther :hasAbility :Technician .
+:Scyther :hasHiddenAbility :Steadfast .
+:Seadra :hasAbility :PoisonPoint .
+:Seadra :hasAbility :Sniper .
+:Seadra :hasHiddenAbility :Damp .
+:Seaking :hasAbility :SwiftSwim .
+:Seaking :hasAbility :WaterVeil .
+:Seaking :hasHiddenAbility :LightningRod .
+:Sealeo :hasAbility :ThickFat .
+:Sealeo :hasAbility :IceBody .
+:Sealeo :hasHiddenAbility :Oblivious .
+:Seedot :hasAbility :Chlorophyll .
+:Seedot :hasAbility :EarlyBird .
+:Seedot :hasHiddenAbility :Pickpocket .
+:Seel :hasAbility :ThickFat .
+:Seel :hasAbility :Hydration .
+:Seel :hasHiddenAbility :IceBody .
+:Sentret :hasAbility :RunAway .
+:Sentret :hasAbility :KeenEye .
+:Sentret :hasHiddenAbility :Frisk .
+:Seviper :hasAbility :ShedSkin .
+:Seviper :hasHiddenAbility :Infiltrator .
+:Sharpedo :hasAbility :RoughSkin .
+:Sharpedo :hasHiddenAbility :SpeedBoost .
+:Shedinja :hasAbility :WonderGuard .
+:Shelgon :hasAbility :RockHead .
+:Shelgon :hasHiddenAbility :Overcoat .
+:Shellder :hasAbility :ShellArmor .
+:Shellder :hasAbility :SkillLink .
+:Shellder :hasHiddenAbility :Overcoat .
+:Shiftry :hasAbility :Chlorophyll .
+:Shiftry :hasAbility :WindRider .
+:Shiftry :hasHiddenAbility :Pickpocket .
+:Shroomish :hasAbility :EffectSpore .
+:Shroomish :hasAbility :PoisonHeal .
+:Shroomish :hasHiddenAbility :QuickFeet .
+:Shuckle :hasAbility :Sturdy .
+:Shuckle :hasAbility :Gluttony .
+:Shuckle :hasHiddenAbility :Contrary .
+:Shuppet :hasAbility :Insomnia .
+:Shuppet :hasAbility :Frisk .
+:Shuppet :hasHiddenAbility :CursedBody .
+:Silcoon :hasAbility :ShedSkin .
+:Skarmory :hasAbility :KeenEye .
+:Skarmory :hasAbility :Sturdy .
+:Skarmory :hasHiddenAbility :WeakArmor .
+:Skiploom :hasAbility :Chlorophyll .
+:Skiploom :hasAbility :LeafGuard .
+:Skiploom :hasHiddenAbility :Infiltrator .
+:Skitty :hasAbility :CuteCharm .
+:Skitty :hasAbility :Normalize .
+:Skitty :hasHiddenAbility :WonderSkin .
+:Slaking :hasAbility :Truant .
+:Slakoth :hasAbility :Truant .
+:Slowbro :hasAbility :Oblivious .
+:Slowbro :hasAbility :OwnTempo .
+:Slowbro :hasHiddenAbility :Regenerator .
+:Slowking :hasAbility :Oblivious .
+:Slowking :hasAbility :OwnTempo .
+:Slowking :hasHiddenAbility :Regenerator .
+:Slowpoke :hasAbility :Oblivious .
+:Slowpoke :hasAbility :OwnTempo .
+:Slowpoke :hasHiddenAbility :Regenerator .
+:Slugma :hasAbility :MagmaArmor .
+:Slugma :hasAbility :FlameBody .
+:Slugma :hasHiddenAbility :WeakArmor .
+:Smeargle :hasAbility :OwnTempo .
+:Smeargle :hasAbility :Technician .
+:Smeargle :hasHiddenAbility :Moody .
+:Smoochum :hasAbility :Oblivious .
+:Smoochum :hasAbility :Forewarn .
+:Smoochum :hasHiddenAbility :Hydration .
+:Sneasel :hasAbility :InnerFocus .
+:Sneasel :hasAbility :KeenEye .
+:Sneasel :hasHiddenAbility :Pickpocket .
+:Snorlax :hasAbility :Immunity .
+:Snorlax :hasAbility :ThickFat .
+:Snorlax :hasHiddenAbility :Gluttony .
+:Snorunt :hasAbility :InnerFocus .
+:Snorunt :hasAbility :IceBody .
+:Snorunt :hasHiddenAbility :Moody .
+:Snubbull :hasAbility :Intimidate .
+:Snubbull :hasAbility :RunAway .
+:Snubbull :hasHiddenAbility :Rattled .
+:Solrock :hasAbility :Levitate .
+:Spearow :hasAbility :KeenEye .
+:Spearow :hasHiddenAbility :Sniper .
+:Spheal :hasAbility :ThickFat .
+:Spheal :hasAbility :IceBody .
+:Spheal :hasHiddenAbility :Oblivious .
+:Spinarak :hasAbility :Swarm .
+:Spinarak :hasAbility :Insomnia .
+:Spinarak :hasHiddenAbility :Sniper .
+:Spinda :hasAbility :OwnTempo .
+:Spinda :hasAbility :TangledFeet .
+:Spinda :hasHiddenAbility :Contrary .
+:Spoink :hasAbility :ThickFat .
+:Spoink :hasAbility :OwnTempo .
+:Spoink :hasHiddenAbility :Gluttony .
+:Squirtle :hasAbility :Torrent .
+:Squirtle :hasHiddenAbility :RainDish .
+:Stantler :hasAbility :Intimidate .
+:Stantler :hasAbility :Frisk .
+:Stantler :hasHiddenAbility :SapSipper .
+:Starmie :hasAbility :Illuminate .
+:Starmie :hasAbility :NaturalCure .
+:Starmie :hasHiddenAbility :Analytic .
+:Staryu :hasAbility :Illuminate .
+:Staryu :hasAbility :NaturalCure .
+:Staryu :hasHiddenAbility :Analytic .
+:Steelix :hasAbility :RockHead .
+:Steelix :hasAbility :Sturdy .
+:Steelix :hasHiddenAbility :SheerForce .
+:Sudowoodo :hasAbility :Sturdy .
+:Sudowoodo :hasAbility :RockHead .
+:Sudowoodo :hasHiddenAbility :Rattled .
+:Suicune :hasAbility :Pressure .
+:Suicune :hasHiddenAbility :InnerFocus .
+:Sunflora :hasAbility :Chlorophyll .
+:Sunflora :hasAbility :SolarPower .
+:Sunflora :hasHiddenAbility :EarlyBird .
+:Sunkern :hasAbility :Chlorophyll .
+:Sunkern :hasAbility :SolarPower .
+:Sunkern :hasHiddenAbility :EarlyBird .
+:Surskit :hasAbility :SwiftSwim .
+:Surskit :hasHiddenAbility :RainDish .
+:Swablu :hasAbility :NaturalCure .
+:Swablu :hasHiddenAbility :CloudNine .
+:Swalot :hasAbility :LiquidOoze .
+:Swalot :hasAbility :StickyHold .
+:Swalot :hasHiddenAbility :Gluttony .
+:Swampert :hasAbility :Torrent .
+:Swampert :hasHiddenAbility :Damp .
+:Swellow :hasAbility :Guts .
+:Swellow :hasHiddenAbility :Scrappy .
+:Swinub :hasAbility :Oblivious .
+:Swinub :hasAbility :SnowCloak .
+:Swinub :hasHiddenAbility :ThickFat .
+:Taillow :hasAbility :Guts .
+:Taillow :hasHiddenAbility :Scrappy .
+:Tangela :hasAbility :Chlorophyll .
+:Tangela :hasAbility :LeafGuard .
+:Tangela :hasHiddenAbility :Regenerator .
+:Tauros :hasAbility :Intimidate .
+:Tauros :hasAbility :AngerPoint .
+:Tauros :hasHiddenAbility :SheerForce .
+:Teddiursa :hasAbility :Pickup .
+:Teddiursa :hasAbility :QuickFeet .
+:Teddiursa :hasHiddenAbility :HoneyGather .
+:Tentacool :hasAbility :ClearBody .
+:Tentacool :hasAbility :LiquidOoze .
+:Tentacool :hasHiddenAbility :RainDish .
+:Tentacruel :hasAbility :ClearBody .
+:Tentacruel :hasAbility :LiquidOoze .
+:Tentacruel :hasHiddenAbility :RainDish .
+:Togepi :hasAbility :Hustle .
+:Togepi :hasAbility :SereneGrace .
+:Togepi :hasHiddenAbility :SuperLuck .
+:Togetic :hasAbility :Hustle .
+:Togetic :hasAbility :SereneGrace .
+:Togetic :hasHiddenAbility :SuperLuck .
+:Torchic :hasAbility :Blaze .
+:Torchic :hasHiddenAbility :SpeedBoost .
+:Torkoal :hasAbility :WhiteSmoke .
+:Torkoal :hasAbility :Drought .
+:Torkoal :hasHiddenAbility :ShellArmor .
+:Totodile :hasAbility :Torrent .
+:Totodile :hasHiddenAbility :SheerForce .
+:Trapinch :hasAbility :HyperCutter .
+:Trapinch :hasAbility :ArenaTrap .
+:Trapinch :hasHiddenAbility :SheerForce .
+:Treecko :hasAbility :Overgrow .
+:Treecko :hasHiddenAbility :Unburden .
+:Tropius :hasAbility :Chlorophyll .
+:Tropius :hasAbility :SolarPower .
+:Tropius :hasHiddenAbility :Harvest .
+:Typhlosion :hasAbility :Blaze .
+:Typhlosion :hasHiddenAbility :FlashFire .
+:Tyranitar :hasAbility :SandStream .
+:Tyranitar :hasHiddenAbility :Unnerve .
+:Tyrogue :hasAbility :Guts .
+:Tyrogue :hasAbility :Steadfast .
+:Tyrogue :hasHiddenAbility :VitalSpirit .
+:Umbreon :hasAbility :Synchronize .
+:Umbreon :hasHiddenAbility :InnerFocus .
+:Unown :hasAbility :Levitate .
+:Ursaring :hasAbility :Guts .
+:Ursaring :hasAbility :QuickFeet .
+:Ursaring :hasHiddenAbility :Unnerve .
+:Vaporeon :hasAbility :WaterAbsorb .
+:Vaporeon :hasHiddenAbility :Hydration .
+:Venomoth :hasAbility :ShieldDust .
+:Venomoth :hasAbility :TintedLens .
+:Venomoth :hasHiddenAbility :WonderSkin .
+:Venonat :hasAbility :CompoundEyes .
+:Venonat :hasAbility :TintedLens .
+:Venonat :hasHiddenAbility :RunAway .
+:Venusaur :hasAbility :Overgrow .
+:Venusaur :hasHiddenAbility :Chlorophyll .
+:Vibrava :hasAbility :Levitate .
+:Victreebel :hasAbility :Chlorophyll .
+:Victreebel :hasHiddenAbility :Gluttony .
+:Vigoroth :hasAbility :VitalSpirit .
+:Vileplume :hasAbility :Chlorophyll .
+:Vileplume :hasHiddenAbility :EffectSpore .
+:Volbeat :hasAbility :Illuminate .
+:Volbeat :hasAbility :Swarm .
+:Volbeat :hasHiddenAbility :Prankster .
+:Voltorb :hasAbility :Soundproof .
+:Voltorb :hasAbility :Static .
+:Voltorb :hasHiddenAbility :Aftermath .
+:Vulpix :hasAbility :FlashFire .
+:Vulpix :hasHiddenAbility :Drought .
+:Wailmer :hasAbility :WaterVeil .
+:Wailmer :hasAbility :Oblivious .
+:Wailmer :hasHiddenAbility :Pressure .
+:Wailord :hasAbility :WaterVeil .
+:Wailord :hasAbility :Oblivious .
+:Wailord :hasHiddenAbility :Pressure .
+:Walrein :hasAbility :ThickFat .
+:Walrein :hasAbility :IceBody .
+:Walrein :hasHiddenAbility :Oblivious .
+:Wartortle :hasAbility :Torrent .
+:Wartortle :hasHiddenAbility :RainDish .
+:Weedle :hasAbility :ShieldDust .
+:Weedle :hasHiddenAbility :RunAway .
+:Weepinbell :hasAbility :Chlorophyll .
+:Weepinbell :hasHiddenAbility :Gluttony .
+:Weezing :hasAbility :Levitate .
+:Weezing :hasAbility :NeutralizingGas .
+:Weezing :hasHiddenAbility :Stench .
+:Whiscash :hasAbility :Oblivious .
+:Whiscash :hasAbility :Anticipation .
+:Whiscash :hasHiddenAbility :Hydration .
+:Whismur :hasAbility :Soundproof .
+:Whismur :hasHiddenAbility :Rattled .
+:Wigglytuff :hasAbility :CuteCharm .
+:Wigglytuff :hasAbility :Competitive .
+:Wigglytuff :hasHiddenAbility :Frisk .
+:Wingull :hasAbility :KeenEye .
+:Wingull :hasAbility :Hydration .
+:Wingull :hasHiddenAbility :RainDish .
+:Wobbuffet :hasAbility :ShadowTag .
+:Wobbuffet :hasHiddenAbility :Telepathy .
+:Wooper :hasAbility :Damp .
+:Wooper :hasAbility :WaterAbsorb .
+:Wooper :hasHiddenAbility :Unaware .
+:Wurmple :hasAbility :ShieldDust .
+:Wurmple :hasHiddenAbility :RunAway .
+:Wynaut :hasAbility :ShadowTag .
+:Wynaut :hasHiddenAbility :Telepathy .
+:Xatu :hasAbility :Synchronize .
+:Xatu :hasAbility :EarlyBird .
+:Xatu :hasHiddenAbility :MagicBounce .
+:Yanma :hasAbility :SpeedBoost .
+:Yanma :hasAbility :CompoundEyes .
+:Yanma :hasHiddenAbility :Frisk .
+:Zangoose :hasAbility :Immunity .
+:Zangoose :hasHiddenAbility :ToxicBoost .
+:Zapdos :hasAbility :Pressure .
+:Zapdos :hasHiddenAbility :Static .
+:Zigzagoon :hasAbility :Pickup .
+:Zigzagoon :hasAbility :Gluttony .
+:Zigzagoon :hasHiddenAbility :QuickFeet .
+:Zubat :hasAbility :InnerFocus .
+:Zubat :hasHiddenAbility :Infiltrator .
+
+# Ability-Individuen mit rdfs:label
+:Adaptability a :Ability ; rdfs:label "Adaptability" .
+:Aftermath a :Ability ; rdfs:label "Aftermath" .
+:AirLock a :Ability ; rdfs:label "Air Lock" .
+:Analytic a :Ability ; rdfs:label "Analytic" .
+:AngerPoint a :Ability ; rdfs:label "Anger Point" .
+:Anticipation a :Ability ; rdfs:label "Anticipation" .
+:ArenaTrap a :Ability ; rdfs:label "Arena Trap" .
+:BattleArmor a :Ability ; rdfs:label "Battle Armor" .
+:BigPecks a :Ability ; rdfs:label "Big Pecks" .
+:Blaze a :Ability ; rdfs:label "Blaze" .
+:Chlorophyll a :Ability ; rdfs:label "Chlorophyll" .
+:ClearBody a :Ability ; rdfs:label "Clear Body" .
+:CloudNine a :Ability ; rdfs:label "Cloud Nine" .
+:ColorChange a :Ability ; rdfs:label "Color Change" .
+:Competitive a :Ability ; rdfs:label "Competitive" .
+:CompoundEyes a :Ability ; rdfs:label "Compound Eyes" .
+:Contrary a :Ability ; rdfs:label "Contrary" .
+:CursedBody a :Ability ; rdfs:label "Cursed Body" .
+:CuteCharm a :Ability ; rdfs:label "Cute Charm" .
+:Damp a :Ability ; rdfs:label "Damp" .
+:Defiant a :Ability ; rdfs:label "Defiant" .
+:Download a :Ability ; rdfs:label "Download" .
+:Drizzle a :Ability ; rdfs:label "Drizzle" .
+:Drought a :Ability ; rdfs:label "Drought" .
+:DrySkin a :Ability ; rdfs:label "Dry Skin" .
+:EarlyBird a :Ability ; rdfs:label "Early Bird" .
+:EffectSpore a :Ability ; rdfs:label "Effect Spore" .
+:Filter a :Ability ; rdfs:label "Filter" .
+:FlameBody a :Ability ; rdfs:label "Flame Body" .
+:FlashFire a :Ability ; rdfs:label "Flash Fire" .
+:Forecast a :Ability ; rdfs:label "Forecast" .
+:Forewarn a :Ability ; rdfs:label "Forewarn" .
+:FriendGuard a :Ability ; rdfs:label "Friend Guard" .
+:Frisk a :Ability ; rdfs:label "Frisk" .
+:Gluttony a :Ability ; rdfs:label "Gluttony" .
+:Guts a :Ability ; rdfs:label "Guts" .
+:Harvest a :Ability ; rdfs:label "Harvest" .
+:Healer a :Ability ; rdfs:label "Healer" .
+:HeavyMetal a :Ability ; rdfs:label "Heavy Metal" .
+:HoneyGather a :Ability ; rdfs:label "Honey Gather" .
+:HugePower a :Ability ; rdfs:label "Huge Power" .
+:Hustle a :Ability ; rdfs:label "Hustle" .
+:Hydration a :Ability ; rdfs:label "Hydration" .
+:HyperCutter a :Ability ; rdfs:label "Hyper Cutter" .
+:IceBody a :Ability ; rdfs:label "Ice Body" .
+:Illuminate a :Ability ; rdfs:label "Illuminate" .
+:Immunity a :Ability ; rdfs:label "Immunity" .
+:Imposter a :Ability ; rdfs:label "Imposter" .
+:Infiltrator a :Ability ; rdfs:label "Infiltrator" .
+:InnerFocus a :Ability ; rdfs:label "Inner Focus" .
+:Insomnia a :Ability ; rdfs:label "Insomnia" .
+:Intimidate a :Ability ; rdfs:label "Intimidate" .
+:IronFist a :Ability ; rdfs:label "Iron Fist" .
+:Justified a :Ability ; rdfs:label "Justified" .
+:KeenEye a :Ability ; rdfs:label "Keen Eye" .
+:LeafGuard a :Ability ; rdfs:label "Leaf Guard" .
+:Levitate a :Ability ; rdfs:label "Levitate" .
+:LightMetal a :Ability ; rdfs:label "Light Metal" .
+:LightningRod a :Ability ; rdfs:label "Lightning Rod" .
+:Limber a :Ability ; rdfs:label "Limber" .
+:LiquidOoze a :Ability ; rdfs:label "Liquid Ooze" .
+:MagicBounce a :Ability ; rdfs:label "Magic Bounce" .
+:MagicGuard a :Ability ; rdfs:label "Magic Guard" .
+:MagmaArmor a :Ability ; rdfs:label "Magma Armor" .
+:MagnetPull a :Ability ; rdfs:label "Magnet Pull" .
+:MarvelScale a :Ability ; rdfs:label "Marvel Scale" .
+:Minus a :Ability ; rdfs:label "Minus" .
+:MoldBreaker a :Ability ; rdfs:label "Mold Breaker" .
+:Moody a :Ability ; rdfs:label "Moody" .
+:Moxie a :Ability ; rdfs:label "Moxie" .
+:Multiscale a :Ability ; rdfs:label "Multiscale" .
+:NaturalCure a :Ability ; rdfs:label "Natural Cure" .
+:NeutralizingGas a :Ability ; rdfs:label "Neutralizing Gas" .
+:NoGuard a :Ability ; rdfs:label "No Guard" .
+:Normalize a :Ability ; rdfs:label "Normalize" .
+:Oblivious a :Ability ; rdfs:label "Oblivious" .
+:Overcoat a :Ability ; rdfs:label "Overcoat" .
+:Overgrow a :Ability ; rdfs:label "Overgrow" .
+:OwnTempo a :Ability ; rdfs:label "Own Tempo" .
+:Pickpocket a :Ability ; rdfs:label "Pickpocket" .
+:Pickup a :Ability ; rdfs:label "Pickup" .
+:Plus a :Ability ; rdfs:label "Plus" .
+:PoisonHeal a :Ability ; rdfs:label "Poison Heal" .
+:PoisonPoint a :Ability ; rdfs:label "Poison Point" .
+:PoisonTouch a :Ability ; rdfs:label "Poison Touch" .
+:Prankster a :Ability ; rdfs:label "Prankster" .
+:Pressure a :Ability ; rdfs:label "Pressure" .
+:Protean a :Ability ; rdfs:label "Protean" .
+:PurePower a :Ability ; rdfs:label "Pure Power" .
+:QuickFeet a :Ability ; rdfs:label "Quick Feet" .
+:RainDish a :Ability ; rdfs:label "Rain Dish" .
+:Rattled a :Ability ; rdfs:label "Rattled" .
+:Reckless a :Ability ; rdfs:label "Reckless" .
+:Regenerator a :Ability ; rdfs:label "Regenerator" .
+:Rivalry a :Ability ; rdfs:label "Rivalry" .
+:RockHead a :Ability ; rdfs:label "Rock Head" .
+:RoughSkin a :Ability ; rdfs:label "Rough Skin" .
+:RunAway a :Ability ; rdfs:label "Run Away" .
+:SandForce a :Ability ; rdfs:label "Sand Force" .
+:SandRush a :Ability ; rdfs:label "Sand Rush" .
+:SandStream a :Ability ; rdfs:label "Sand Stream" .
+:SandVeil a :Ability ; rdfs:label "Sand Veil" .
+:SapSipper a :Ability ; rdfs:label "Sap Sipper" .
+:Scrappy a :Ability ; rdfs:label "Scrappy" .
+:SereneGrace a :Ability ; rdfs:label "Serene Grace" .
+:ShadowTag a :Ability ; rdfs:label "Shadow Tag" .
+:ShedSkin a :Ability ; rdfs:label "Shed Skin" .
+:SheerForce a :Ability ; rdfs:label "Sheer Force" .
+:ShellArmor a :Ability ; rdfs:label "Shell Armor" .
+:ShieldDust a :Ability ; rdfs:label "Shield Dust" .
+:Simple a :Ability ; rdfs:label "Simple" .
+:SkillLink a :Ability ; rdfs:label "Skill Link" .
+:Sniper a :Ability ; rdfs:label "Sniper" .
+:SnowCloak a :Ability ; rdfs:label "Snow Cloak" .
+:SolarPower a :Ability ; rdfs:label "Solar Power" .
+:SolidRock a :Ability ; rdfs:label "Solid Rock" .
+:Soundproof a :Ability ; rdfs:label "Soundproof" .
+:SpeedBoost a :Ability ; rdfs:label "Speed Boost" .
+:Stall a :Ability ; rdfs:label "Stall" .
+:Static a :Ability ; rdfs:label "Static" .
+:Steadfast a :Ability ; rdfs:label "Steadfast" .
+:Stench a :Ability ; rdfs:label "Stench" .
+:StickyHold a :Ability ; rdfs:label "Sticky Hold" .
+:StormDrain a :Ability ; rdfs:label "Storm Drain" .
+:Sturdy a :Ability ; rdfs:label "Sturdy" .
+:SuctionCups a :Ability ; rdfs:label "Suction Cups" .
+:SuperLuck a :Ability ; rdfs:label "Super Luck" .
+:Swarm a :Ability ; rdfs:label "Swarm" .
+:SwiftSwim a :Ability ; rdfs:label "Swift Swim" .
+:Synchronize a :Ability ; rdfs:label "Synchronize" .
+:TangledFeet a :Ability ; rdfs:label "Tangled Feet" .
+:Technician a :Ability ; rdfs:label "Technician" .
+:Telepathy a :Ability ; rdfs:label "Telepathy" .
+:ThickFat a :Ability ; rdfs:label "Thick Fat" .
+:TintedLens a :Ability ; rdfs:label "Tinted Lens" .
+:Torrent a :Ability ; rdfs:label "Torrent" .
+:ToxicBoost a :Ability ; rdfs:label "Toxic Boost" .
+:Trace a :Ability ; rdfs:label "Trace" .
+:Truant a :Ability ; rdfs:label "Truant" .
+:Unaware a :Ability ; rdfs:label "Unaware" .
+:Unburden a :Ability ; rdfs:label "Unburden" .
+:Unnerve a :Ability ; rdfs:label "Unnerve" .
+:VitalSpirit a :Ability ; rdfs:label "Vital Spirit" .
+:VoltAbsorb a :Ability ; rdfs:label "Volt Absorb" .
+:WaterAbsorb a :Ability ; rdfs:label "Water Absorb" .
+:WaterVeil a :Ability ; rdfs:label "Water Veil" .
+:WeakArmor a :Ability ; rdfs:label "Weak Armor" .
+:WhiteSmoke a :Ability ; rdfs:label "White Smoke" .
+:WindRider a :Ability ; rdfs:label "Wind Rider" .
+:WonderGuard a :Ability ; rdfs:label "Wonder Guard" .
+:WonderSkin a :Ability ; rdfs:label "Wonder Skin" .

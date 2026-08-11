@@ -36,6 +36,7 @@ The project has two halves:
 
 ## Play it
 
+<<<<<<< Updated upstream
 ### Option A — Instant play (no setup)
 
 The game ships with a bundled offline copy of the ontology data, so it runs
@@ -62,6 +63,30 @@ should use if you want to see the ontology actually being queried while you play
 You do **not** need any programming experience for this. It's mostly
 copy-pasting a few commands into a terminal window. It takes about 10 minutes
 the first time.
+=======
+To run it the way it's designed — with queries hitting a live triple store:
+
+1. Install **[Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/)**.
+2. Start Fuseki and create a dataset named `pokedex`.
+3. Upload the ontology file `akr_ontology_kilic_rajput_v8.ttl` to that dataset.
+
+   Via the web UI at `http://localhost:3030`: open the `pokedex` dataset →
+   "add data" → select the file → upload.
+
+   > **If the web UI rejects the upload** with an error like *"Invalid graph
+   > name"* (a known quirk in some Fuseki versions): leave the Fuseki server
+   > running and instead upload the file directly from a terminal with:
+   > ```bash
+   > curl.exe -X POST -H "Content-Type: text/turtle" --data-binary "@akr_ontology_kilic_rajput_v8.ttl" http://localhost:3030/pokedex/data?default
+   > ```
+   > (drop the `.exe` on Mac/Linux). This sends the file straight into the
+   > dataset's default graph via Fuseki's HTTP API, bypassing the web form
+   > entirely. A successful upload replies with something like
+   > `{"count": 35174, ...}`, matching the ontology's triple count.
+
+4. Confirm the endpoint is live at `http://localhost:3030/pokedex/sparql`.
+5. Run the app:
+>>>>>>> Stashed changes
 
 #### Step 1 — Check that Java is installed
 
@@ -242,7 +267,7 @@ situations), and the ontology passes the HermiT reasoner as consistent.
 
 ## Authors
 
-**Firaz Kilic** & **Prakhar Rajput** — University of Bremen,
+**Firaz Kilic** — University of Bremen,
 *Actionable Knowledge Representation*.
 
 ## Credits & notes
@@ -251,4 +276,8 @@ Pokémon and all related names are trademarks of Nintendo / Game Freak / The Pok
 Company. This is a non-commercial student project for educational purposes. Sprites
 are served from PokeAPI.
 
+<<<<<<< Updated upstream
 Shout-outs go to our teacher Dr. Michaela Kümpel!
+=======
+Shout-outs to my teacher Dr. Michaela Kümpel!
+>>>>>>> Stashed changes

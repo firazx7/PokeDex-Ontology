@@ -1,0 +1,862 @@
+@prefix : <http://www.uni-bremen.de/akr/pokedex#> .
+
+:Abra :evolvesTo :Kadabra ;
+    :hasEvolutionMethod :LevelUp .
+
+:Aggron :evolvesFrom :Lairon .
+
+:Alakazam :evolvesFrom :Kadabra .
+
+:Altaria :evolvesFrom :Swablu .
+
+:Ampharos :evolvesFrom :Flaaffy .
+
+:Anorith :evolvesTo :Armaldo ;
+    :hasEvolutionMethod :LevelUp .
+
+:Arbok :evolvesFrom :Ekans .
+
+:Arcanine :evolvesFrom :Growlithe .
+
+:Ariados :evolvesFrom :Spinarak .
+
+:Armaldo :evolvesFrom :Anorith .
+
+:Aron :evolvesTo :Lairon ;
+    :hasEvolutionMethod :LevelUp .
+
+:Azumarill :evolvesFrom :Marill .
+
+:Azurill :evolvesTo :Marill ;
+    :hasEvolutionMethod :Friendship .
+
+:Bagon :evolvesTo :Shelgon ;
+    :hasEvolutionMethod :LevelUp .
+
+:Baltoy :evolvesTo :Claydol ;
+    :hasEvolutionMethod :LevelUp .
+
+:Banette :evolvesFrom :Shuppet .
+
+:Barboach :evolvesTo :Whiscash ;
+    :hasEvolutionMethod :LevelUp .
+
+:Beautifly :evolvesFrom :Silcoon .
+
+:Beedrill :evolvesFrom :Kakuna .
+
+:Beldum :evolvesTo :Metang ;
+    :hasEvolutionMethod :LevelUp .
+
+:Bellossom :evolvesFrom :Gloom .
+
+:Bellsprout :evolvesTo :Weepinbell ;
+    :hasEvolutionMethod :LevelUp .
+
+:Blastoise :evolvesFrom :Wartortle .
+
+:Blaziken :evolvesFrom :Combusken .
+
+:Blissey :evolvesFrom :Chansey .
+
+:Breloom :evolvesFrom :Shroomish .
+
+:Bulbasaur :evolvesTo :Ivysaur ;
+    :hasEvolutionMethod :LevelUp .
+
+:Butterfree :evolvesFrom :Metapod .
+
+:Cacnea :evolvesTo :Cacturne ;
+    :hasEvolutionMethod :LevelUp .
+
+:Cacturne :evolvesFrom :Cacnea .
+
+:Camerupt :evolvesFrom :Numel .
+
+:Carvanha :evolvesTo :Sharpedo ;
+    :hasEvolutionMethod :LevelUp .
+
+:Caterpie :evolvesTo :Metapod ;
+    :hasEvolutionMethod :LevelUp .
+
+:Chansey :evolvesTo :Blissey ;
+    :hasEvolutionMethod :Friendship .
+
+:Charizard :evolvesFrom :Charmeleon .
+
+:Charmander :evolvesTo :Charmeleon ;
+    :hasEvolutionMethod :LevelUp .
+
+:Chikorita :evolvesTo :Bayleef ;
+    :hasEvolutionMethod :LevelUp .
+
+:Chinchou :evolvesTo :Lanturn ;
+    :hasEvolutionMethod :LevelUp .
+
+:Claydol :evolvesFrom :Baltoy .
+
+:Clefable :evolvesFrom :Clefairy .
+
+:Cleffa :evolvesTo :Clefairy ;
+    :hasEvolutionMethod :Friendship .
+
+:Cloyster :evolvesFrom :Shellder .
+
+:Corphish :evolvesTo :Crawdaunt ;
+    :hasEvolutionMethod :LevelUp .
+
+:Cradily :evolvesFrom :Lileep .
+
+:Crawdaunt :evolvesFrom :Corphish .
+
+:Crobat :evolvesFrom :Golbat .
+
+:Cubone :evolvesTo :Marowak ;
+    :hasEvolutionMethod :LevelUp .
+
+:Cyndaquil :evolvesTo :Quilava ;
+    :hasEvolutionMethod :LevelUp .
+
+:Delcatty :evolvesFrom :Skitty .
+
+:Dewgong :evolvesFrom :Seel .
+
+:Diglett :evolvesTo :Dugtrio ;
+    :hasEvolutionMethod :LevelUp .
+
+:Dodrio :evolvesFrom :Doduo .
+
+:Doduo :evolvesTo :Dodrio ;
+    :hasEvolutionMethod :LevelUp .
+
+:Donphan :evolvesFrom :Phanpy .
+
+:Dragonite :evolvesFrom :Dragonair .
+
+:Dratini :evolvesTo :Dragonair ;
+    :hasEvolutionMethod :LevelUp .
+
+:Drowzee :evolvesTo :Hypno ;
+    :hasEvolutionMethod :LevelUp .
+
+:Dugtrio :evolvesFrom :Diglett .
+
+:Dusclops :evolvesFrom :Duskull .
+
+:Duskull :evolvesTo :Dusclops ;
+    :hasEvolutionMethod :LevelUp .
+
+:Dustox :evolvesFrom :Cascoon .
+
+:Ekans :evolvesTo :Arbok ;
+    :hasEvolutionMethod :LevelUp .
+
+:Electabuzz :evolvesFrom :Elekid .
+
+:Electrike :evolvesTo :Manectric ;
+    :hasEvolutionMethod :LevelUp .
+
+:Electrode :evolvesFrom :Voltorb .
+
+:Elekid :evolvesTo :Electabuzz ;
+    :hasEvolutionMethod :LevelUp .
+
+:Espeon :evolvesFrom :Eevee .
+
+:Exeggcute :evolvesTo :Exeggutor ;
+    :hasEvolutionMethod :UseStone .
+
+:Exeggutor :evolvesFrom :Exeggcute .
+
+:Exploud :evolvesFrom :Loudred .
+
+:Fearow :evolvesFrom :Spearow .
+
+:Feebas :evolvesTo :Milotic ;
+    :hasEvolutionMethod :Trade .
+
+:Feraligatr :evolvesFrom :Croconaw .
+
+:Flareon :evolvesFrom :Eevee .
+
+:Flygon :evolvesFrom :Vibrava .
+
+:Forretress :evolvesFrom :Pineco .
+
+:Furret :evolvesFrom :Sentret .
+
+:Gardevoir :evolvesFrom :Kirlia .
+
+:Gastly :evolvesTo :Haunter ;
+    :hasEvolutionMethod :LevelUp .
+
+:Gengar :evolvesFrom :Haunter .
+
+:Geodude :evolvesTo :Graveler ;
+    :hasEvolutionMethod :LevelUp .
+
+:Glalie :evolvesFrom :Snorunt .
+
+:Goldeen :evolvesTo :Seaking ;
+    :hasEvolutionMethod :LevelUp .
+
+:Golduck :evolvesFrom :Psyduck .
+
+:Golem :evolvesFrom :Graveler .
+
+:Gorebyss :evolvesFrom :Clamperl .
+
+:Granbull :evolvesFrom :Snubbull .
+
+:Grimer :evolvesTo :Muk ;
+    :hasEvolutionMethod :LevelUp .
+
+:Growlithe :evolvesTo :Arcanine ;
+    :hasEvolutionMethod :UseStone .
+
+:Grumpig :evolvesFrom :Spoink .
+
+:Gulpin :evolvesTo :Swalot ;
+    :hasEvolutionMethod :LevelUp .
+
+:Gyarados :evolvesFrom :Magikarp .
+
+:Hariyama :evolvesFrom :Makuhita .
+
+:Hitmonchan :evolvesFrom :Tyrogue .
+
+:Hitmonlee :evolvesFrom :Tyrogue .
+
+:Hitmontop :evolvesFrom :Tyrogue .
+
+:Hoothoot :evolvesTo :Noctowl ;
+    :hasEvolutionMethod :LevelUp .
+
+:Hoppip :evolvesTo :Skiploom ;
+    :hasEvolutionMethod :LevelUp .
+
+:Horsea :evolvesTo :Seadra ;
+    :hasEvolutionMethod :LevelUp .
+
+:Houndoom :evolvesFrom :Houndour .
+
+:Houndour :evolvesTo :Houndoom ;
+    :hasEvolutionMethod :LevelUp .
+
+:Huntail :evolvesFrom :Clamperl .
+
+:Hypno :evolvesFrom :Drowzee .
+
+:Igglybuff :evolvesTo :Jigglypuff ;
+    :hasEvolutionMethod :Friendship .
+
+:Jolteon :evolvesFrom :Eevee .
+
+:Jumpluff :evolvesFrom :Skiploom .
+
+:Jynx :evolvesFrom :Smoochum .
+
+:Kabuto :evolvesTo :Kabutops ;
+    :hasEvolutionMethod :LevelUp .
+
+:Kabutops :evolvesFrom :Kabuto .
+
+:Kingdra :evolvesFrom :Seadra .
+
+:Kingler :evolvesFrom :Krabby .
+
+:Koffing :evolvesTo :Weezing ;
+    :hasEvolutionMethod :LevelUp .
+
+:Krabby :evolvesTo :Kingler ;
+    :hasEvolutionMethod :LevelUp .
+
+:Lanturn :evolvesFrom :Chinchou .
+
+:Larvitar :evolvesTo :Pupitar ;
+    :hasEvolutionMethod :LevelUp .
+
+:Ledian :evolvesFrom :Ledyba .
+
+:Ledyba :evolvesTo :Ledian ;
+    :hasEvolutionMethod :LevelUp .
+
+:Lileep :evolvesTo :Cradily ;
+    :hasEvolutionMethod :LevelUp .
+
+:Linoone :evolvesFrom :Zigzagoon .
+
+:Lotad :evolvesTo :Lombre ;
+    :hasEvolutionMethod :LevelUp .
+
+:Ludicolo :evolvesFrom :Lombre .
+
+:Machamp :evolvesFrom :Machoke .
+
+:Machop :evolvesTo :Machoke ;
+    :hasEvolutionMethod :LevelUp .
+
+:Magby :evolvesTo :Magmar ;
+    :hasEvolutionMethod :LevelUp .
+
+:Magcargo :evolvesFrom :Slugma .
+
+:Magikarp :evolvesTo :Gyarados ;
+    :hasEvolutionMethod :LevelUp .
+
+:Magmar :evolvesFrom :Magby .
+
+:Magnemite :evolvesTo :Magneton ;
+    :hasEvolutionMethod :LevelUp .
+
+:Magneton :evolvesFrom :Magnemite .
+
+:Makuhita :evolvesTo :Hariyama ;
+    :hasEvolutionMethod :LevelUp .
+
+:Manectric :evolvesFrom :Electrike .
+
+:Mankey :evolvesTo :Primeape ;
+    :hasEvolutionMethod :LevelUp .
+
+:Mareep :evolvesTo :Flaaffy ;
+    :hasEvolutionMethod :LevelUp .
+
+:Marowak :evolvesFrom :Cubone .
+
+:Masquerain :evolvesFrom :Surskit .
+
+:Medicham :evolvesFrom :Meditite .
+
+:Meditite :evolvesTo :Medicham ;
+    :hasEvolutionMethod :LevelUp .
+
+:Meganium :evolvesFrom :Bayleef .
+
+:Meowth :evolvesTo :Persian ;
+    :hasEvolutionMethod :Friendship,
+        :LevelUp .
+
+:Metagross :evolvesFrom :Metang .
+
+:Mightyena :evolvesFrom :Poochyena .
+
+:Milotic :evolvesFrom :Feebas .
+
+:Mudkip :evolvesTo :Marshtomp ;
+    :hasEvolutionMethod :LevelUp .
+
+:Muk :evolvesFrom :Grimer .
+
+:Natu :evolvesTo :Xatu ;
+    :hasEvolutionMethod :LevelUp .
+
+:Nidoking :evolvesFrom :Nidorino .
+
+:Nidoqueen :evolvesFrom :Nidorina .
+
+:NidoranF :evolvesTo :Nidorina ;
+    :hasEvolutionMethod :LevelUp .
+
+:NidoranM :evolvesTo :Nidorino ;
+    :hasEvolutionMethod :LevelUp .
+
+:Ninetales :evolvesFrom :Vulpix .
+
+:Ninjask :evolvesFrom :Nincada .
+
+:Noctowl :evolvesFrom :Hoothoot .
+
+:Numel :evolvesTo :Camerupt ;
+    :hasEvolutionMethod :LevelUp .
+
+:Octillery :evolvesFrom :Remoraid .
+
+:Oddish :evolvesTo :Gloom ;
+    :hasEvolutionMethod :LevelUp .
+
+:Omanyte :evolvesTo :Omastar ;
+    :hasEvolutionMethod :LevelUp .
+
+:Omastar :evolvesFrom :Omanyte .
+
+:Onix :evolvesTo :Steelix ;
+    :hasEvolutionMethod :Trade .
+
+:Paras :evolvesTo :Parasect ;
+    :hasEvolutionMethod :LevelUp .
+
+:Parasect :evolvesFrom :Paras .
+
+:Pelipper :evolvesFrom :Wingull .
+
+:Persian :evolvesFrom :Meowth .
+
+:Phanpy :evolvesTo :Donphan ;
+    :hasEvolutionMethod :LevelUp .
+
+:Pichu :evolvesTo :Pikachu ;
+    :hasEvolutionMethod :Friendship .
+
+:Pidgeot :evolvesFrom :Pidgeotto .
+
+:Pidgey :evolvesTo :Pidgeotto ;
+    :hasEvolutionMethod :LevelUp .
+
+:Piloswine :evolvesFrom :Swinub .
+
+:Pineco :evolvesTo :Forretress ;
+    :hasEvolutionMethod :LevelUp .
+
+:Politoed :evolvesFrom :Poliwhirl .
+
+:Poliwag :evolvesTo :Poliwhirl ;
+    :hasEvolutionMethod :LevelUp .
+
+:Poliwrath :evolvesFrom :Poliwhirl .
+
+:Ponyta :evolvesTo :Rapidash ;
+    :hasEvolutionMethod :LevelUp .
+
+:Poochyena :evolvesTo :Mightyena ;
+    :hasEvolutionMethod :LevelUp .
+
+:Porygon :evolvesTo :Porygon2 ;
+    :hasEvolutionMethod :Trade .
+
+:Porygon2 :evolvesFrom :Porygon .
+
+:Primeape :evolvesFrom :Mankey .
+
+:Psyduck :evolvesTo :Golduck ;
+    :hasEvolutionMethod :LevelUp .
+
+:Quagsire :evolvesFrom :Wooper .
+
+:Raichu :evolvesFrom :Pikachu .
+
+:Ralts :evolvesTo :Kirlia ;
+    :hasEvolutionMethod :LevelUp .
+
+:Rapidash :evolvesFrom :Ponyta .
+
+:Raticate :evolvesFrom :Rattata .
+
+:Rattata :evolvesTo :Raticate ;
+    :hasEvolutionMethod :LevelUp .
+
+:Remoraid :evolvesTo :Octillery ;
+    :hasEvolutionMethod :LevelUp .
+
+:Rhydon :evolvesFrom :Rhyhorn .
+
+:Rhyhorn :evolvesTo :Rhydon ;
+    :hasEvolutionMethod :LevelUp .
+
+:Salamence :evolvesFrom :Shelgon .
+
+:Sandshrew :evolvesTo :Sandslash ;
+    :hasEvolutionMethod :LevelUp,
+        :UseStone .
+
+:Sandslash :evolvesFrom :Sandshrew .
+
+:Sceptile :evolvesFrom :Grovyle .
+
+:Scizor :evolvesFrom :Scyther .
+
+:Scyther :evolvesTo :Scizor ;
+    :hasEvolutionMethod :Trade .
+
+:Seaking :evolvesFrom :Goldeen .
+
+:Seedot :evolvesTo :Nuzleaf ;
+    :hasEvolutionMethod :LevelUp .
+
+:Seel :evolvesTo :Dewgong ;
+    :hasEvolutionMethod :LevelUp .
+
+:Sentret :evolvesTo :Furret ;
+    :hasEvolutionMethod :LevelUp .
+
+:Sharpedo :evolvesFrom :Carvanha .
+
+:Shedinja :evolvesFrom :Nincada .
+
+:Shellder :evolvesTo :Cloyster ;
+    :hasEvolutionMethod :UseStone .
+
+:Shiftry :evolvesFrom :Nuzleaf .
+
+:Shroomish :evolvesTo :Breloom ;
+    :hasEvolutionMethod :LevelUp .
+
+:Shuppet :evolvesTo :Banette ;
+    :hasEvolutionMethod :LevelUp .
+
+:Skitty :evolvesTo :Delcatty ;
+    :hasEvolutionMethod :UseStone .
+
+:Slaking :evolvesFrom :Vigoroth .
+
+:Slakoth :evolvesTo :Vigoroth ;
+    :hasEvolutionMethod :LevelUp .
+
+:Slowbro :evolvesFrom :Slowpoke .
+
+:Slowking :evolvesFrom :Slowpoke .
+
+:Slugma :evolvesTo :Magcargo ;
+    :hasEvolutionMethod :LevelUp .
+
+:Smoochum :evolvesTo :Jynx ;
+    :hasEvolutionMethod :LevelUp .
+
+:Snorunt :evolvesTo :Glalie ;
+    :hasEvolutionMethod :LevelUp .
+
+:Snubbull :evolvesTo :Granbull ;
+    :hasEvolutionMethod :LevelUp .
+
+:Spearow :evolvesTo :Fearow ;
+    :hasEvolutionMethod :LevelUp .
+
+:Spheal :evolvesTo :Sealeo ;
+    :hasEvolutionMethod :LevelUp .
+
+:Spinarak :evolvesTo :Ariados ;
+    :hasEvolutionMethod :LevelUp .
+
+:Spoink :evolvesTo :Grumpig ;
+    :hasEvolutionMethod :LevelUp .
+
+:Squirtle :evolvesTo :Wartortle ;
+    :hasEvolutionMethod :LevelUp .
+
+:Starmie :evolvesFrom :Staryu .
+
+:Staryu :evolvesTo :Starmie ;
+    :hasEvolutionMethod :UseStone .
+
+:Steelix :evolvesFrom :Onix .
+
+:Sunflora :evolvesFrom :Sunkern .
+
+:Sunkern :evolvesTo :Sunflora ;
+    :hasEvolutionMethod :UseStone .
+
+:Surskit :evolvesTo :Masquerain ;
+    :hasEvolutionMethod :LevelUp .
+
+:Swablu :evolvesTo :Altaria ;
+    :hasEvolutionMethod :LevelUp .
+
+:Swalot :evolvesFrom :Gulpin .
+
+:Swampert :evolvesFrom :Marshtomp .
+
+:Swellow :evolvesFrom :Taillow .
+
+:Swinub :evolvesTo :Piloswine ;
+    :hasEvolutionMethod :LevelUp .
+
+:Taillow :evolvesTo :Swellow ;
+    :hasEvolutionMethod :LevelUp .
+
+:Teddiursa :evolvesTo :Ursaring ;
+    :hasEvolutionMethod :LevelUp .
+
+:Tentacool :evolvesTo :Tentacruel ;
+    :hasEvolutionMethod :LevelUp .
+
+:Tentacruel :evolvesFrom :Tentacool .
+
+:Togepi :evolvesTo :Togetic ;
+    :hasEvolutionMethod :Friendship .
+
+:Togetic :evolvesFrom :Togepi .
+
+:Torchic :evolvesTo :Combusken ;
+    :hasEvolutionMethod :LevelUp .
+
+:Totodile :evolvesTo :Croconaw ;
+    :hasEvolutionMethod :LevelUp .
+
+:Trapinch :evolvesTo :Vibrava ;
+    :hasEvolutionMethod :LevelUp .
+
+:Treecko :evolvesTo :Grovyle ;
+    :hasEvolutionMethod :LevelUp .
+
+:Typhlosion :evolvesFrom :Quilava .
+
+:Tyranitar :evolvesFrom :Pupitar .
+
+:Umbreon :evolvesFrom :Eevee .
+
+:Ursaring :evolvesFrom :Teddiursa .
+
+:Vaporeon :evolvesFrom :Eevee .
+
+:Venomoth :evolvesFrom :Venonat .
+
+:Venonat :evolvesTo :Venomoth ;
+    :hasEvolutionMethod :LevelUp .
+
+:Venusaur :evolvesFrom :Ivysaur .
+
+:Victreebel :evolvesFrom :Weepinbell .
+
+:Vileplume :evolvesFrom :Gloom .
+
+:Voltorb :evolvesTo :Electrode ;
+    :hasEvolutionMethod :LevelUp,
+        :UseStone .
+
+:Vulpix :evolvesTo :Ninetales ;
+    :hasEvolutionMethod :UseStone .
+
+:Wailmer :evolvesTo :Wailord ;
+    :hasEvolutionMethod :LevelUp .
+
+:Wailord :evolvesFrom :Wailmer .
+
+:Walrein :evolvesFrom :Sealeo .
+
+:Weedle :evolvesTo :Kakuna ;
+    :hasEvolutionMethod :LevelUp .
+
+:Weezing :evolvesFrom :Koffing .
+
+:Whiscash :evolvesFrom :Barboach .
+
+:Whismur :evolvesTo :Loudred ;
+    :hasEvolutionMethod :LevelUp .
+
+:Wigglytuff :evolvesFrom :Jigglypuff .
+
+:Wingull :evolvesTo :Pelipper ;
+    :hasEvolutionMethod :LevelUp .
+
+:Wobbuffet :evolvesFrom :Wynaut .
+
+:Wooper :evolvesTo :Quagsire ;
+    :hasEvolutionMethod :LevelUp .
+
+:Wynaut :evolvesTo :Wobbuffet ;
+    :hasEvolutionMethod :LevelUp .
+
+:Xatu :evolvesFrom :Natu .
+
+:Zigzagoon :evolvesTo :Linoone ;
+    :hasEvolutionMethod :LevelUp .
+
+:Zubat :evolvesTo :Golbat ;
+    :hasEvolutionMethod :LevelUp .
+
+:Bayleef :evolvesFrom :Chikorita ;
+    :evolvesTo :Meganium ;
+    :hasEvolutionMethod :LevelUp .
+
+:Cascoon :evolvesFrom :Wurmple ;
+    :evolvesTo :Dustox ;
+    :hasEvolutionMethod :LevelUp .
+
+:Charmeleon :evolvesFrom :Charmander ;
+    :evolvesTo :Charizard ;
+    :hasEvolutionMethod :LevelUp .
+
+:Clamperl :evolvesTo :Gorebyss,
+        :Huntail ;
+    :hasEvolutionMethod :Trade .
+
+:Clefairy :evolvesFrom :Cleffa ;
+    :evolvesTo :Clefable ;
+    :hasEvolutionMethod :UseStone .
+
+:Combusken :evolvesFrom :Torchic ;
+    :evolvesTo :Blaziken ;
+    :hasEvolutionMethod :LevelUp .
+
+:Croconaw :evolvesFrom :Totodile ;
+    :evolvesTo :Feraligatr ;
+    :hasEvolutionMethod :LevelUp .
+
+:Dragonair :evolvesFrom :Dratini ;
+    :evolvesTo :Dragonite ;
+    :hasEvolutionMethod :LevelUp .
+
+:Flaaffy :evolvesFrom :Mareep ;
+    :evolvesTo :Ampharos ;
+    :hasEvolutionMethod :LevelUp .
+
+:Golbat :evolvesFrom :Zubat ;
+    :evolvesTo :Crobat ;
+    :hasEvolutionMethod :Friendship .
+
+:Graveler :evolvesFrom :Geodude ;
+    :evolvesTo :Golem ;
+    :hasEvolutionMethod :Trade .
+
+:Grovyle :evolvesFrom :Treecko ;
+    :evolvesTo :Sceptile ;
+    :hasEvolutionMethod :LevelUp .
+
+:Haunter :evolvesFrom :Gastly ;
+    :evolvesTo :Gengar ;
+    :hasEvolutionMethod :Trade .
+
+:Ivysaur :evolvesFrom :Bulbasaur ;
+    :evolvesTo :Venusaur ;
+    :hasEvolutionMethod :LevelUp .
+
+:Jigglypuff :evolvesFrom :Igglybuff ;
+    :evolvesTo :Wigglytuff ;
+    :hasEvolutionMethod :UseStone .
+
+:Kadabra :evolvesFrom :Abra ;
+    :evolvesTo :Alakazam ;
+    :hasEvolutionMethod :Trade .
+
+:Kakuna :evolvesFrom :Weedle ;
+    :evolvesTo :Beedrill ;
+    :hasEvolutionMethod :LevelUp .
+
+:Kirlia :evolvesFrom :Ralts ;
+    :evolvesTo :Gardevoir ;
+    :hasEvolutionMethod :LevelUp .
+
+:Lairon :evolvesFrom :Aron ;
+    :evolvesTo :Aggron ;
+    :hasEvolutionMethod :LevelUp .
+
+:Lombre :evolvesFrom :Lotad ;
+    :evolvesTo :Ludicolo ;
+    :hasEvolutionMethod :UseStone .
+
+:Loudred :evolvesFrom :Whismur ;
+    :evolvesTo :Exploud ;
+    :hasEvolutionMethod :LevelUp .
+
+:Machoke :evolvesFrom :Machop ;
+    :evolvesTo :Machamp ;
+    :hasEvolutionMethod :Trade .
+
+:Marill :evolvesFrom :Azurill ;
+    :evolvesTo :Azumarill ;
+    :hasEvolutionMethod :LevelUp .
+
+:Marshtomp :evolvesFrom :Mudkip ;
+    :evolvesTo :Swampert ;
+    :hasEvolutionMethod :LevelUp .
+
+:Metang :evolvesFrom :Beldum ;
+    :evolvesTo :Metagross ;
+    :hasEvolutionMethod :LevelUp .
+
+:Metapod :evolvesFrom :Caterpie ;
+    :evolvesTo :Butterfree ;
+    :hasEvolutionMethod :LevelUp .
+
+:Nidorina :evolvesFrom :NidoranF ;
+    :evolvesTo :Nidoqueen ;
+    :hasEvolutionMethod :UseStone .
+
+:Nidorino :evolvesFrom :NidoranM ;
+    :evolvesTo :Nidoking ;
+    :hasEvolutionMethod :UseStone .
+
+:Nincada :evolvesTo :Ninjask,
+        :Shedinja ;
+    :hasEvolutionMethod :LevelUp .
+
+:Nuzleaf :evolvesFrom :Seedot ;
+    :evolvesTo :Shiftry ;
+    :hasEvolutionMethod :UseStone .
+
+:Pidgeotto :evolvesFrom :Pidgey ;
+    :evolvesTo :Pidgeot ;
+    :hasEvolutionMethod :LevelUp .
+
+:Pikachu :evolvesFrom :Pichu ;
+    :evolvesTo :Raichu ;
+    :hasEvolutionMethod :UseStone .
+
+:Pupitar :evolvesFrom :Larvitar ;
+    :evolvesTo :Tyranitar ;
+    :hasEvolutionMethod :LevelUp .
+
+:Quilava :evolvesFrom :Cyndaquil ;
+    :evolvesTo :Typhlosion ;
+    :hasEvolutionMethod :LevelUp .
+
+:Seadra :evolvesFrom :Horsea ;
+    :evolvesTo :Kingdra ;
+    :hasEvolutionMethod :Trade .
+
+:Sealeo :evolvesFrom :Spheal ;
+    :evolvesTo :Walrein ;
+    :hasEvolutionMethod :LevelUp .
+
+:Shelgon :evolvesFrom :Bagon ;
+    :evolvesTo :Salamence ;
+    :hasEvolutionMethod :LevelUp .
+
+:Silcoon :evolvesFrom :Wurmple ;
+    :evolvesTo :Beautifly ;
+    :hasEvolutionMethod :LevelUp .
+
+:Skiploom :evolvesFrom :Hoppip ;
+    :evolvesTo :Jumpluff ;
+    :hasEvolutionMethod :LevelUp .
+
+:Slowpoke :evolvesTo :Slowbro,
+        :Slowking ;
+    :hasEvolutionMethod :LevelUp,
+        :Trade,
+        :UseStone .
+
+:Vibrava :evolvesFrom :Trapinch ;
+    :evolvesTo :Flygon ;
+    :hasEvolutionMethod :LevelUp .
+
+:Vigoroth :evolvesFrom :Slakoth ;
+    :evolvesTo :Slaking ;
+    :hasEvolutionMethod :LevelUp .
+
+:Wartortle :evolvesFrom :Squirtle ;
+    :evolvesTo :Blastoise ;
+    :hasEvolutionMethod :LevelUp .
+
+:Weepinbell :evolvesFrom :Bellsprout ;
+    :evolvesTo :Victreebel ;
+    :hasEvolutionMethod :UseStone .
+
+:Wurmple :evolvesTo :Cascoon,
+        :Silcoon ;
+    :hasEvolutionMethod :LevelUp .
+
+:Gloom :evolvesFrom :Oddish ;
+    :evolvesTo :Bellossom,
+        :Vileplume ;
+    :hasEvolutionMethod :UseStone .
+
+:Poliwhirl :evolvesFrom :Poliwag ;
+    :evolvesTo :Politoed,
+        :Poliwrath ;
+    :hasEvolutionMethod :Trade,
+        :UseStone .
+
+:Tyrogue :evolvesTo :Hitmonchan,
+        :Hitmonlee,
+        :Hitmontop ;
+    :hasEvolutionMethod :LevelUp .
+
+:Eevee :evolvesTo :Espeon,
+        :Flareon,
+        :Jolteon,
+        :Umbreon,
+        :Vaporeon ;
+    :hasEvolutionMethod :Friendship,
+        :UseStone .
+

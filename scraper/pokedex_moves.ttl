@@ -1,0 +1,7191 @@
+@prefix : <http://www.uni-bremen.de/akr/pokedex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:M10000000VoltThunderbolt a :Move ;
+    rdfs:label "10,000,000 Volt Thunderbolt" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 195 ;
+    :pp 1 ;
+    :effectDescription "Pikachu-exclusive Z-Move. High critical hit ratio." .
+
+:Absorb a :Move ;
+    rdfs:label "Absorb" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:Accelerock a :Move ;
+    rdfs:label "Accelerock" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "User attacks first." .
+
+:Acid a :Move ;
+    rdfs:label "Acid" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:AcidArmor a :Move ;
+    rdfs:label "Acid Armor" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Sharply raises user's Defense." .
+
+:AcidSpray a :Move ;
+    rdfs:label "Acid Spray" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Sharply lowers opponent's Special Defense." .
+
+:Acrobatics a :Move ;
+    rdfs:label "Acrobatics" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 55 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Stronger when the user does not have a held item." .
+
+:Acupressure a :Move ;
+    rdfs:label "Acupressure" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Sharply raises a random stat." .
+
+:AerialAce a :Move ;
+    rdfs:label "Aerial Ace" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:Aeroblast a :Move ;
+    rdfs:label "Aeroblast" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "High critical hit ratio." .
+
+:AfterYou a :Move ;
+    rdfs:label "After You" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Gives target priority in the next turn." .
+
+:Agility a :Move ;
+    rdfs:label "Agility" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Sharply raises user's Speed." .
+
+:AirCutter a :Move ;
+    rdfs:label "Air Cutter" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 95 ;
+    :pp 25 ;
+    :effectDescription "High critical hit ratio." .
+
+:AirSlash a :Move ;
+    rdfs:label "Air Slash" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 75 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:AlluringVoice a :Move ;
+    rdfs:label "Alluring Voice" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 .
+
+:AllySwitch a :Move ;
+    rdfs:label "Ally Switch" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "User switches with opposite teammate." .
+
+:Amnesia a :Move ;
+    rdfs:label "Amnesia" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Sharply raises user's Special Defense." .
+
+:AnchorShot a :Move ;
+    rdfs:label "Anchor Shot" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "The user entangles the target with its anchor chain while attacking. The target becomes unable to flee." .
+
+:AncientPower a :Move ;
+    rdfs:label "Ancient Power" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May raise all user's stats at once." .
+
+:AppleAcid a :Move ;
+    rdfs:label "Apple Acid" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Lowers target's Special Defense." .
+
+:AquaCutter a :Move ;
+    rdfs:label "Aqua Cutter" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "High critical hit ratio." .
+
+:AquaJet a :Move ;
+    rdfs:label "Aqua Jet" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "User attacks first." .
+
+:AquaRing a :Move ;
+    rdfs:label "Aqua Ring" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Restores a little HP each turn." .
+
+:AquaStep a :Move ;
+    rdfs:label "Aqua Step" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Raises user's Speed." .
+
+:AquaTail a :Move ;
+    rdfs:label "Aqua Tail" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 90 ;
+    :pp 10 .
+
+:ArmThrust a :Move ;
+    rdfs:label "Arm Thrust" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 15 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:ArmorCannon a :Move ;
+    rdfs:label "Armor Cannon" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Defense and Special Defense." .
+
+:Aromatherapy a :Move ;
+    rdfs:label "Aromatherapy" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Cures all status problems in your party." .
+
+:AromaticMist a :Move ;
+    rdfs:label "Aromatic Mist" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises Special Defense of an ally." .
+
+:Assist a :Move ;
+    rdfs:label "Assist" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "User performs a move known by its allies at random." .
+
+:Assurance a :Move ;
+    rdfs:label "Assurance" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power doubles if opponent already took damage in the same turn." .
+
+:Astonish a :Move ;
+    rdfs:label "Astonish" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:AstralBarrage a :Move ;
+    rdfs:label "Astral Barrage" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "The user attacks by sending a frightful amount of small ghosts at opposing Pokémon." .
+
+:AttackOrder a :Move ;
+    rdfs:label "Attack Order" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "High critical hit ratio." .
+
+:Attract a :Move ;
+    rdfs:label "Attract" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "If opponent is the opposite gender, it's less likely to attack." .
+
+:AuraSphere a :Move ;
+    rdfs:label "Aura Sphere" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:AuraWheel a :Move ;
+    rdfs:label "Aura Wheel" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 110 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Changes type based on Morpeko's Mode." .
+
+:AuroraBeam a :Move ;
+    rdfs:label "Aurora Beam" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May lower opponent's Attack." .
+
+:AuroraVeil a :Move ;
+    rdfs:label "Aurora Veil" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Halves damage from Physical and Special attacks for five turns." .
+
+:Autotomize a :Move ;
+    rdfs:label "Autotomize" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Reduces weight and sharply raises Speed." .
+
+:Avalanche a :Move ;
+    rdfs:label "Avalanche" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power doubles if user took damage first." .
+
+:AxeKick a :Move ;
+    rdfs:label "Axe Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May confuse opponent. If it misses, the user loses HP." .
+
+:BabyDollEyes a :Move ;
+    rdfs:label "Baby-Doll Eyes" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Always goes first. Lowers the target's attack." .
+
+:BaddyBad a :Move ;
+    rdfs:label "Baddy Bad" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Reduces damage from Physical attacks." .
+
+:BanefulBunker a :Move ;
+    rdfs:label "Baneful Bunker" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the user and poisons opponent on contact." .
+
+:BarbBarrage a :Move ;
+    rdfs:label "Barb Barrage" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May poison opponent; inflicts double damage if the target is already poisoned." .
+
+:Barrage a :Move ;
+    rdfs:label "Barrage" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 15 ;
+    :accuracy 85 ;
+    :pp 20 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:Barrier a :Move ;
+    rdfs:label "Barrier" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Sharply raises user's Defense." .
+
+:BatonPass a :Move ;
+    rdfs:label "Baton Pass" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "User switches out and gives stat changes to the incoming Pokémon." .
+
+:BeakBlast a :Move ;
+    rdfs:label "Beak Blast" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it's heating up its beak results in a burn." .
+
+:BeatUp a :Move ;
+    rdfs:label "Beat Up" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Each Pokémon in user's party attacks." .
+
+:BehemothBash a :Move ;
+    rdfs:label "Behemoth Bash" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Damage doubles if target is Dynamaxed." .
+
+:BehemothBlade a :Move ;
+    rdfs:label "Behemoth Blade" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Damage doubles if target is Dynamaxed." .
+
+:Belch a :Move ;
+    rdfs:label "Belch" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "User must have consumed a Berry." .
+
+:BellyDrum a :Move ;
+    rdfs:label "Belly Drum" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User loses 50% of its max HP, but Attack raises to maximum." .
+
+:Bestow a :Move ;
+    rdfs:label "Bestow" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Gives the user's held item to the target." .
+
+:Bide a :Move ;
+    rdfs:label "Bide" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :pp 10 ;
+    :effectDescription "User takes damage for two turns then strikes back double." .
+
+:Bind a :Move ;
+    rdfs:label "Bind" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 15 ;
+    :accuracy 85 ;
+    :pp 20 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:Bite a :Move ;
+    rdfs:label "Bite" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "May cause flinching." .
+
+:BitterBlade a :Move ;
+    rdfs:label "Bitter Blade" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:BitterMalice a :Move ;
+    rdfs:label "Bitter Malice" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Attack." .
+
+:BlastBurn a :Move ;
+    rdfs:label "Blast Burn" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:BlazeKick a :Move ;
+    rdfs:label "Blaze Kick" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "High critical hit ratio. May burn opponent." .
+
+:BlazingTorque a :Move ;
+    rdfs:label "Blazing Torque" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May burn the opponent." .
+
+:BleakwindStorm a :Move ;
+    rdfs:label "Bleakwind Storm" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 80 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Speed." .
+
+:Blizzard a :Move ;
+    rdfs:label "Blizzard" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 70 ;
+    :pp 5 ;
+    :effectDescription "May freeze opponent." .
+
+:Block a :Move ;
+    rdfs:label "Block" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Opponent cannot flee or switch." .
+
+:BloodMoon a :Move ;
+    rdfs:label "Blood Moon" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 140 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Cannot be used twice in a row." .
+
+:BlueFlare a :Move ;
+    rdfs:label "Blue Flare" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 130 ;
+    :accuracy 85 ;
+    :pp 5 ;
+    :effectDescription "May burn opponent." .
+
+:BodyPress a :Move ;
+    rdfs:label "Body Press" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The higher the user's Defense, the stronger the attack." .
+
+:BodySlam a :Move ;
+    rdfs:label "Body Slam" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May paralyze opponent." .
+
+:BoltBeak a :Move ;
+    rdfs:label "Bolt Beak" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "If the user attacks before the target, the power of this move is doubled." .
+
+:BoltStrike a :Move ;
+    rdfs:label "Bolt Strike" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 130 ;
+    :accuracy 85 ;
+    :pp 5 ;
+    :effectDescription "May paralyze opponent." .
+
+:BoneClub a :Move ;
+    rdfs:label "Bone Club" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 85 ;
+    :pp 20 ;
+    :effectDescription "May cause flinching." .
+
+:BoneRush a :Move ;
+    rdfs:label "Bone Rush" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:Bonemerang a :Move ;
+    rdfs:label "Bonemerang" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Hits twice in one turn." .
+
+:Boomburst a :Move ;
+    rdfs:label "Boomburst" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 140 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Hits all adjacent Pokémon." .
+
+:Bounce a :Move ;
+    rdfs:label "Bounce" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 85 ;
+    :pp 5 ;
+    :effectDescription "Springs up on first turn, attacks on second. May paralyze opponent." .
+
+:BouncyBubble a :Move ;
+    rdfs:label "Bouncy Bubble" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:BranchPoke a :Move ;
+    rdfs:label "Branch Poke" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 40 .
+
+:BraveBird a :Move ;
+    rdfs:label "Brave Bird" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User receives recoil damage." .
+
+:BreakingSwipe a :Move ;
+    rdfs:label "Breaking Swipe" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Hits multiple opponents and lowers their attack." .
+
+:BrickBreak a :Move ;
+    rdfs:label "Brick Break" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Breaks through Reflect and Light Screen barriers." .
+
+:Brine a :Move ;
+    rdfs:label "Brine" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power doubles if opponent's HP is less than 50%." .
+
+:BrutalSwing a :Move ;
+    rdfs:label "Brutal Swing" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "The user swings its body around violently to inflict damage on everything in its vicinity." .
+
+:Bubble a :Move ;
+    rdfs:label "Bubble" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "May lower opponent's Speed." .
+
+:BubbleBeam a :Move ;
+    rdfs:label "Bubble Beam" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May lower opponent's Speed." .
+
+:BugBite a :Move ;
+    rdfs:label "Bug Bite" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Receives the effect from the opponent's held berry." .
+
+:BugBuzz a :Move ;
+    rdfs:label "Bug Buzz" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:BulkUp a :Move ;
+    rdfs:label "Bulk Up" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Attack and Defense." .
+
+:Bulldoze a :Move ;
+    rdfs:label "Bulldoze" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:BulletPunch a :Move ;
+    rdfs:label "Bullet Punch" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "User attacks first." .
+
+:BulletSeed a :Move ;
+    rdfs:label "Bullet Seed" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:BurnUp a :Move ;
+    rdfs:label "Burn Up" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 130 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type." .
+
+:BurningBulwark a :Move ;
+    rdfs:label "Burning Bulwark" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Status ;
+    :pp 10 .
+
+:BurningJealousy a :Move ;
+    rdfs:label "Burning Jealousy" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Hits all opponents, and burns any that have had their stats boosted." .
+
+:BuzzyBuzz a :Move ;
+    rdfs:label "Buzzy Buzz" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Paralyzes the opponent." .
+
+:CalmMind a :Move ;
+    rdfs:label "Calm Mind" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Special Attack and Special Defense." .
+
+:Camouflage a :Move ;
+    rdfs:label "Camouflage" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Changes user's type according to the location." .
+
+:Captivate a :Move ;
+    rdfs:label "Captivate" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Sharply lowers opponent's Special Attack if opposite gender." .
+
+:Catastropika a :Move ;
+    rdfs:label "Catastropika" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 210 ;
+    :pp 1 ;
+    :effectDescription "Pikachu-exclusive Z-Move." .
+
+:CeaselessEdge a :Move ;
+    rdfs:label "Ceaseless Edge" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "Sets up Spikes." .
+
+:Celebrate a :Move ;
+    rdfs:label "Celebrate" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "The Pokémon congratulates you on your special day. No battle effect." .
+
+:Charge a :Move ;
+    rdfs:label "Charge" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Special Defense and next Electric move's power increases." .
+
+:ChargeBeam a :Move ;
+    rdfs:label "Charge Beam" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May raise user's Special Attack." .
+
+:Charm a :Move ;
+    rdfs:label "Charm" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Sharply lowers opponent's Attack." .
+
+:Chatter a :Move ;
+    rdfs:label "Chatter" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Confuses opponent." .
+
+:ChillingWater a :Move ;
+    rdfs:label "Chilling Water" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Attack." .
+
+:ChillyReception a :Move ;
+    rdfs:label "Chilly Reception" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Switches out and summons a snowstorm lasting 5 turns." .
+
+:ChipAway a :Move ;
+    rdfs:label "Chip Away" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Ignores opponent's stat changes." .
+
+:Chloroblast a :Move ;
+    rdfs:label "Chloroblast" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "User receives recoil damage." .
+
+:CircleThrow a :Move ;
+    rdfs:label "Circle Throw" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "In battles, the opponent switches. In the wild, the Pokémon runs." .
+
+:Clamp a :Move ;
+    rdfs:label "Clamp" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 35 ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:ClangingScales a :Move ;
+    rdfs:label "Clanging Scales" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Defense." .
+
+:ClangorousSoul a :Move ;
+    rdfs:label "Clangorous Soul" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Raises all user's stats but loses HP." .
+
+:ClangorousSoulblaze a :Move ;
+    rdfs:label "Clangorous Soulblaze" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 185 ;
+    :pp 1 ;
+    :effectDescription "Kommo-o exclusive Z-Move." .
+
+:ClearSmog a :Move ;
+    rdfs:label "Clear Smog" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :pp 15 ;
+    :effectDescription "Removes all of the target's stat changes." .
+
+:CloseCombat a :Move ;
+    rdfs:label "Close Combat" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Defense and Special Defense." .
+
+:Coaching a :Move ;
+    rdfs:label "Coaching" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Boosts Attack and Defense of a teammate." .
+
+:Coil a :Move ;
+    rdfs:label "Coil" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Attack, Defense and Accuracy." .
+
+:CollisionCourse a :Move ;
+    rdfs:label "Collision Course" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Boosted even more if it's super-effective." .
+
+:CombatTorque a :Move ;
+    rdfs:label "Combat Torque" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May paralyze the opponent." .
+
+:CometPunch a :Move ;
+    rdfs:label "Comet Punch" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 18 ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:Comeuppance a :Move ;
+    rdfs:label "Comeuppance" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Deals more damage to the opponent that last inflicted damage on it." .
+
+:Confide a :Move ;
+    rdfs:label "Confide" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Special Attack." .
+
+:ConfuseRay a :Move ;
+    rdfs:label "Confuse Ray" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Confuses opponent." .
+
+:Confusion a :Move ;
+    rdfs:label "Confusion" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "May confuse opponent." .
+
+:Constrict a :Move ;
+    rdfs:label "Constrict" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 10 ;
+    :accuracy 100 ;
+    :pp 35 ;
+    :effectDescription "May lower opponent's Speed by one stage." .
+
+:Conversion a :Move ;
+    rdfs:label "Conversion" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Changes user's type to that of its first move." .
+
+:Conversion2 a :Move ;
+    rdfs:label "Conversion 2" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "User changes type to become resistant to opponent's last move." .
+
+:Copycat a :Move ;
+    rdfs:label "Copycat" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Copies opponent's last move." .
+
+:CoreEnforcer a :Move ;
+    rdfs:label "Core Enforcer" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Suppresses the target's ability if the target has already moved." .
+
+:CorrosiveGas a :Move ;
+    rdfs:label "Corrosive Gas" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 40 ;
+    :effectDescription "Removes opponent's items." .
+
+:CosmicPower a :Move ;
+    rdfs:label "Cosmic Power" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Defense and Special Defense." .
+
+:CottonGuard a :Move ;
+    rdfs:label "Cotton Guard" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Drastically raises user's Defense." .
+
+:CottonSpore a :Move ;
+    rdfs:label "Cotton Spore" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 40 ;
+    :effectDescription "Sharply lowers opponent's Speed." .
+
+:Counter a :Move ;
+    rdfs:label "Counter" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "When hit by a Physical Attack, user strikes back with 2x power." .
+
+:CourtChange a :Move ;
+    rdfs:label "Court Change" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Swaps the effects on either side of the field." .
+
+:Covet a :Move ;
+    rdfs:label "Covet" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "Opponent's item is stolen by the user." .
+
+:Crabhammer a :Move ;
+    rdfs:label "Crabhammer" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "High critical hit ratio." .
+
+:CraftyShield a :Move ;
+    rdfs:label "Crafty Shield" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the Pokémon from status moves." .
+
+:CrossChop a :Move ;
+    rdfs:label "Cross Chop" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 80 ;
+    :pp 5 ;
+    :effectDescription "High critical hit ratio." .
+
+:CrossPoison a :Move ;
+    rdfs:label "Cross Poison" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "High critical hit ratio. May poison opponent." .
+
+:Crunch a :Move ;
+    rdfs:label "Crunch" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May lower opponent's Defense." .
+
+:CrushClaw a :Move ;
+    rdfs:label "Crush Claw" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Defense." .
+
+:CrushGrip a :Move ;
+    rdfs:label "Crush Grip" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "More powerful when opponent has higher HP." .
+
+:Curse a :Move ;
+    rdfs:label "Curse" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Ghosts lose 50% of max HP and curse the opponent; Non-Ghosts raise Attack, Defense and lower Speed." .
+
+:Cut a :Move ;
+    rdfs:label "Cut" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 95 ;
+    :pp 30 .
+
+:DarkPulse a :Move ;
+    rdfs:label "Dark Pulse" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:DarkVoid a :Move ;
+    rdfs:label "Dark Void" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 50 ;
+    :pp 10 ;
+    :effectDescription "Puts all adjacent opponents to sleep." .
+
+:DarkestLariat a :Move ;
+    rdfs:label "Darkest Lariat" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Ignores opponent's stat changes." .
+
+:DazzlingGleam a :Move ;
+    rdfs:label "Dazzling Gleam" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Hits all adjacent opponents." .
+
+:Decorate a :Move ;
+    rdfs:label "Decorate" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Sharply raises target's Attack and Special Attack." .
+
+:DefendOrder a :Move ;
+    rdfs:label "Defend Order" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Raises user's Defense and Special Defense." .
+
+:DefenseCurl a :Move ;
+    rdfs:label "Defense Curl" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Raises user's Defense." .
+
+:Defog a :Move ;
+    rdfs:label "Defog" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Evasiveness and clears fog." .
+
+:DestinyBond a :Move ;
+    rdfs:label "Destiny Bond" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "If the user faints, the opponent also faints." .
+
+:Detect a :Move ;
+    rdfs:label "Detect" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Protects the user, but may fail if used consecutively." .
+
+:DiamondStorm a :Move ;
+    rdfs:label "Diamond Storm" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "May sharply raise user's Defense." .
+
+:Dig a :Move ;
+    rdfs:label "Dig" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Digs underground on first turn, attacks on second. Can also escape from caves." .
+
+:DireClaw a :Move ;
+    rdfs:label "Dire Claw" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May poison, paralyze or put the opponent to sleep." .
+
+:Disable a :Move ;
+    rdfs:label "Disable" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Opponent can't use its last attack for a few turns." .
+
+:DisarmingVoice a :Move ;
+    rdfs:label "Disarming Voice" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :pp 15 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:Discharge a :Move ;
+    rdfs:label "Discharge" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May paralyze opponent." .
+
+:Dive a :Move ;
+    rdfs:label "Dive" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Dives underwater on first turn, attacks on second turn." .
+
+:DizzyPunch a :Move ;
+    rdfs:label "Dizzy Punch" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May confuse opponent." .
+
+:Doodle a :Move ;
+    rdfs:label "Doodle" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Changes the abilities of the user and its teammates to that of the target." .
+
+:DoomDesire a :Move ;
+    rdfs:label "Doom Desire" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Special ;
+    :power 140 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Damage occurs 2 turns later." .
+
+:DoubleHit a :Move ;
+    rdfs:label "Double Hit" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 35 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Hits twice in one turn." .
+
+:DoubleIronBash a :Move ;
+    rdfs:label "Double Iron Bash" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Hits twice in one turn; may cause flinching." .
+
+:DoubleKick a :Move ;
+    rdfs:label "Double Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Hits twice in one turn." .
+
+:DoubleShock a :Move ;
+    rdfs:label "Double Shock" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "After using this move, the user will no longer be Electric type." .
+
+:DoubleSlap a :Move ;
+    rdfs:label "Double Slap" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 15 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:DoubleTeam a :Move ;
+    rdfs:label "Double Team" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Raises user's Evasiveness." .
+
+:DoubleEdge a :Move ;
+    rdfs:label "Double-Edge" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User receives recoil damage." .
+
+:DracoMeteor a :Move ;
+    rdfs:label "Draco Meteor" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 130 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Sharply lowers user's Special Attack." .
+
+:DragonAscent a :Move ;
+    rdfs:label "Dragon Ascent" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Defense and Special Defense." .
+
+:DragonBreath a :Move ;
+    rdfs:label "Dragon Breath" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May paralyze opponent." .
+
+:DragonCheer a :Move ;
+    rdfs:label "Dragon Cheer" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Status ;
+    :pp 15 .
+
+:DragonClaw a :Move ;
+    rdfs:label "Dragon Claw" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 .
+
+:DragonDance a :Move ;
+    rdfs:label "Dragon Dance" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Attack and Speed." .
+
+:DragonDarts a :Move ;
+    rdfs:label "Dragon Darts" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User attacks twice." .
+
+:DragonEnergy a :Move ;
+    rdfs:label "Dragon Energy" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "The higher the user's HP, the higher the power." .
+
+:DragonHammer a :Move ;
+    rdfs:label "Dragon Hammer" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "The user uses its body like a hammer to attack the target and inflict damage." .
+
+:DragonPulse a :Move ;
+    rdfs:label "Dragon Pulse" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 .
+
+:DragonRage a :Move ;
+    rdfs:label "Dragon Rage" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Always inflicts 40 HP." .
+
+:DragonRush a :Move ;
+    rdfs:label "Dragon Rush" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 75 ;
+    :pp 10 ;
+    :effectDescription "May cause flinching." .
+
+:DragonTail a :Move ;
+    rdfs:label "Dragon Tail" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "In battles, the opponent switches. In the wild, the Pokémon runs." .
+
+:DrainPunch a :Move ;
+    rdfs:label "Drain Punch" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:DrainingKiss a :Move ;
+    rdfs:label "Draining Kiss" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User recovers most the HP inflicted on opponent." .
+
+:DreamEater a :Move ;
+    rdfs:label "Dream Eater" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User recovers half the HP inflicted on a sleeping opponent." .
+
+:DrillPeck a :Move ;
+    rdfs:label "Drill Peck" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 20 .
+
+:DrillRun a :Move ;
+    rdfs:label "Drill Run" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "High critical hit ratio." .
+
+:DrumBeating a :Move ;
+    rdfs:label "Drum Beating" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:DualChop a :Move ;
+    rdfs:label "Dual Chop" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "Hits twice in one turn." .
+
+:DualWingbeat a :Move ;
+    rdfs:label "Dual Wingbeat" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "The user slams the target with its wings. The target is hit twice in a row." .
+
+:DynamaxCannon a :Move ;
+    rdfs:label "Dynamax Cannon" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Damage doubles if opponent is Dynamaxed." .
+
+:DynamicPunch a :Move ;
+    rdfs:label "Dynamic Punch" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 50 ;
+    :pp 5 ;
+    :effectDescription "Confuses opponent." .
+
+:EarthPower a :Move ;
+    rdfs:label "Earth Power" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:Earthquake a :Move ;
+    rdfs:label "Earthquake" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power is doubled if opponent is underground from using Dig." .
+
+:EchoedVoice a :Move ;
+    rdfs:label "Echoed Voice" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Power increases each turn." .
+
+:EerieImpulse a :Move ;
+    rdfs:label "Eerie Impulse" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Sharply lowers opponent's Special Attack." .
+
+:EerieSpell a :Move ;
+    rdfs:label "Eerie Spell" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Deals damage and reduces opponent's PP." .
+
+:EggBomb a :Move ;
+    rdfs:label "Egg Bomb" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 75 ;
+    :pp 10 .
+
+:ElectricTerrain a :Move ;
+    rdfs:label "Electric Terrain" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Prevents all Pokémon from falling asleep for 5 turns." .
+
+:Electrify a :Move ;
+    rdfs:label "Electrify" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Changes the target's move to Electric type." .
+
+:ElectroBall a :Move ;
+    rdfs:label "Electro Ball" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The faster the user, the stronger the attack." .
+
+:ElectroDrift a :Move ;
+    rdfs:label "Electro Drift" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Boosted even more if it's super-effective." .
+
+:ElectroShot a :Move ;
+    rdfs:label "Electro Shot" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 130 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Charges on first turn, attacks on second." .
+
+:Electroweb a :Move ;
+    rdfs:label "Electroweb" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 55 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:Embargo a :Move ;
+    rdfs:label "Embargo" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Opponent cannot use items." .
+
+:Ember a :Move ;
+    rdfs:label "Ember" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "May burn opponent." .
+
+:Encore a :Move ;
+    rdfs:label "Encore" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Forces opponent to keep using its last move for 3 turns." .
+
+:Endeavor a :Move ;
+    rdfs:label "Endeavor" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Reduces opponent's HP to same as user's." .
+
+:Endure a :Move ;
+    rdfs:label "Endure" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Always left with at least 1 HP, but may fail if used consecutively." .
+
+:EnergyBall a :Move ;
+    rdfs:label "Energy Ball" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:Entrainment a :Move ;
+    rdfs:label "Entrainment" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Makes target's ability same as user's." .
+
+:Eruption a :Move ;
+    rdfs:label "Eruption" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Stronger when the user's HP is higher." .
+
+:EsperWing a :Move ;
+    rdfs:label "Esper Wing" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "High critical hit ratio. Raises user's Speed." .
+
+:Eternabeam a :Move ;
+    rdfs:label "Eternabeam" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 160 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User can't move on the next turn." .
+
+:ExpandingForce a :Move ;
+    rdfs:label "Expanding Force" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Increases power and hits all opponents on Psychic Terrain." .
+
+:Explosion a :Move ;
+    rdfs:label "Explosion" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 250 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "User faints." .
+
+:Extrasensory a :Move ;
+    rdfs:label "Extrasensory" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May cause flinching." .
+
+:ExtremeEvoboost a :Move ;
+    rdfs:label "Extreme Evoboost" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 1 ;
+    :effectDescription "Eevee-exclusive Z-Move. Sharply raises all stats." .
+
+:ExtremeSpeed a :Move ;
+    rdfs:label "Extreme Speed" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "User attacks first." .
+
+:Facade a :Move ;
+    rdfs:label "Facade" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Power doubles if user is burned, poisoned, or paralyzed." .
+
+:FairyLock a :Move ;
+    rdfs:label "Fairy Lock" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Prevents fleeing in the next turn." .
+
+:FairyWind a :Move ;
+    rdfs:label "Fairy Wind" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 .
+
+:FakeOut a :Move ;
+    rdfs:label "Fake Out" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User attacks first, foe flinches. Only usable on first turn." .
+
+:FakeTears a :Move ;
+    rdfs:label "Fake Tears" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Sharply lowers opponent's Special Defense." .
+
+:FalseSurrender a :Move ;
+    rdfs:label "False Surrender" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :pp 10 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:FalseSwipe a :Move ;
+    rdfs:label "False Swipe" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 40 ;
+    :effectDescription "Always leaves opponent with at least 1 HP." .
+
+:FeatherDance a :Move ;
+    rdfs:label "Feather Dance" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Sharply lowers opponent's Attack." .
+
+:Feint a :Move ;
+    rdfs:label "Feint" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Only hits if opponent uses Protect or Detect in the same turn." .
+
+:FeintAttack a :Move ;
+    rdfs:label "Feint Attack" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:FellStinger a :Move ;
+    rdfs:label "Fell Stinger" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "Drastically raises user's Attack if target is KO'd." .
+
+:FickleBeam a :Move ;
+    rdfs:label "Fickle Beam" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May deal double damage." .
+
+:FieryDance a :Move ;
+    rdfs:label "Fiery Dance" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May raise user's Special Attack." .
+
+:FieryWrath a :Move ;
+    rdfs:label "Fiery Wrath" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May cause flinching." .
+
+:FilletAway a :Move ;
+    rdfs:label "Fillet Away" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Lowers HP but sharply boosts Attack, Special Attack, and Speed." .
+
+:FinalGambit a :Move ;
+    rdfs:label "Final Gambit" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Inflicts damage equal to the user's remaining HP. User faints." .
+
+:FireBlast a :Move ;
+    rdfs:label "Fire Blast" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 85 ;
+    :pp 5 ;
+    :effectDescription "May burn opponent." .
+
+:FireFang a :Move ;
+    rdfs:label "Fire Fang" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching and/or burn opponent." .
+
+:FireLash a :Move ;
+    rdfs:label "Fire Lash" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "The user strikes the target with a burning lash. This also lowers the target's Defense stat." .
+
+:FirePledge a :Move ;
+    rdfs:label "Fire Pledge" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Added effects appear if combined with Grass Pledge or Water Pledge." .
+
+:FirePunch a :Move ;
+    rdfs:label "Fire Punch" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May burn opponent." .
+
+:FireSpin a :Move ;
+    rdfs:label "Fire Spin" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 35 ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:FirstImpression a :Move ;
+    rdfs:label "First Impression" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Although this move has great power, it only works the first turn the user is in battle." .
+
+:FishiousRend a :Move ;
+    rdfs:label "Fishious Rend" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "If the user attacks before the target, the power of this move is doubled." .
+
+:Fissure a :Move ;
+    rdfs:label "Fissure" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :accuracy 30 ;
+    :pp 5 ;
+    :effectDescription "One-Hit-KO, if it hits." .
+
+:Flail a :Move ;
+    rdfs:label "Flail" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "The lower the user's HP, the higher the power." .
+
+:FlameBurst a :Move ;
+    rdfs:label "Flame Burst" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May also injure nearby Pokémon." .
+
+:FlameCharge a :Move ;
+    rdfs:label "Flame Charge" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Raises user's Speed." .
+
+:FlameWheel a :Move ;
+    rdfs:label "Flame Wheel" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "May burn opponent." .
+
+:Flamethrower a :Move ;
+    rdfs:label "Flamethrower" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May burn opponent." .
+
+:FlareBlitz a :Move ;
+    rdfs:label "Flare Blitz" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User receives recoil damage. May burn opponent." .
+
+:Flash a :Move ;
+    rdfs:label "Flash" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Accuracy." .
+
+:FlashCannon a :Move ;
+    rdfs:label "Flash Cannon" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:Flatter a :Move ;
+    rdfs:label "Flatter" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Confuses opponent, but raises its Special Attack." .
+
+:FleurCannon a :Move ;
+    rdfs:label "Fleur Cannon" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 130 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Sharply lowers user's Special Attack." .
+
+:Fling a :Move ;
+    rdfs:label "Fling" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power depends on held item." .
+
+:FlipTurn a :Move ;
+    rdfs:label "Flip Turn" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "After making its attack, the user rushes back to switch places with a party Pokémon in waiting." .
+
+:FloatyFall a :Move ;
+    rdfs:label "Floaty Fall" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:FloralHealing a :Move ;
+    rdfs:label "Floral Healing" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The user restores the target's HP by up to half of its max HP. It restores more HP when the terrain is grass." .
+
+:FlowerShield a :Move ;
+    rdfs:label "Flower Shield" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Sharply raises Defense of all Grass-type Pokémon on the field." .
+
+:FlowerTrick a :Move ;
+    rdfs:label "Flower Trick" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :pp 10 ;
+    :effectDescription "Never misses; always results in a critical hit." .
+
+:Fly a :Move ;
+    rdfs:label "Fly" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "Flies up on first turn, attacks on second turn." .
+
+:FlyingPress a :Move ;
+    rdfs:label "Flying Press" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "Deals Fighting and Flying type damage." .
+
+:FocusBlast a :Move ;
+    rdfs:label "Focus Blast" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 70 ;
+    :pp 5 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:FocusEnergy a :Move ;
+    rdfs:label "Focus Energy" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Increases critical hit ratio." .
+
+:FocusPunch a :Move ;
+    rdfs:label "Focus Punch" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 150 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "If the user is hit before attacking, it flinches instead." .
+
+:FollowMe a :Move ;
+    rdfs:label "Follow Me" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "In Double Battle, the user takes all the attacks." .
+
+:ForcePalm a :Move ;
+    rdfs:label "Force Palm" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May paralyze opponent." .
+
+:Foresight a :Move ;
+    rdfs:label "Foresight" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Resets opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts." .
+
+:ForestsCurse a :Move ;
+    rdfs:label "Forest's Curse" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Adds Grass type to opponent." .
+
+:FoulPlay a :Move ;
+    rdfs:label "Foul Play" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 95 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Uses the opponent's Attack stat." .
+
+:FreezeShock a :Move ;
+    rdfs:label "Freeze Shock" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 140 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Charges on first turn, attacks on second. May paralyze opponent." .
+
+:FreezeDry a :Move ;
+    rdfs:label "Freeze-Dry" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May freeze opponent. Super-effective against Water types." .
+
+:FreezingGlare a :Move ;
+    rdfs:label "Freezing Glare" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May freeze opponent." .
+
+:FreezyFrost a :Move ;
+    rdfs:label "Freezy Frost" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Resets all stat changes." .
+
+:FrenzyPlant a :Move ;
+    rdfs:label "Frenzy Plant" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:FrostBreath a :Move ;
+    rdfs:label "Frost Breath" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Always results in a critical hit." .
+
+:Frustration a :Move ;
+    rdfs:label "Frustration" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Power decreases with higher Friendship." .
+
+:FuryAttack a :Move ;
+    rdfs:label "Fury Attack" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 15 ;
+    :accuracy 85 ;
+    :pp 20 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:FuryCutter a :Move ;
+    rdfs:label "Fury Cutter" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 95 ;
+    :pp 20 ;
+    :effectDescription "Power increases each turn." .
+
+:FurySwipes a :Move ;
+    rdfs:label "Fury Swipes" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 18 ;
+    :accuracy 80 ;
+    :pp 15 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:FusionBolt a :Move ;
+    rdfs:label "Fusion Bolt" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Power increases if Fusion Flare is used in the same turn." .
+
+:FusionFlare a :Move ;
+    rdfs:label "Fusion Flare" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Power increases if Fusion Bolt is used in the same turn." .
+
+:FutureSight a :Move ;
+    rdfs:label "Future Sight" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Damage occurs 2 turns later." .
+
+:GastroAcid a :Move ;
+    rdfs:label "Gastro Acid" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Cancels out the effect of the opponent's Ability." .
+
+:GearGrind a :Move ;
+    rdfs:label "Gear Grind" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Hits twice in one turn." .
+
+:GearUp a :Move ;
+    rdfs:label "Gear Up" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "The user engages its gears to raise the Attack and Sp. Atk stats of ally Pokémon with the Plus or Minus Ability." .
+
+:GenesisSupernova a :Move ;
+    rdfs:label "Genesis Supernova" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 185 ;
+    :pp 1 ;
+    :effectDescription "Mew-exclusive Z-Move." .
+
+:Geomancy a :Move ;
+    rdfs:label "Geomancy" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Charges on first turn, sharply raises user's Sp. Attack, Sp. Defense and Speed on the second." .
+
+:GigaDrain a :Move ;
+    rdfs:label "Giga Drain" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:GigaImpact a :Move ;
+    rdfs:label "Giga Impact" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 150 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:GigatonHammer a :Move ;
+    rdfs:label "Gigaton Hammer" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 160 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Cannot be used twice in a row." .
+
+:GlacialLance a :Move ;
+    rdfs:label "Glacial Lance" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pokémon." .
+
+:Glaciate a :Move ;
+    rdfs:label "Glaciate" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:GlaiveRush a :Move ;
+    rdfs:label "Glaive Rush" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Attacks from opposing Pokémon during the next turn cannot miss and will inflict double damage." .
+
+:Glare a :Move ;
+    rdfs:label "Glare" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Paralyzes opponent." .
+
+:GlitzyGlow a :Move ;
+    rdfs:label "Glitzy Glow" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Reduces damage from Special attacks." .
+
+:GrassKnot a :Move ;
+    rdfs:label "Grass Knot" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "The heavier the opponent, the stronger the attack." .
+
+:GrassPledge a :Move ;
+    rdfs:label "Grass Pledge" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Added effects appear if preceded by Water Pledge or succeeded by Fire Pledge." .
+
+:GrassWhistle a :Move ;
+    rdfs:label "Grass Whistle" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 55 ;
+    :pp 15 ;
+    :effectDescription "Puts opponent to sleep." .
+
+:GrassyGlide a :Move ;
+    rdfs:label "Grassy Glide" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 55 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "High priority during Grassy Terrain." .
+
+:GrassyTerrain a :Move ;
+    rdfs:label "Grassy Terrain" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Restores a little HP of all Pokémon for 5 turns." .
+
+:GravApple a :Move ;
+    rdfs:label "Grav Apple" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Lowers the opponent's Defense stat." .
+
+:Gravity a :Move ;
+    rdfs:label "Gravity" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Prevents moves like Fly and Bounce and the Ability Levitate for 5 turns." .
+
+:Growl a :Move ;
+    rdfs:label "Growl" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 40 ;
+    :effectDescription "Lowers opponent's Attack." .
+
+:Growth a :Move ;
+    rdfs:label "Growth" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Attack and Special Attack." .
+
+:Grudge a :Move ;
+    rdfs:label "Grudge" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "If the users faints after using this move, the PP for the opponent's last move is depleted." .
+
+:GuardSplit a :Move ;
+    rdfs:label "Guard Split" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Averages Defense and Special Defense with the target." .
+
+:GuardSwap a :Move ;
+    rdfs:label "Guard Swap" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User and opponent swap Defense and Special Defense." .
+
+:GuardianOfAlola a :Move ;
+    rdfs:label "Guardian of Alola" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :pp 1 ;
+    :effectDescription "Tapu-exclusive Z-move. Cuts opponent's HP by 75%." .
+
+:Guillotine a :Move ;
+    rdfs:label "Guillotine" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 30 ;
+    :pp 5 ;
+    :effectDescription "One-Hit-KO, if it hits." .
+
+:GunkShot a :Move ;
+    rdfs:label "Gunk Shot" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 80 ;
+    :pp 5 ;
+    :effectDescription "May poison opponent." .
+
+:Gust a :Move ;
+    rdfs:label "Gust" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 35 ;
+    :effectDescription "Hits Pokémon using Fly/Bounce/Sky Drop with double power." .
+
+:GyroBall a :Move ;
+    rdfs:label "Gyro Ball" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "The slower the user, the stronger the attack." .
+
+:Hail a :Move ;
+    rdfs:label "Hail" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Non-Ice types are damaged for 5 turns." .
+
+:HammerArm a :Move ;
+    rdfs:label "Hammer Arm" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Lowers user's Speed." .
+
+:HappyHour a :Move ;
+    rdfs:label "Happy Hour" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Doubles prize money from trainer battles." .
+
+:HardPress a :Move ;
+    rdfs:label "Hard Press" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 10 .
+
+:Harden a :Move ;
+    rdfs:label "Harden" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Raises user's Defense." .
+
+:Haze a :Move ;
+    rdfs:label "Haze" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Resets all stat changes." .
+
+:HeadCharge a :Move ;
+    rdfs:label "Head Charge" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User receives recoil damage." .
+
+:HeadSmash a :Move ;
+    rdfs:label "Head Smash" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 150 ;
+    :accuracy 80 ;
+    :pp 5 ;
+    :effectDescription "User receives recoil damage." .
+
+:Headbutt a :Move ;
+    rdfs:label "Headbutt" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:HeadlongRush a :Move ;
+    rdfs:label "Headlong Rush" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Defense." .
+
+:HealBell a :Move ;
+    rdfs:label "Heal Bell" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Heals the user's party's status conditions." .
+
+:HealBlock a :Move ;
+    rdfs:label "Heal Block" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Prevents the opponent from restoring HP for 5 turns." .
+
+:HealOrder a :Move ;
+    rdfs:label "Heal Order" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User recovers half its max HP." .
+
+:HealPulse a :Move ;
+    rdfs:label "Heal Pulse" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Restores half the target's max HP." .
+
+:HealingWish a :Move ;
+    rdfs:label "Healing Wish" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The user faints and the next Pokémon released is fully healed." .
+
+:HeartStamp a :Move ;
+    rdfs:label "Heart Stamp" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "May cause flinching." .
+
+:HeartSwap a :Move ;
+    rdfs:label "Heart Swap" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Stat changes are swapped with the opponent." .
+
+:HeatCrash a :Move ;
+    rdfs:label "Heat Crash" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The heavier the user, the stronger the attack." .
+
+:HeatWave a :Move ;
+    rdfs:label "Heat Wave" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 95 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May burn opponent." .
+
+:HeavySlam a :Move ;
+    rdfs:label "Heavy Slam" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The heavier the user, the stronger the attack." .
+
+:HelpingHand a :Move ;
+    rdfs:label "Helping Hand" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "In Double Battles, boosts the power of the partner's move." .
+
+:Hex a :Move ;
+    rdfs:label "Hex" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Inflicts more damage if the target has a status condition." .
+
+:HiddenPower a :Move ;
+    rdfs:label "Hidden Power" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Type and power depends on user's IVs." .
+
+:HighHorsepower a :Move ;
+    rdfs:label "High Horsepower" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 95 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "The user fiercely attacks the target using its entire body." .
+
+:HighJumpKick a :Move ;
+    rdfs:label "High Jump Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 130 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "If it misses, the user loses half their HP." .
+
+:HoldBack a :Move ;
+    rdfs:label "Hold Back" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 40 ;
+    :effectDescription "Always leaves opponent with at least 1 HP." .
+
+:HoldHands a :Move ;
+    rdfs:label "Hold Hands" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Makes the user and an ally very happy." .
+
+:HoneClaws a :Move ;
+    rdfs:label "Hone Claws" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Raises user's Attack and Accuracy." .
+
+:HornAttack a :Move ;
+    rdfs:label "Horn Attack" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 25 .
+
+:HornDrill a :Move ;
+    rdfs:label "Horn Drill" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 30 ;
+    :pp 5 ;
+    :effectDescription "One-Hit-KO, if it hits." .
+
+:HornLeech a :Move ;
+    rdfs:label "Horn Leech" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:Howl a :Move ;
+    rdfs:label "Howl" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Raises Attack of allies." .
+
+:Hurricane a :Move ;
+    rdfs:label "Hurricane" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 70 ;
+    :pp 10 ;
+    :effectDescription "May confuse opponent." .
+
+:HydroCannon a :Move ;
+    rdfs:label "Hydro Cannon" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:HydroPump a :Move ;
+    rdfs:label "Hydro Pump" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 80 ;
+    :pp 5 .
+
+:HydroSteam a :Move ;
+    rdfs:label "Hydro Steam" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Power increases in harsh sunlight." .
+
+:HyperBeam a :Move ;
+    rdfs:label "Hyper Beam" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:HyperDrill a :Move ;
+    rdfs:label "Hyper Drill" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Can strike through Protect/Detect." .
+
+:HyperFang a :Move ;
+    rdfs:label "Hyper Fang" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:HyperVoice a :Move ;
+    rdfs:label "Hyper Voice" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 .
+
+:HyperspaceFury a :Move ;
+    rdfs:label "Hyperspace Fury" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Defense. Can strike through Protect/Detect." .
+
+:HyperspaceHole a :Move ;
+    rdfs:label "Hyperspace Hole" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :pp 5 ;
+    :effectDescription "Can strike through Protect/Detect." .
+
+:Hypnosis a :Move ;
+    rdfs:label "Hypnosis" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :accuracy 60 ;
+    :pp 20 ;
+    :effectDescription "Puts opponent to sleep." .
+
+:IceBall a :Move ;
+    rdfs:label "Ice Ball" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 90 ;
+    :pp 20 ;
+    :effectDescription "Doubles in power each turn for 5 turns." .
+
+:IceBeam a :Move ;
+    rdfs:label "Ice Beam" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May freeze opponent." .
+
+:IceBurn a :Move ;
+    rdfs:label "Ice Burn" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 140 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Charges on first turn, attacks on second. May burn opponent." .
+
+:IceFang a :Move ;
+    rdfs:label "Ice Fang" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching and/or freeze opponent." .
+
+:IceHammer a :Move ;
+    rdfs:label "Ice Hammer" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "The user swings and hits with its strong, heavy fist. It lowers the user's Speed, however." .
+
+:IcePunch a :Move ;
+    rdfs:label "Ice Punch" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May freeze opponent." .
+
+:IceShard a :Move ;
+    rdfs:label "Ice Shard" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "User attacks first." .
+
+:IceSpinner a :Move ;
+    rdfs:label "Ice Spinner" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Removes effects of Terrain." .
+
+:IcicleCrash a :Move ;
+    rdfs:label "Icicle Crash" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May cause flinching." .
+
+:IcicleSpear a :Move ;
+    rdfs:label "Icicle Spear" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:IcyWind a :Move ;
+    rdfs:label "Icy Wind" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 55 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:Imprison a :Move ;
+    rdfs:label "Imprison" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Opponent is unable to use moves that the user also knows." .
+
+:Incinerate a :Move ;
+    rdfs:label "Incinerate" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Destroys the target's held berry." .
+
+:InfernalParade a :Move ;
+    rdfs:label "Infernal Parade" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Inflicts double damage if the target has a status condition." .
+
+:Inferno a :Move ;
+    rdfs:label "Inferno" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 50 ;
+    :pp 5 ;
+    :effectDescription "Burns opponent." .
+
+:Infestation a :Move ;
+    rdfs:label "Infestation" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Special ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:Ingrain a :Move ;
+    rdfs:label "Ingrain" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "User restores HP each turn. User cannot escape/switch." .
+
+:Instruct a :Move ;
+    rdfs:label "Instruct" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Allows an ally to use a move instead." .
+
+:IonDeluge a :Move ;
+    rdfs:label "Ion Deluge" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :pp 25 ;
+    :effectDescription "Changes Normal-type moves to Electric-type." .
+
+:IronDefense a :Move ;
+    rdfs:label "Iron Defense" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Sharply raises user's Defense." .
+
+:IronHead a :Move ;
+    rdfs:label "Iron Head" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:IronTail a :Move ;
+    rdfs:label "Iron Tail" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 75 ;
+    :pp 15 ;
+    :effectDescription "May lower opponent's Defense." .
+
+:IvyCudgel a :Move ;
+    rdfs:label "Ivy Cudgel" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :effectDescription "High critical hit ratio. Type changes based on form." .
+
+:JawLock a :Move ;
+    rdfs:label "Jaw Lock" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Prevents user and opponent from switching out." .
+
+:JetPunch a :Move ;
+    rdfs:label "Jet Punch" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Always goes first." .
+
+:Judgment a :Move ;
+    rdfs:label "Judgment" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Type depends on the Arceus Plate being held." .
+
+:JumpKick a :Move ;
+    rdfs:label "Jump Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "If it misses, the user loses half their HP." .
+
+:JungleHealing a :Move ;
+    rdfs:label "Jungle Healing" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Restores team's HP and cures status conditions." .
+
+:KarateChop a :Move ;
+    rdfs:label "Karate Chop" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "High critical hit ratio." .
+
+:Kinesis a :Move ;
+    rdfs:label "Kinesis" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :accuracy 80 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Accuracy." .
+
+:KingsShield a :Move ;
+    rdfs:label "King's Shield" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the user and lowers opponent's Attack on contact." .
+
+:KnockOff a :Move ;
+    rdfs:label "Knock Off" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Removes opponent's held item for the rest of the battle." .
+
+:KowtowCleave a :Move ;
+    rdfs:label "Kowtow Cleave" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :pp 10 ;
+    :effectDescription "Always hits." .
+
+:LandsWrath a :Move ;
+    rdfs:label "Land's Wrath" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 .
+
+:LaserFocus a :Move ;
+    rdfs:label "Laser Focus" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "User's next attack is guaranteed to result in a critical hit." .
+
+:LashOut a :Move ;
+    rdfs:label "Lash Out" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Double power if stats were lowered during the turn." .
+
+:LastResort a :Move ;
+    rdfs:label "Last Resort" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 140 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Can only be used after all other moves are used." .
+
+:LastRespects a :Move ;
+    rdfs:label "Last Respects" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Damages increases the more party Pokémon have been defeated." .
+
+:LavaPlume a :Move ;
+    rdfs:label "Lava Plume" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May burn opponent." .
+
+:LeafBlade a :Move ;
+    rdfs:label "Leaf Blade" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "High critical hit ratio." .
+
+:LeafStorm a :Move ;
+    rdfs:label "Leaf Storm" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 130 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Sharply lowers user's Special Attack." .
+
+:LeafTornado a :Move ;
+    rdfs:label "Leaf Tornado" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Accuracy." .
+
+:Leafage a :Move ;
+    rdfs:label "Leafage" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 40 ;
+    :effectDescription "Strikes opponent with leaves." .
+
+:LeechLife a :Move ;
+    rdfs:label "Leech Life" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:LeechSeed a :Move ;
+    rdfs:label "Leech Seed" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Drains HP from opponent each turn." .
+
+:Leer a :Move ;
+    rdfs:label "Leer" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Lowers opponent's Defense." .
+
+:LetsSnuggleForever a :Move ;
+    rdfs:label "Let's Snuggle Forever" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Physical ;
+    :power 190 ;
+    :pp 1 ;
+    :effectDescription "Mimikyu-exclusive Z-Move." .
+
+:Lick a :Move ;
+    rdfs:label "Lick" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "May paralyze opponent." .
+
+:LifeDew a :Move ;
+    rdfs:label "Life Dew" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User and teammates recover HP." .
+
+:LightOfRuin a :Move ;
+    rdfs:label "Light of Ruin" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 140 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User receives recoil damage." .
+
+:LightScreen a :Move ;
+    rdfs:label "Light Screen" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Halves damage from Special attacks for 5 turns." .
+
+:LightThatBurnsTheSky a :Move ;
+    rdfs:label "Light That Burns the Sky" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 200 ;
+    :pp 1 ;
+    :effectDescription "Ultra Necrozma-exclusive Z-Move. Ignores target's ability; uses highest Attack stat." .
+
+:Liquidation a :Move ;
+    rdfs:label "Liquidation" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Defense." .
+
+:LockOn a :Move ;
+    rdfs:label "Lock-On" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User's next attack is guaranteed to hit." .
+
+:LovelyKiss a :Move ;
+    rdfs:label "Lovely Kiss" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 75 ;
+    :pp 10 ;
+    :effectDescription "Puts opponent to sleep." .
+
+:LowKick a :Move ;
+    rdfs:label "Low Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "The heavier the opponent, the stronger the attack." .
+
+:LowSweep a :Move ;
+    rdfs:label "Low Sweep" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:LuckyChant a :Move ;
+    rdfs:label "Lucky Chant" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Opponent cannot land critical hits for 5 turns." .
+
+:LuminaCrash a :Move ;
+    rdfs:label "Lumina Crash" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Harshly lowers target’s Special Defense." .
+
+:LunarBlessing a :Move ;
+    rdfs:label "Lunar Blessing" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Heals user's status conditions and recovers HP." .
+
+:LunarDance a :Move ;
+    rdfs:label "Lunar Dance" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The user faints but the next Pokémon released is fully healed." .
+
+:Lunge a :Move ;
+    rdfs:label "Lunge" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "The user makes a lunge at the target, attacking with full force. This also lowers the target's Attack stat." .
+
+:LusterPurge a :Move ;
+    rdfs:label "Luster Purge" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 95 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:MachPunch a :Move ;
+    rdfs:label "Mach Punch" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "User attacks first." .
+
+:MagicCoat a :Move ;
+    rdfs:label "Magic Coat" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Reflects moves that cause status conditions back to the attacker." .
+
+:MagicPowder a :Move ;
+    rdfs:label "Magic Powder" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Changes target's type to Psychic." .
+
+:MagicRoom a :Move ;
+    rdfs:label "Magic Room" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Suppresses the effects of held items for five turns." .
+
+:MagicalLeaf a :Move ;
+    rdfs:label "Magical Leaf" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:MagicalTorque a :Move ;
+    rdfs:label "Magical Torque" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May confuse the opponent." .
+
+:MagmaStorm a :Move ;
+    rdfs:label "Magma Storm" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 75 ;
+    :pp 5 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:MagnetBomb a :Move ;
+    rdfs:label "Magnet Bomb" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:MagnetRise a :Move ;
+    rdfs:label "Magnet Rise" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User becomes immune to Ground-type moves for 5 turns." .
+
+:MagneticFlux a :Move ;
+    rdfs:label "Magnetic Flux" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises Defense and Sp. Defense of Plus/Minus Pokémon." .
+
+:Magnitude a :Move ;
+    rdfs:label "Magnitude" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Hits with random power." .
+
+:MakeItRain a :Move ;
+    rdfs:label "Make It Rain" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Special Attack. Money is earned after the battle." .
+
+:MaliciousMoonsault a :Move ;
+    rdfs:label "Malicious Moonsault" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 180 ;
+    :pp 1 ;
+    :effectDescription "Incineroar-exclusive Z-Move." .
+
+:MalignantChain a :Move ;
+    rdfs:label "Malignant Chain" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May poison the opponent." .
+
+:MatBlock a :Move ;
+    rdfs:label "Mat Block" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects teammates from damaging moves." .
+
+:MatchaGotcha a :Move ;
+    rdfs:label "Matcha Gotcha" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "Deals damage, restores HP, may burn opponent." .
+
+:MeFirst a :Move ;
+    rdfs:label "Me First" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "User copies the opponent's attack with 1.5× power." .
+
+:MeanLook a :Move ;
+    rdfs:label "Mean Look" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Opponent cannot flee or switch." .
+
+:Meditate a :Move ;
+    rdfs:label "Meditate" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Raises user's Attack." .
+
+:MegaDrain a :Move ;
+    rdfs:label "Mega Drain" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:MegaKick a :Move ;
+    rdfs:label "Mega Kick" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 75 ;
+    :pp 5 .
+
+:MegaPunch a :Move ;
+    rdfs:label "Mega Punch" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 85 ;
+    :pp 20 .
+
+:Megahorn a :Move ;
+    rdfs:label "Megahorn" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 85 ;
+    :pp 10 .
+
+:Memento a :Move ;
+    rdfs:label "Memento" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User faints, sharply lowers opponent's Attack and Special Attack." .
+
+:MenacingMoonrazeMaelstrom a :Move ;
+    rdfs:label "Menacing Moonraze Maelstrom" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 200 ;
+    :pp 1 ;
+    :effectDescription "Lunala-exclusive Z-Move." .
+
+:MetalBurst a :Move ;
+    rdfs:label "Metal Burst" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Deals damage equal to 1.5x opponent's attack." .
+
+:MetalClaw a :Move ;
+    rdfs:label "Metal Claw" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 95 ;
+    :pp 35 ;
+    :effectDescription "May raise user's Attack." .
+
+:MetalSound a :Move ;
+    rdfs:label "Metal Sound" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Status ;
+    :accuracy 85 ;
+    :pp 40 ;
+    :effectDescription "Sharply lowers opponent's Special Defense." .
+
+:MeteorAssault a :Move ;
+    rdfs:label "Meteor Assault" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 150 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:MeteorBeam a :Move ;
+    rdfs:label "Meteor Beam" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "User gathers space power and boosts its Sp. Atk stat, then attacks the target on the next turn." .
+
+:MeteorMash a :Move ;
+    rdfs:label "Meteor Mash" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May raise user's Attack." .
+
+:Metronome a :Move ;
+    rdfs:label "Metronome" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User performs almost any move in the game at random." .
+
+:MightyCleave a :Move ;
+    rdfs:label "Mighty Cleave" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 95 ;
+    :accuracy 100 ;
+    :pp 5 .
+
+:MilkDrink a :Move ;
+    rdfs:label "Milk Drink" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers half its max HP." .
+
+:Mimic a :Move ;
+    rdfs:label "Mimic" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Copies the opponent's last move." .
+
+:MindBlown a :Move ;
+    rdfs:label "Mind Blown" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "User receives recoil damage." .
+
+:MindReader a :Move ;
+    rdfs:label "Mind Reader" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User's next attack is guaranteed to hit." .
+
+:Minimize a :Move ;
+    rdfs:label "Minimize" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Sharply raises user's Evasiveness." .
+
+:MiracleEye a :Move ;
+    rdfs:label "Miracle Eye" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Resets opponent's Evasiveness, removes Dark's Psychic immunity." .
+
+:MirrorCoat a :Move ;
+    rdfs:label "Mirror Coat" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "When hit by a Special Attack, user strikes back with 2x power." .
+
+:MirrorMove a :Move ;
+    rdfs:label "Mirror Move" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "User performs the opponent's last move." .
+
+:MirrorShot a :Move ;
+    rdfs:label "Mirror Shot" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Accuracy." .
+
+:Mist a :Move ;
+    rdfs:label "Mist" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "User's stats cannot be changed for a period of time." .
+
+:MistBall a :Move ;
+    rdfs:label "Mist Ball" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 95 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May lower opponent's Special Attack." .
+
+:MistyExplosion a :Move ;
+    rdfs:label "Misty Explosion" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Power increases on Misty Terrain." .
+
+:MistyTerrain a :Move ;
+    rdfs:label "Misty Terrain" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the field from status conditions for 5 turns." .
+
+:Moonblast a :Move ;
+    rdfs:label "Moonblast" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 95 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May lower opponent's Special Attack." .
+
+:MoongeistBeam a :Move ;
+    rdfs:label "Moongeist Beam" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Ignores the target's ability." .
+
+:Moonlight a :Move ;
+    rdfs:label "Moonlight" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers HP. Amount varies with the weather." .
+
+:MorningSun a :Move ;
+    rdfs:label "Morning Sun" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers HP. Amount varies with the weather." .
+
+:MortalSpin a :Move ;
+    rdfs:label "Mortal Spin" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Removes entry hazards and trap move effects, and poisons opposing Pokémon." .
+
+:MountainGale a :Move ;
+    rdfs:label "Mountain Gale" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "Lowers user's Speed." .
+
+:MudBomb a :Move ;
+    rdfs:label "Mud Bomb" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Accuracy." .
+
+:MudShot a :Move ;
+    rdfs:label "Mud Shot" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Special ;
+    :power 55 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:MudSport a :Move ;
+    rdfs:label "Mud Sport" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Weakens the power of Electric-type moves." .
+
+:MudSlap a :Move ;
+    rdfs:label "Mud-Slap" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Special ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Accuracy." .
+
+:MuddyWater a :Move ;
+    rdfs:label "Muddy Water" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Accuracy." .
+
+:MultiAttack a :Move ;
+    rdfs:label "Multi-Attack" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Type matches Memory item held." .
+
+:MysticalFire a :Move ;
+    rdfs:label "Mystical Fire" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Special Attack." .
+
+:MysticalPower a :Move ;
+    rdfs:label "Mystical Power" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Raises user's Special Attack." .
+
+:NastyPlot a :Move ;
+    rdfs:label "Nasty Plot" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Sharply raises user's Special Attack." .
+
+:NaturalGift a :Move ;
+    rdfs:label "Natural Gift" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Power and type depend on the user's held berry." .
+
+:NaturePower a :Move ;
+    rdfs:label "Nature Power" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Uses a certain move based on the current terrain." .
+
+:NaturesMadness a :Move ;
+    rdfs:label "Nature's Madness" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Halves the foe's HP." .
+
+:NeedleArm a :Move ;
+    rdfs:label "Needle Arm" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:NightDaze a :Move ;
+    rdfs:label "Night Daze" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Special ;
+    :power 85 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Accuracy." .
+
+:NightShade a :Move ;
+    rdfs:label "Night Shade" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Inflicts damage equal to user's level." .
+
+:NightSlash a :Move ;
+    rdfs:label "Night Slash" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "High critical hit ratio." .
+
+:Nightmare a :Move ;
+    rdfs:label "Nightmare" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "The sleeping opponent loses 25% of its max HP each turn." .
+
+:NoRetreat a :Move ;
+    rdfs:label "No Retreat" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Raises all stats but user cannot switch out." .
+
+:NobleRoar a :Move ;
+    rdfs:label "Noble Roar" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Lowers opponent's Attack and Special Attack." .
+
+:NoxiousTorque a :Move ;
+    rdfs:label "Noxious Torque" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May poison the opponent." .
+
+:Nuzzle a :Move ;
+    rdfs:label "Nuzzle" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Paralyzes opponent." .
+
+:OblivionWing a :Move ;
+    rdfs:label "Oblivion Wing" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User recovers most of the HP inflicted on opponent." .
+
+:Obstruct a :Move ;
+    rdfs:label "Obstruct" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Protects the user and sharply lowers Defence on contact." .
+
+:OceanicOperetta a :Move ;
+    rdfs:label "Oceanic Operetta" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 195 ;
+    :pp 1 ;
+    :effectDescription "Primarina-exclusive Z-Move." .
+
+:Octazooka a :Move ;
+    rdfs:label "Octazooka" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Accuracy." .
+
+:Octolock a :Move ;
+    rdfs:label "Octolock" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Defense and Special Defense every turn, and they cannot flee or switch out." .
+
+:OdorSleuth a :Move ;
+    rdfs:label "Odor Sleuth" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Resets opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts." .
+
+:OminousWind a :Move ;
+    rdfs:label "Ominous Wind" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May raise all user's stats at once." .
+
+:OrderUp a :Move ;
+    rdfs:label "Order Up" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Boosts Attack/Defense/Speed depending on ally Tatsugiri." .
+
+:OriginPulse a :Move ;
+    rdfs:label "Origin Pulse" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "Hits all adjacent opponents." .
+
+:Outrage a :Move ;
+    rdfs:label "Outrage" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User attacks for 2-3 turns but then becomes confused." .
+
+:Overdrive a :Move ;
+    rdfs:label "Overdrive" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Hits all adjacent opponents." .
+
+:Overheat a :Move ;
+    rdfs:label "Overheat" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 130 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Sharply lowers user's Special Attack." .
+
+:PainSplit a :Move ;
+    rdfs:label "Pain Split" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "The user's and opponent's HP becomes the average of both." .
+
+:ParabolicCharge a :Move ;
+    rdfs:label "Parabolic Charge" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "User recovers half the HP inflicted on opponent." .
+
+:PartingShot a :Move ;
+    rdfs:label "Parting Shot" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Attack and Special Attack then switches out." .
+
+:PayDay a :Move ;
+    rdfs:label "Pay Day" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Money is earned after the battle." .
+
+:Payback a :Move ;
+    rdfs:label "Payback" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power doubles if the user was attacked first." .
+
+:Peck a :Move ;
+    rdfs:label "Peck" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 35 ;
+    :accuracy 100 ;
+    :pp 35 .
+
+:PerishSong a :Move ;
+    rdfs:label "Perish Song" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Any Pokémon in play when this attack is used faints in 3 turns." .
+
+:PetalBlizzard a :Move ;
+    rdfs:label "Petal Blizzard" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Hits all adjacent Pokémon." .
+
+:PetalDance a :Move ;
+    rdfs:label "Petal Dance" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User attacks for 2-3 turns but then becomes confused." .
+
+:PhantomForce a :Move ;
+    rdfs:label "Phantom Force" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Disappears on first turn, attacks on second. Can strike through Protect/Detect." .
+
+:PhotonGeyser a :Move ;
+    rdfs:label "Photon Geyser" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Uses Attack or Special Attack stat, whichever is higher." .
+
+:PikaPapow a :Move ;
+    rdfs:label "Pika Papow" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :pp 20 ;
+    :effectDescription "Power increases when player's bond is stronger." .
+
+:PinMissile a :Move ;
+    rdfs:label "Pin Missile" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 95 ;
+    :pp 20 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:PlasmaFists a :Move ;
+    rdfs:label "Plasma Fists" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Changes Normal-type moves to Electric-type moves." .
+
+:PlayNice a :Move ;
+    rdfs:label "Play Nice" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Attack. Always hits." .
+
+:PlayRough a :Move ;
+    rdfs:label "Play Rough" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Attack." .
+
+:Pluck a :Move ;
+    rdfs:label "Pluck" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "If the opponent is holding a berry, its effect is stolen by user." .
+
+:PoisonFang a :Move ;
+    rdfs:label "Poison Fang" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May badly poison opponent." .
+
+:PoisonGas a :Move ;
+    rdfs:label "Poison Gas" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :accuracy 90 ;
+    :pp 40 ;
+    :effectDescription "Poisons opponent." .
+
+:PoisonJab a :Move ;
+    rdfs:label "Poison Jab" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May poison the opponent." .
+
+:PoisonPowder a :Move ;
+    rdfs:label "Poison Powder" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :accuracy 75 ;
+    :pp 35 ;
+    :effectDescription "Poisons opponent." .
+
+:PoisonSting a :Move ;
+    rdfs:label "Poison Sting" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 15 ;
+    :accuracy 100 ;
+    :pp 35 ;
+    :effectDescription "May poison the opponent." .
+
+:PoisonTail a :Move ;
+    rdfs:label "Poison Tail" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "High critical hit ratio. May poison opponent." .
+
+:PollenPuff a :Move ;
+    rdfs:label "Pollen Puff" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Deals damage to opponent or restores HP of teammate." .
+
+:Poltergeist a :Move ;
+    rdfs:label "Poltergeist" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 110 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Fails if the target doesn’t have an item." .
+
+:PopulationBomb a :Move ;
+    rdfs:label "Population Bomb" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 20 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Hits 1-10 times in a row." .
+
+:Pounce a :Move ;
+    rdfs:label "Pounce" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:Pound a :Move ;
+    rdfs:label "Pound" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 35 .
+
+:Powder a :Move ;
+    rdfs:label "Powder" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Damages Pokémon using Fire type moves." .
+
+:PowderSnow a :Move ;
+    rdfs:label "Powder Snow" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "May freeze opponent." .
+
+:PowerGem a :Move ;
+    rdfs:label "Power Gem" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 20 .
+
+:PowerShift a :Move ;
+    rdfs:label "Power Shift" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Switches Attack and Defense stats." .
+
+:PowerSplit a :Move ;
+    rdfs:label "Power Split" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Averages Attack and Special Attack with the target." .
+
+:PowerSwap a :Move ;
+    rdfs:label "Power Swap" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User and opponent swap Attack and Special Attack." .
+
+:PowerTrick a :Move ;
+    rdfs:label "Power Trick" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User's own Attack and Defense switch." .
+
+:PowerTrip a :Move ;
+    rdfs:label "Power Trip" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The user boasts its strength and attacks the target. The more the user's stats are raised, the greater the move's power." .
+
+:PowerWhip a :Move ;
+    rdfs:label "Power Whip" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 85 ;
+    :pp 10 .
+
+:PowerUpPunch a :Move ;
+    rdfs:label "Power-Up Punch" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Raises Attack." .
+
+:PrecipiceBlades a :Move ;
+    rdfs:label "Precipice Blades" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "Hits all adjacent opponents." .
+
+:Present a :Move ;
+    rdfs:label "Present" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "Either deals damage or heals." .
+
+:PrismaticLaser a :Move ;
+    rdfs:label "Prismatic Laser" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 160 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The user shoots powerful lasers using the power of a prism. The user can't move on the next turn." .
+
+:Protect a :Move ;
+    rdfs:label "Protect" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the user, but may fail if used consecutively." .
+
+:Psybeam a :Move ;
+    rdfs:label "Psybeam" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May confuse opponent." .
+
+:Psyblade a :Move ;
+    rdfs:label "Psyblade" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Power increases on Electric Terrain." .
+
+:PsychUp a :Move ;
+    rdfs:label "Psych Up" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Copies the opponent's stat changes." .
+
+:Psychic a :Move ;
+    rdfs:label "Psychic" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:PsychicFangs a :Move ;
+    rdfs:label "Psychic Fangs" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect." .
+
+:PsychicNoise a :Move ;
+    rdfs:label "Psychic Noise" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Deals damage and prevents target from healing." .
+
+:PsychicTerrain a :Move ;
+    rdfs:label "Psychic Terrain" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Prevents priority moves from being used for 5 turns." .
+
+:PsychoBoost a :Move ;
+    rdfs:label "Psycho Boost" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 140 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Sharply lowers user's Special Attack." .
+
+:PsychoCut a :Move ;
+    rdfs:label "Psycho Cut" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "High critical hit ratio." .
+
+:PsychoShift a :Move ;
+    rdfs:label "Psycho Shift" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Transfers user's status condition to the opponent." .
+
+:PsyshieldBash a :Move ;
+    rdfs:label "Psyshield Bash" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Raises user's Defense and Special Defense." .
+
+:Psyshock a :Move ;
+    rdfs:label "Psyshock" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Inflicts damage based on the target's Defense, not Special Defense." .
+
+:Psystrike a :Move ;
+    rdfs:label "Psystrike" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Inflicts damage based on the target's Defense, not Special Defense." .
+
+:Psywave a :Move ;
+    rdfs:label "Psywave" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Inflicts damage 50-150% of user's level." .
+
+:PulverizingPancake a :Move ;
+    rdfs:label "Pulverizing Pancake" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 210 ;
+    :pp 1 ;
+    :effectDescription "Snorlax-exclusive Normal type Z-Move." .
+
+:Punishment a :Move ;
+    rdfs:label "Punishment" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Power increases when opponent's stats have been raised." .
+
+:Purify a :Move ;
+    rdfs:label "Purify" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "The user heals the target's status condition. If the move succeeds, it also restores the user's own HP." .
+
+:Pursuit a :Move ;
+    rdfs:label "Pursuit" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Double power if the opponent is switching out." .
+
+:PyroBall a :Move ;
+    rdfs:label "Pyro Ball" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "May burn opponent." .
+
+:Quash a :Move ;
+    rdfs:label "Quash" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Makes the target act last this turn." .
+
+:QuickAttack a :Move ;
+    rdfs:label "Quick Attack" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "User attacks first." .
+
+:QuickGuard a :Move ;
+    rdfs:label "Quick Guard" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Protects the user's team from high-priority moves." .
+
+:QuiverDance a :Move ;
+    rdfs:label "Quiver Dance" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Raises user's Special Attack, Special Defense and Speed." .
+
+:Rage a :Move ;
+    rdfs:label "Rage" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Raises user's Attack when hit." .
+
+:RageFist a :Move ;
+    rdfs:label "Rage Fist" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The more times the user has been hit by attacks, the greater the move's power." .
+
+:RagePowder a :Move ;
+    rdfs:label "Rage Powder" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Forces attacks to hit user, not team-mates." .
+
+:RagingBull a :Move ;
+    rdfs:label "Raging Bull" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Type depends on the user’s form. Breaks through Reflect and Light Screen barriers." .
+
+:RagingFury a :Move ;
+    rdfs:label "Raging Fury" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User attacks for 2-3 turns but then becomes confused." .
+
+:RainDance a :Move ;
+    rdfs:label "Rain Dance" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Makes it rain for 5 turns." .
+
+:RapidSpin a :Move ;
+    rdfs:label "Rapid Spin" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 40 ;
+    :effectDescription "Raises user's Speed and removes entry hazards and trap move effects." .
+
+:RazorLeaf a :Move ;
+    rdfs:label "Razor Leaf" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 55 ;
+    :accuracy 95 ;
+    :pp 25 ;
+    :effectDescription "High critical hit ratio." .
+
+:RazorShell a :Move ;
+    rdfs:label "Razor Shell" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Defense." .
+
+:RazorWind a :Move ;
+    rdfs:label "Razor Wind" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Charges on first turn, attacks on second. High critical hit ratio." .
+
+:Recover a :Move ;
+    rdfs:label "Recover" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers half its max HP." .
+
+:Recycle a :Move ;
+    rdfs:label "Recycle" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User's used hold item is restored." .
+
+:Reflect a :Move ;
+    rdfs:label "Reflect" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Halves damage from Physical attacks for 5 turns." .
+
+:ReflectType a :Move ;
+    rdfs:label "Reflect Type" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "User becomes the target's type." .
+
+:Refresh a :Move ;
+    rdfs:label "Refresh" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Cures paralysis, poison, and burns." .
+
+:RelicSong a :Move ;
+    rdfs:label "Relic Song" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May put the target to sleep." .
+
+:Rest a :Move ;
+    rdfs:label "Rest" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User sleeps for 2 turns, but user is fully healed." .
+
+:Retaliate a :Move ;
+    rdfs:label "Retaliate" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Inflicts double damage if a teammate fainted on the last turn." .
+
+:Return a :Move ;
+    rdfs:label "Return" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Power increases with higher Friendship." .
+
+:RevelationDance a :Move ;
+    rdfs:label "Revelation Dance" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Type changes based on Oricorio's form." .
+
+:Revenge a :Move ;
+    rdfs:label "Revenge" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power increases if user was hit first." .
+
+:Reversal a :Move ;
+    rdfs:label "Reversal" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "The lower the user's HP, the higher the power." .
+
+:RevivalBlessing a :Move ;
+    rdfs:label "Revival Blessing" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 1 ;
+    :effectDescription "Revives a fainted party Pokémon to half HP." .
+
+:RisingVoltage a :Move ;
+    rdfs:label "Rising Voltage" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Power doubles on Electric Terrain." .
+
+:Roar a :Move ;
+    rdfs:label "Roar" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "In battles, the opponent switches. In the wild, the Pokémon runs." .
+
+:RoarOfTime a :Move ;
+    rdfs:label "Roar of Time" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:RockBlast a :Move ;
+    rdfs:label "Rock Blast" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:RockClimb a :Move ;
+    rdfs:label "Rock Climb" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 85 ;
+    :pp 20 ;
+    :effectDescription "May confuse opponent." .
+
+:RockPolish a :Move ;
+    rdfs:label "Rock Polish" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Sharply raises user's Speed." .
+
+:RockSlide a :Move ;
+    rdfs:label "Rock Slide" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "May cause flinching." .
+
+:RockSmash a :Move ;
+    rdfs:label "Rock Smash" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May lower opponent's Defense." .
+
+:RockThrow a :Move ;
+    rdfs:label "Rock Throw" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 90 ;
+    :pp 15 .
+
+:RockTomb a :Move ;
+    rdfs:label "Rock Tomb" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Speed." .
+
+:RockWrecker a :Move ;
+    rdfs:label "Rock Wrecker" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 150 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "User must recharge next turn." .
+
+:RolePlay a :Move ;
+    rdfs:label "Role Play" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User copies the opponent's Ability." .
+
+:RollingKick a :Move ;
+    rdfs:label "Rolling Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:Rollout a :Move ;
+    rdfs:label "Rollout" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 90 ;
+    :pp 20 ;
+    :effectDescription "Doubles in power each turn for 5 turns." .
+
+:Roost a :Move ;
+    rdfs:label "Roost" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers half of its max HP and loses the Flying type temporarily." .
+
+:Rototiller a :Move ;
+    rdfs:label "Rototiller" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Raises Attack and Special Attack of Grass-types." .
+
+:Round a :Move ;
+    rdfs:label "Round" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Power increases if teammates use it in the same turn." .
+
+:Ruination a :Move ;
+    rdfs:label "Ruination" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Special ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Halves the opponent's HP." .
+
+:SacredFire a :Move ;
+    rdfs:label "Sacred Fire" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "May burn opponent." .
+
+:SacredSword a :Move ;
+    rdfs:label "Sacred Sword" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Ignores opponent's stat changes." .
+
+:Safeguard a :Move ;
+    rdfs:label "Safeguard" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 25 ;
+    :effectDescription "The user's party is protected from status conditions." .
+
+:SaltCure a :Move ;
+    rdfs:label "Salt Cure" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Deals damage each turn; Steel and Water types are more affected." .
+
+:SandAttack a :Move ;
+    rdfs:label "Sand Attack" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Accuracy." .
+
+:SandTomb a :Move ;
+    rdfs:label "Sand Tomb" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 35 ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:SandsearStorm a :Move ;
+    rdfs:label "Sandsear Storm" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 80 ;
+    :pp 10 ;
+    :effectDescription "May burn target." .
+
+:Sandstorm a :Move ;
+    rdfs:label "Sandstorm" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Creates a sandstorm for 5 turns." .
+
+:SappySeed a :Move ;
+    rdfs:label "Sappy Seed" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Drains HP from opponent each turn." .
+
+:Scald a :Move ;
+    rdfs:label "Scald" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May burn opponent." .
+
+:ScaleShot a :Move ;
+    rdfs:label "Scale Shot" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 90 ;
+    :pp 20 ;
+    :effectDescription "Hits 2-5 times in one turn. Boosts user's Speed but lowers its Defense." .
+
+:ScaryFace a :Move ;
+    rdfs:label "Scary Face" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Sharply lowers opponent's Speed." .
+
+:ScorchingSands a :Move ;
+    rdfs:label "Scorching Sands" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May burn the target." .
+
+:Scratch a :Move ;
+    rdfs:label "Scratch" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 35 .
+
+:Screech a :Move ;
+    rdfs:label "Screech" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 85 ;
+    :pp 40 ;
+    :effectDescription "Sharply lowers opponent's Defense." .
+
+:SearingShot a :Move ;
+    rdfs:label "Searing Shot" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May burn opponent." .
+
+:SearingSunrazeSmash a :Move ;
+    rdfs:label "Searing Sunraze Smash" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 200 ;
+    :pp 1 ;
+    :effectDescription "Solgaleo-exclusive Z-Move." .
+
+:SecretPower a :Move ;
+    rdfs:label "Secret Power" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Effects of the attack vary with the location." .
+
+:SecretSword a :Move ;
+    rdfs:label "Secret Sword" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Special ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Inflicts damage based on the target's Defense, not Special Defense." .
+
+:SeedBomb a :Move ;
+    rdfs:label "Seed Bomb" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 .
+
+:SeedFlare a :Move ;
+    rdfs:label "Seed Flare" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 85 ;
+    :pp 5 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:SeismicToss a :Move ;
+    rdfs:label "Seismic Toss" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Inflicts damage equal to user's level." .
+
+:SelfDestruct a :Move ;
+    rdfs:label "Self-Destruct" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 200 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "User faints." .
+
+:ShadowBall a :Move ;
+    rdfs:label "Shadow Ball" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May lower opponent's Special Defense." .
+
+:ShadowBone a :Move ;
+    rdfs:label "Shadow Bone" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May lower opponent's Defense." .
+
+:ShadowClaw a :Move ;
+    rdfs:label "Shadow Claw" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "High critical hit ratio." .
+
+:ShadowForce a :Move ;
+    rdfs:label "Shadow Force" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Disappears on first turn, attacks on second. Can strike through Protect/Detect." .
+
+:ShadowPunch a :Move ;
+    rdfs:label "Shadow Punch" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:ShadowSneak a :Move ;
+    rdfs:label "Shadow Sneak" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "User attacks first." .
+
+:Sharpen a :Move ;
+    rdfs:label "Sharpen" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Raises user's Attack." .
+
+:ShedTail a :Move ;
+    rdfs:label "Shed Tail" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Creates a substitute, then swaps places with a party Pokémon in waiting." .
+
+:SheerCold a :Move ;
+    rdfs:label "Sheer Cold" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Special ;
+    :accuracy 30 ;
+    :pp 5 ;
+    :effectDescription "One-Hit-KO, if it hits." .
+
+:ShellSideArm a :Move ;
+    rdfs:label "Shell Side Arm" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May poison opponent. Inflicts either Special or Physical damage, whichever is better." .
+
+:ShellSmash a :Move ;
+    rdfs:label "Shell Smash" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Sharply raises user's Attack, Special Attack and Speed but lowers Defense and Special Defense." .
+
+:ShellTrap a :Move ;
+    rdfs:label "Shell Trap" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Deals more damage to opponent if hit by a Physical move." .
+
+:Shelter a :Move ;
+    rdfs:label "Shelter" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Raises user's Defense." .
+
+:ShiftGear a :Move ;
+    rdfs:label "Shift Gear" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Raises user's Attack and sharply raises Speed." .
+
+:ShockWave a :Move ;
+    rdfs:label "Shock Wave" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:ShoreUp a :Move ;
+    rdfs:label "Shore Up" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "The user regains up to half of its max HP. It restores more HP in a sandstorm." .
+
+:SignalBeam a :Move ;
+    rdfs:label "Signal Beam" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Special ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May confuse opponent." .
+
+:SilkTrap a :Move ;
+    rdfs:label "Silk Trap" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the user and lowers opponent's Speed on contact." .
+
+:SilverWind a :Move ;
+    rdfs:label "Silver Wind" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "May raise all stats of user at once." .
+
+:SimpleBeam a :Move ;
+    rdfs:label "Simple Beam" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Changes target's ability to Simple." .
+
+:Sing a :Move ;
+    rdfs:label "Sing" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 55 ;
+    :pp 15 ;
+    :effectDescription "Puts opponent to sleep." .
+
+:SinisterArrowRaid a :Move ;
+    rdfs:label "Sinister Arrow Raid" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 180 ;
+    :pp 1 ;
+    :effectDescription "Decidueye-exclusive Z-Move." .
+
+:SizzlySlide a :Move ;
+    rdfs:label "Sizzly Slide" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Burns the opponent." .
+
+:Sketch a :Move ;
+    rdfs:label "Sketch" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 1 ;
+    :effectDescription "Permanently copies the opponent's last move." .
+
+:SkillSwap a :Move ;
+    rdfs:label "Skill Swap" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The user swaps Abilities with the opponent." .
+
+:SkitterSmack a :Move ;
+    rdfs:label "Skitter Smack" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Sp. Attack." .
+
+:SkullBash a :Move ;
+    rdfs:label "Skull Bash" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 130 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Raises Defense on first turn, attacks on second." .
+
+:SkyAttack a :Move ;
+    rdfs:label "Sky Attack" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 140 ;
+    :accuracy 90 ;
+    :pp 5 ;
+    :effectDescription "Charges on first turn, attacks on second. May cause flinching. High critical hit ratio." .
+
+:SkyDrop a :Move ;
+    rdfs:label "Sky Drop" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Takes opponent into the air on first turn, drops them on second turn." .
+
+:SkyUppercut a :Move ;
+    rdfs:label "Sky Uppercut" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 85 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "Hits the opponent, even during Fly." .
+
+:SlackOff a :Move ;
+    rdfs:label "Slack Off" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers half its max HP." .
+
+:Slam a :Move ;
+    rdfs:label "Slam" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 75 ;
+    :pp 20 .
+
+:Slash a :Move ;
+    rdfs:label "Slash" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "High critical hit ratio." .
+
+:SleepPowder a :Move ;
+    rdfs:label "Sleep Powder" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 75 ;
+    :pp 15 ;
+    :effectDescription "Puts opponent to sleep." .
+
+:SleepTalk a :Move ;
+    rdfs:label "Sleep Talk" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User performs one of its own moves while sleeping." .
+
+:Sludge a :Move ;
+    rdfs:label "Sludge" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May poison opponent." .
+
+:SludgeBomb a :Move ;
+    rdfs:label "Sludge Bomb" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May poison opponent." .
+
+:SludgeWave a :Move ;
+    rdfs:label "Sludge Wave" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 95 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May poison opponent." .
+
+:SmackDown a :Move ;
+    rdfs:label "Smack Down" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Makes Flying-type Pokémon vulnerable to Ground moves." .
+
+:SmartStrike a :Move ;
+    rdfs:label "Smart Strike" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :pp 10 ;
+    :effectDescription "The user stabs the target with a sharp horn. This attack never misses." .
+
+:SmellingSalts a :Move ;
+    rdfs:label "Smelling Salts" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power doubles if opponent is paralyzed, but cures it." .
+
+:Smog a :Move ;
+    rdfs:label "Smog" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 30 ;
+    :accuracy 70 ;
+    :pp 20 ;
+    :effectDescription "May poison opponent." .
+
+:Smokescreen a :Move ;
+    rdfs:label "Smokescreen" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Accuracy." .
+
+:SnapTrap a :Move ;
+    rdfs:label "Snap Trap" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 35 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:Snarl a :Move ;
+    rdfs:label "Snarl" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Special ;
+    :power 55 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Special Attack." .
+
+:Snatch a :Move ;
+    rdfs:label "Snatch" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Steals the effects of the opponent's next move." .
+
+:SnipeShot a :Move ;
+    rdfs:label "Snipe Shot" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Ignores moves and abilities that draw in moves. High critical hit ratio." .
+
+:Snore a :Move ;
+    rdfs:label "Snore" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Can only be used if asleep. May cause flinching." .
+
+:Snowscape a :Move ;
+    rdfs:label "Snowscape" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Raises Defense of Ice types for 5 turns." .
+
+:Soak a :Move ;
+    rdfs:label "Soak" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Changes the target's type to water." .
+
+:SoftBoiled a :Move ;
+    rdfs:label "Soft-Boiled" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers half its max HP." .
+
+:SolarBeam a :Move ;
+    rdfs:label "Solar Beam" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Charges on first turn, attacks on second." .
+
+:SolarBlade a :Move ;
+    rdfs:label "Solar Blade" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 125 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Charges on first turn, attacks on second." .
+
+:SonicBoom a :Move ;
+    rdfs:label "Sonic Boom" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :accuracy 90 ;
+    :pp 20 ;
+    :effectDescription "Always inflicts 20 HP." .
+
+:SoulStealing7StarStrike a :Move ;
+    rdfs:label "Soul-Stealing 7-Star Strike" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 195 ;
+    :pp 1 ;
+    :effectDescription "Marshadow-exclusive Z-Move." .
+
+:SpacialRend a :Move ;
+    rdfs:label "Spacial Rend" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "High critical hit ratio." .
+
+:Spark a :Move ;
+    rdfs:label "Spark" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May paralyze opponent." .
+
+:SparklingAria a :Move ;
+    rdfs:label "Sparkling Aria" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Heals the burns of its target." .
+
+:SparklySwirl a :Move ;
+    rdfs:label "Sparkly Swirl" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Cures all status problems in the party Pokémon." .
+
+:SpectralThief a :Move ;
+    rdfs:label "Spectral Thief" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The user hides in the target's shadow, steals the target's stat boosts, and then attacks." .
+
+:SpeedSwap a :Move ;
+    rdfs:label "Speed Swap" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The user exchanges Speed stats with the target." .
+
+:SpicyExtract a :Move ;
+    rdfs:label "Spicy Extract" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Harshly lowers the opponent's Defense and sharply raises their Attack." .
+
+:SpiderWeb a :Move ;
+    rdfs:label "Spider Web" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Opponent cannot escape/switch." .
+
+:SpikeCannon a :Move ;
+    rdfs:label "Spike Cannon" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:Spikes a :Move ;
+    rdfs:label "Spikes" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Damages opponents switching into battle." .
+
+:SpikyShield a :Move ;
+    rdfs:label "Spiky Shield" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the user and inflicts damage on contact." .
+
+:SpinOut a :Move ;
+    rdfs:label "Spin Out" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Harshly lowers user’s Speed." .
+
+:SpiritBreak a :Move ;
+    rdfs:label "Spirit Break" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Special Attack." .
+
+:SpiritShackle a :Move ;
+    rdfs:label "Spirit Shackle" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Prevents the opponent from switching out." .
+
+:SpitUp a :Move ;
+    rdfs:label "Spit Up" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power depends on how many times the user performed Stockpile." .
+
+:Spite a :Move ;
+    rdfs:label "Spite" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The opponent's last move loses 2-5 PP." .
+
+:Splash a :Move ;
+    rdfs:label "Splash" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Doesn't do ANYTHING." .
+
+:SplinteredStormshards a :Move ;
+    rdfs:label "Splintered Stormshards" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 190 ;
+    :pp 1 ;
+    :effectDescription "Lycanroc-exclusive Z-Move." .
+
+:SplishySplash a :Move ;
+    rdfs:label "Splishy Splash" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May paralyze opponent." .
+
+:Spore a :Move ;
+    rdfs:label "Spore" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Puts opponent to sleep." .
+
+:Spotlight a :Move ;
+    rdfs:label "Spotlight" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "The user shines a spotlight on the target so that only the target will be attacked during the turn." .
+
+:SpringtideStorm a :Move ;
+    rdfs:label "Springtide Storm" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 80 ;
+    :pp 5 ;
+    :effectDescription "Boosts user's stats in Incarnate Forme, or lowers opponent's stats in Therian Forme." .
+
+:StealthRock a :Move ;
+    rdfs:label "Stealth Rock" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Damages opponents switching into battle." .
+
+:SteamEruption a :Move ;
+    rdfs:label "Steam Eruption" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "May burn opponent." .
+
+:Steamroller a :Move ;
+    rdfs:label "Steamroller" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May cause flinching." .
+
+:SteelBeam a :Move ;
+    rdfs:label "Steel Beam" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Special ;
+    :power 140 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "User loses 50% of its HP." .
+
+:SteelRoller a :Move ;
+    rdfs:label "Steel Roller" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 130 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Fails if no Terrain in effect." .
+
+:SteelWing a :Move ;
+    rdfs:label "Steel Wing" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 90 ;
+    :pp 25 ;
+    :effectDescription "May raise user's Defense." .
+
+:StickyWeb a :Move ;
+    rdfs:label "Sticky Web" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Speed when switching into battle." .
+
+:Stockpile a :Move ;
+    rdfs:label "Stockpile" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Stores energy for use with Spit Up and Swallow." .
+
+:StokedSparksurfer a :Move ;
+    rdfs:label "Stoked Sparksurfer" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 175 ;
+    :pp 1 ;
+    :effectDescription "Alolan Raichu-exclusive Electric type Z-Move." .
+
+:Stomp a :Move ;
+    rdfs:label "Stomp" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May cause flinching." .
+
+:StompingTantrum a :Move ;
+    rdfs:label "Stomping Tantrum" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Driven by frustration, the user attacks the target. If the user's previous move has failed, the power of this move doubles." .
+
+:StoneAxe a :Move ;
+    rdfs:label "Stone Axe" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "Sets up Stealth Rock." .
+
+:StoneEdge a :Move ;
+    rdfs:label "Stone Edge" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 80 ;
+    :pp 5 ;
+    :effectDescription "High critical hit ratio." .
+
+:StoredPower a :Move ;
+    rdfs:label "Stored Power" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 20 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power increases when user's stats have been raised." .
+
+:StormThrow a :Move ;
+    rdfs:label "Storm Throw" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Always results in a critical hit." .
+
+:StrangeSteam a :Move ;
+    rdfs:label "Strange Steam" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "May confuse opponent." .
+
+:Strength a :Move ;
+    rdfs:label "Strength" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 .
+
+:StrengthSap a :Move ;
+    rdfs:label "Strength Sap" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "The user restores its HP by the same amount as the target's Attack stat. It also lowers the target's Attack stat." .
+
+:StringShot a :Move ;
+    rdfs:label "String Shot" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :accuracy 95 ;
+    :pp 40 ;
+    :effectDescription "Sharply lowers opponent's Speed." .
+
+:Struggle a :Move ;
+    rdfs:label "Struggle" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :effectDescription "Only usable when all PP are gone. Hurts the user." .
+
+:StruggleBug a :Move ;
+    rdfs:label "Struggle Bug" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Special Attack." .
+
+:StuffCheeks a :Move ;
+    rdfs:label "Stuff Cheeks" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The user eats its held Berry, then sharply raises its Defense stat." .
+
+:StunSpore a :Move ;
+    rdfs:label "Stun Spore" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 75 ;
+    :pp 30 ;
+    :effectDescription "Paralyzes opponent." .
+
+:Submission a :Move ;
+    rdfs:label "Submission" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 80 ;
+    :pp 20 ;
+    :effectDescription "User receives recoil damage." .
+
+:Substitute a :Move ;
+    rdfs:label "Substitute" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Uses HP to creates a decoy that takes hits." .
+
+:SuckerPunch a :Move ;
+    rdfs:label "Sucker Punch" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "User attacks first, but only works if opponent is readying an attack." .
+
+:SunnyDay a :Move ;
+    rdfs:label "Sunny Day" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Makes it sunny for 5 turns." .
+
+:SunsteelStrike a :Move ;
+    rdfs:label "Sunsteel Strike" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Ignores the target's ability." .
+
+:SuperFang a :Move ;
+    rdfs:label "Super Fang" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Always takes off half of the opponent's HP." .
+
+:SupercellSlam a :Move ;
+    rdfs:label "Supercell Slam" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 100 ;
+    :accuracy 95 ;
+    :pp 15 .
+
+:Superpower a :Move ;
+    rdfs:label "Superpower" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Attack and Defense." .
+
+:Supersonic a :Move ;
+    rdfs:label "Supersonic" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 55 ;
+    :pp 20 ;
+    :effectDescription "Confuses opponent." .
+
+:Surf a :Move ;
+    rdfs:label "Surf" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Hits all adjacent Pokémon." .
+
+:SurgingStrikes a :Move ;
+    rdfs:label "Surging Strikes" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Always results in a critical hit and ignores stat changes." .
+
+:Swagger a :Move ;
+    rdfs:label "Swagger" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Confuses opponent, but sharply raises its Attack." .
+
+:Swallow a :Move ;
+    rdfs:label "Swallow" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The more times the user has performed Stockpile, the more HP is recovered." .
+
+:SweetKiss a :Move ;
+    rdfs:label "Sweet Kiss" ;
+    :hasMoveType :Fairy ;
+    :hasMoveCategory :Status ;
+    :accuracy 75 ;
+    :pp 10 ;
+    :effectDescription "Confuses opponent." .
+
+:SweetScent a :Move ;
+    rdfs:label "Sweet Scent" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Evasiveness." .
+
+:Swift a :Move ;
+    rdfs:label "Swift" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :pp 20 ;
+    :effectDescription "Ignores Accuracy and Evasiveness." .
+
+:Switcheroo a :Move ;
+    rdfs:label "Switcheroo" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Swaps held items with the opponent." .
+
+:SwordsDance a :Move ;
+    rdfs:label "Swords Dance" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Sharply raises user's Attack." .
+
+:Synchronoise a :Move ;
+    rdfs:label "Synchronoise" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Hits any Pokémon that shares a type with the user." .
+
+:Synthesis a :Move ;
+    rdfs:label "Synthesis" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "User recovers HP. Amount varies with the weather." .
+
+:SyrupBomb a :Move ;
+    rdfs:label "Syrup Bomb" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Speed each turn for 3 turns." .
+
+:TachyonCutter a :Move ;
+    rdfs:label "Tachyon Cutter" ;
+    :hasMoveType :Steel ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :pp 10 ;
+    :effectDescription "Guaranteed to hit twice in a row." .
+
+:Tackle a :Move ;
+    rdfs:label "Tackle" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 35 .
+
+:TailGlow a :Move ;
+    rdfs:label "Tail Glow" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Drastically raises user's Special Attack." .
+
+:TailSlap a :Move ;
+    rdfs:label "Tail Slap" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 85 ;
+    :pp 10 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:TailWhip a :Move ;
+    rdfs:label "Tail Whip" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "Lowers opponent's Defense." .
+
+:Tailwind a :Move ;
+    rdfs:label "Tailwind" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Doubles Speed for 4 turns." .
+
+:TakeDown a :Move ;
+    rdfs:label "Take Down" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 85 ;
+    :pp 20 ;
+    :effectDescription "User receives recoil damage." .
+
+:TakeHeart a :Move ;
+    rdfs:label "Take Heart" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Heals user's status conditions and raises its stats." .
+
+:TarShot a :Move ;
+    rdfs:label "Tar Shot" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Lowers the opponent's Speed and makes them weaker to Fire-type moves." .
+
+:Taunt a :Move ;
+    rdfs:label "Taunt" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Opponent can only use moves that attack." .
+
+:TearfulLook a :Move ;
+    rdfs:label "Tearful Look" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "The user gets teary eyed to make the target lose its combative spirit. This lowers the target's Attack and Sp. Atk stats." .
+
+:Teatime a :Move ;
+    rdfs:label "Teatime" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Forces all Pokémon on the field to eat their berries." .
+
+:TechnoBlast a :Move ;
+    rdfs:label "Techno Blast" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Type depends on the Drive being held." .
+
+:TeeterDance a :Move ;
+    rdfs:label "Teeter Dance" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Confuses all Pokémon." .
+
+:Telekinesis a :Move ;
+    rdfs:label "Telekinesis" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Ignores opponent's Evasiveness for three turns, add Ground immunity." .
+
+:Teleport a :Move ;
+    rdfs:label "Teleport" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Allows user to flee wild battles; also warps player to last PokéCenter." .
+
+:TemperFlare a :Move ;
+    rdfs:label "Temper Flare" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 10 .
+
+:TeraBlast a :Move ;
+    rdfs:label "Tera Blast" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Changes type when the user has Terastallized." .
+
+:TeraStarstorm a :Move ;
+    rdfs:label "Tera Starstorm" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 5 .
+
+:TerrainPulse a :Move ;
+    rdfs:label "Terrain Pulse" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Type and power change depending on the Terrain in effect." .
+
+:Thief a :Move ;
+    rdfs:label "Thief" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 25 ;
+    :effectDescription "Also steals opponent's held item." .
+
+:ThousandArrows a :Move ;
+    rdfs:label "Thousand Arrows" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Makes Flying-type Pokémon vulnerable to Ground moves." .
+
+:ThousandWaves a :Move ;
+    rdfs:label "Thousand Waves" ;
+    :hasMoveType :Ground ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Opponent cannot flee or switch." .
+
+:Thrash a :Move ;
+    rdfs:label "Thrash" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User attacks for 2-3 turns but then becomes confused." .
+
+:ThroatChop a :Move ;
+    rdfs:label "Throat Chop" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Prevents use of sound moves for two turns." .
+
+:Thunder a :Move ;
+    rdfs:label "Thunder" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 110 ;
+    :accuracy 70 ;
+    :pp 10 ;
+    :effectDescription "May paralyze opponent." .
+
+:ThunderCage a :Move ;
+    rdfs:label "Thunder Cage" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "Deals damage and traps opponent, damaging them for 4-5 turns." .
+
+:ThunderFang a :Move ;
+    rdfs:label "Thunder Fang" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 95 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching and/or paralyze opponent." .
+
+:ThunderPunch a :Move ;
+    rdfs:label "Thunder Punch" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May paralyze opponent." .
+
+:ThunderShock a :Move ;
+    rdfs:label "Thunder Shock" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "May paralyze opponent." .
+
+:ThunderWave a :Move ;
+    rdfs:label "Thunder Wave" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Status ;
+    :accuracy 90 ;
+    :pp 20 ;
+    :effectDescription "Paralyzes opponent." .
+
+:Thunderbolt a :Move ;
+    rdfs:label "Thunderbolt" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May paralyze opponent." .
+
+:Thunderclap a :Move ;
+    rdfs:label "Thunderclap" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Strikes before a target's move." .
+
+:ThunderousKick a :Move ;
+    rdfs:label "Thunderous Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Lowers opponent's Defense." .
+
+:Tickle a :Move ;
+    rdfs:label "Tickle" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers opponent's Attack and Defense." .
+
+:TidyUp a :Move ;
+    rdfs:label "Tidy Up" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Removes the effects of entry hazards and Substitute, and boosts user’s Attack and Speed." .
+
+:TopsyTurvy a :Move ;
+    rdfs:label "Topsy-Turvy" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Reverses stat changes of opponent." .
+
+:TorchSong a :Move ;
+    rdfs:label "Torch Song" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Raises user's Special Attack." .
+
+:Torment a :Move ;
+    rdfs:label "Torment" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Opponent cannot use the same move in a row." .
+
+:Toxic a :Move ;
+    rdfs:label "Toxic" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Badly poisons opponent." .
+
+:ToxicSpikes a :Move ;
+    rdfs:label "Toxic Spikes" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "Poisons opponents switching into battle." .
+
+:ToxicThread a :Move ;
+    rdfs:label "Toxic Thread" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Poisons opponent and lowers its Speed." .
+
+:Trailblaze a :Move ;
+    rdfs:label "Trailblaze" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Raises user's Speed." .
+
+:Transform a :Move ;
+    rdfs:label "Transform" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "User takes on the form and attacks of the opponent." .
+
+:TriAttack a :Move ;
+    rdfs:label "Tri Attack" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May paralyze, burn or freeze opponent." .
+
+:Trick a :Move ;
+    rdfs:label "Trick" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Swaps held items with the opponent." .
+
+:TrickRoom a :Move ;
+    rdfs:label "Trick Room" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 5 ;
+    :effectDescription "Slower Pokémon move first in the turn for 5 turns." .
+
+:TrickOrTreat a :Move ;
+    rdfs:label "Trick-or-Treat" ;
+    :hasMoveType :Ghost ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Adds Ghost type to opponent." .
+
+:TripleArrows a :Move ;
+    rdfs:label "Triple Arrows" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "High critical hit ratio. May lower opponent's Defense or cause them to flinch." .
+
+:TripleAxel a :Move ;
+    rdfs:label "Triple Axel" ;
+    :hasMoveType :Ice ;
+    :hasMoveCategory :Physical ;
+    :power 20 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Attacks thrice with more power each time." .
+
+:TripleDive a :Move ;
+    rdfs:label "Triple Dive" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 30 ;
+    :accuracy 95 ;
+    :pp 10 ;
+    :effectDescription "Hits 3 times in a row." .
+
+:TripleKick a :Move ;
+    rdfs:label "Triple Kick" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 10 ;
+    :accuracy 90 ;
+    :pp 10 ;
+    :effectDescription "Hits thrice in one turn at increasing power." .
+
+:TropKick a :Move ;
+    rdfs:label "Trop Kick" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Lowers opponent's Attack." .
+
+:TrumpCard a :Move ;
+    rdfs:label "Trump Card" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :pp 5 ;
+    :effectDescription "The lower the PP, the higher the power." .
+
+:TwinBeam a :Move ;
+    rdfs:label "Twin Beam" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Hits twice in one turn." .
+
+:Twineedle a :Move ;
+    rdfs:label "Twineedle" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 25 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Hits twice in one turn. May poison opponent." .
+
+:Twister a :Move ;
+    rdfs:label "Twister" ;
+    :hasMoveType :Dragon ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May cause flinching. Hits Pokémon using Fly/Bounce with double power." .
+
+:UTurn a :Move ;
+    rdfs:label "U-turn" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "User switches out immediately after attacking." .
+
+:UpperHand a :Move ;
+    rdfs:label "Upper Hand" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Strikes before a target's priority move." .
+
+:Uproar a :Move ;
+    rdfs:label "Uproar" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User attacks for 3 turns and prevents sleep." .
+
+:VCreate a :Move ;
+    rdfs:label "V-create" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Physical ;
+    :power 180 ;
+    :accuracy 95 ;
+    :pp 5 ;
+    :effectDescription "Lowers user's Defense, Special Defense and Speed." .
+
+:VacuumWave a :Move ;
+    rdfs:label "Vacuum Wave" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 30 ;
+    :effectDescription "User attacks first." .
+
+:VeeveeVolley a :Move ;
+    rdfs:label "Veevee Volley" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :pp 20 ;
+    :effectDescription "Power increases when player's bond is stronger." .
+
+:VenomDrench a :Move ;
+    rdfs:label "Venom Drench" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Lowers poisoned opponent's Special Attack and Speed." .
+
+:Venoshock a :Move ;
+    rdfs:label "Venoshock" ;
+    :hasMoveType :Poison ;
+    :hasMoveCategory :Special ;
+    :power 65 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Inflicts double damage if the target is poisoned." .
+
+:VictoryDance a :Move ;
+    rdfs:label "Victory Dance" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Raises Attack and Defense." .
+
+:VineWhip a :Move ;
+    rdfs:label "Vine Whip" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 45 ;
+    :accuracy 100 ;
+    :pp 25 .
+
+:ViseGrip a :Move ;
+    rdfs:label "Vise Grip" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 55 ;
+    :accuracy 100 ;
+    :pp 30 .
+
+:VitalThrow a :Move ;
+    rdfs:label "Vital Throw" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :pp 10 ;
+    :effectDescription "User attacks last, but ignores Accuracy and Evasiveness." .
+
+:VoltSwitch a :Move ;
+    rdfs:label "Volt Switch" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "User must switch out after attacking." .
+
+:VoltTackle a :Move ;
+    rdfs:label "Volt Tackle" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User receives recoil damage. May paralyze opponent." .
+
+:WakeUpSlap a :Move ;
+    rdfs:label "Wake-Up Slap" ;
+    :hasMoveType :Fighting ;
+    :hasMoveCategory :Physical ;
+    :power 70 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Power doubles if opponent is asleep, but wakes it up." .
+
+:WaterGun a :Move ;
+    rdfs:label "Water Gun" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 40 ;
+    :accuracy 100 ;
+    :pp 25 .
+
+:WaterPledge a :Move ;
+    rdfs:label "Water Pledge" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Added effects appear if preceded by Fire Pledge or succeeded by Grass Pledge." .
+
+:WaterPulse a :Move ;
+    rdfs:label "Water Pulse" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "May confuse opponent." .
+
+:WaterShuriken a :Move ;
+    rdfs:label "Water Shuriken" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 15 ;
+    :accuracy 100 ;
+    :pp 20 ;
+    :effectDescription "Hits 2-5 times in one turn." .
+
+:WaterSport a :Move ;
+    rdfs:label "Water Sport" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Status ;
+    :pp 15 ;
+    :effectDescription "Weakens the power of Fire-type moves." .
+
+:WaterSpout a :Move ;
+    rdfs:label "Water Spout" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 150 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "The higher the user's HP, the higher the damage caused." .
+
+:Waterfall a :Move ;
+    rdfs:label "Waterfall" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:WaveCrash a :Move ;
+    rdfs:label "Wave Crash" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "User receives recoil damage." .
+
+:WeatherBall a :Move ;
+    rdfs:label "Weather Ball" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Move's power and type changes with the weather." .
+
+:Whirlpool a :Move ;
+    rdfs:label "Whirlpool" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Special ;
+    :power 35 ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:Whirlwind a :Move ;
+    rdfs:label "Whirlwind" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 20 ;
+    :effectDescription "In battles, the opponent switches. In the wild, the Pokémon runs." .
+
+:WickedBlow a :Move ;
+    rdfs:label "Wicked Blow" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 75 ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "Always results in a critical hit and ignores stat changes." .
+
+:WickedTorque a :Move ;
+    rdfs:label "Wicked Torque" ;
+    :hasMoveType :Dark ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May put opponent to sleep." .
+
+:WideGuard a :Move ;
+    rdfs:label "Wide Guard" ;
+    :hasMoveType :Rock ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Protects the user's team from multi-target attacks." .
+
+:WildCharge a :Move ;
+    rdfs:label "Wild Charge" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 90 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User receives recoil damage." .
+
+:WildboltStorm a :Move ;
+    rdfs:label "Wildbolt Storm" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 100 ;
+    :accuracy 80 ;
+    :pp 10 ;
+    :effectDescription "May paralyze target." .
+
+:WillOWisp a :Move ;
+    rdfs:label "Will-O-Wisp" ;
+    :hasMoveType :Fire ;
+    :hasMoveCategory :Status ;
+    :accuracy 85 ;
+    :pp 15 ;
+    :effectDescription "Burns opponent." .
+
+:WingAttack a :Move ;
+    rdfs:label "Wing Attack" ;
+    :hasMoveType :Flying ;
+    :hasMoveCategory :Physical ;
+    :power 60 ;
+    :accuracy 100 ;
+    :pp 35 .
+
+:Wish a :Move ;
+    rdfs:label "Wish" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "The user recovers HP in the following turn." .
+
+:Withdraw a :Move ;
+    rdfs:label "Withdraw" ;
+    :hasMoveType :Water ;
+    :hasMoveCategory :Status ;
+    :pp 40 ;
+    :effectDescription "Raises user's Defense." .
+
+:WonderRoom a :Move ;
+    rdfs:label "Wonder Room" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Swaps every Pokémon's Defense and Special Defense for 5 turns." .
+
+:WoodHammer a :Move ;
+    rdfs:label "Wood Hammer" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Physical ;
+    :power 120 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "User receives recoil damage." .
+
+:WorkUp a :Move ;
+    rdfs:label "Work Up" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 30 ;
+    :effectDescription "Raises user's Attack and Special Attack." .
+
+:WorrySeed a :Move ;
+    rdfs:label "Worry Seed" ;
+    :hasMoveType :Grass ;
+    :hasMoveCategory :Status ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "Changes the opponent's Ability to Insomnia." .
+
+:Wrap a :Move ;
+    rdfs:label "Wrap" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Physical ;
+    :power 15 ;
+    :accuracy 90 ;
+    :pp 20 ;
+    :effectDescription "Traps opponent, damaging them for 4-5 turns." .
+
+:WringOut a :Move ;
+    rdfs:label "Wring Out" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Special ;
+    :accuracy 100 ;
+    :pp 5 ;
+    :effectDescription "The higher the opponent's HP, the higher the damage." .
+
+:XScissor a :Move ;
+    rdfs:label "X-Scissor" ;
+    :hasMoveType :Bug ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 15 .
+
+:Yawn a :Move ;
+    rdfs:label "Yawn" ;
+    :hasMoveType :Normal ;
+    :hasMoveCategory :Status ;
+    :pp 10 ;
+    :effectDescription "Puts opponent to sleep in the next turn." .
+
+:ZapCannon a :Move ;
+    rdfs:label "Zap Cannon" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Special ;
+    :power 120 ;
+    :accuracy 50 ;
+    :pp 5 ;
+    :effectDescription "Paralyzes opponent." .
+
+:ZenHeadbutt a :Move ;
+    rdfs:label "Zen Headbutt" ;
+    :hasMoveType :Psychic ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 90 ;
+    :pp 15 ;
+    :effectDescription "May cause flinching." .
+
+:ZingZap a :Move ;
+    rdfs:label "Zing Zap" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 80 ;
+    :accuracy 100 ;
+    :pp 10 ;
+    :effectDescription "May cause flinching." .
+
+:ZippyZap a :Move ;
+    rdfs:label "Zippy Zap" ;
+    :hasMoveType :Electric ;
+    :hasMoveCategory :Physical ;
+    :power 50 ;
+    :accuracy 100 ;
+    :pp 15 ;
+    :effectDescription "Always results in a critical hit." .
