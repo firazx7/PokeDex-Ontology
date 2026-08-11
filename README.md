@@ -36,17 +36,6 @@ The project has two halves:
 
 ## Play it
 
-Every action in this game sends a **live SPARQL query** to a real triple store
-(a small database built specifically for ontologies), which answers by
-querying the actual `.ttl` ontology file. There is no offline mode and no
-bundled copy of the data — the game only works with a running SPARQL
-endpoint, by design, since seeing the ontology actually being queried is the
-whole point of this project.
-
-You do **not** need any programming experience for this. It's mostly
-copy-pasting a few commands into a terminal window. It takes about 10 minutes
-the first time.
-
 #### Step 1 — Check that Java is installed
 
 The triple store we use (Apache Jena Fuseki) is a Java program, so Java needs
