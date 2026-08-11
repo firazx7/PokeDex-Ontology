@@ -36,36 +36,137 @@ The project has two halves:
 
 ## Play it
 
-To run it the way it's designed — with queries hitting a live triple store:
+Every action in this game sends a **live SPARQL query** to a real triple store
+(a small database built specifically for ontologies), which answers by
+querying the actual `.ttl` ontology file. There is no offline mode and no
+bundled copy of the data — the game only works with a running SPARQL
+endpoint, by design, since seeing the ontology actually being queried is the
+whole point of this project.
 
-1. Install **[Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/)**.
-2. Start Fuseki and create a dataset named `pokedex`.
-3. Upload the ontology file `akr_ontology_kilic_rajput_v8.ttl` to that dataset.
+You do **not** need any programming experience for this. It's mostly
+copy-pasting a few commands into a terminal window. It takes about 10 minutes
+the first time.
 
-   Via the web UI at `http://localhost:3030`: open the `pokedex` dataset →
-   "add data" → select the file → upload.
+#### Step 1 — Check that Java is installed
 
-   > **If the web UI rejects the upload** with an error like *"Invalid graph
-   > name"* (a known quirk in some Fuseki versions): leave the Fuseki server
-   > running and instead upload the file directly from a terminal with:
-   > ```bash
-   > curl.exe -X POST -H "Content-Type: text/turtle" --data-binary "@akr_ontology_kilic_rajput_v8.ttl" http://localhost:3030/pokedex/data?default
-   > ```
-   > (drop the `.exe` on Mac/Linux). This sends the file straight into the
-   > dataset's default graph via Fuseki's HTTP API, bypassing the web form
-   > entirely. A successful upload replies with something like
-   > `{"count": 35174, ...}`, matching the ontology's triple count.
+The triple store we use (Apache Jena Fuseki) is a Java program, so Java needs
+to be on your computer first.
 
-4. Confirm the endpoint is live at `http://localhost:3030/pokedex/sparql`.
-5. Run the app:
+- **Windows:** press `Win + R`, type `cmd`, press Enter. A black window opens.
+- **Mac:** open the **Terminal** app (search for it with Spotlight, `Cmd + Space`).
 
-   ```bash
-   npm install
-   npm run dev
-   ```
+In that window, type:
 
-The endpoint URL can be changed at the top of `src/hooks/useSparql.js`
-(for example to point at a hosted TriplyDB endpoint instead).
+```
+java -version
+```
+
+- If you see a version number (anything like `java version "17..."` or
+  `"21..."` or `"23..."`), you're good — skip to Step 2.
+- If you see an error like "command not found" or "not recognized", install
+  Java first from **[adoptium.net](https://adoptium.net)** (pick the recommended
+  download for your operating system, run the installer, click through with
+  the defaults). Then close and reopen your terminal window and try
+  `java -version` again to confirm it worked.
+
+#### Step 2 — Download and unzip Fuseki
+
+1. Go to **[jena.apache.org/download](https://jena.apache.org/download/)**.
+2. Download **Apache Jena Fuseki** (look for a file like
+   `apache-jena-fuseki-X.X.X.zip`).
+3. Unzip it somewhere easy to find, like your Downloads folder or Desktop.
+   Right-click the `.zip` file → "Extract All" (Windows) or just double-click
+   it (Mac).
+
+#### Step 3 — Start Fuseki
+
+In your terminal window, navigate into the folder you just unzipped. You'll
+need to adjust the path below to match where you put it — for example:
+
+```
+cd Downloads/apache-jena-fuseki-6.1.0
+```
+
+Then start the server with this command:
+
+**Windows (PowerShell):**
+```
+.\fuseki-server.bat --update --mem /pokedex
+```
+
+**Mac/Linux (Terminal):**
+```
+./fuseki-server --update --mem /pokedex
+```
+
+You should see several lines of text appear, ending with something like
+`Start Fuseki`. **Leave this window open** — as long as it's running, the
+database is alive. If you close it, the server stops.
+
+> Note: `--mem` keeps the data in memory only. If you close this window and
+> reopen it later, you'll need to re-upload the ontology file (Step 4) again.
+
+#### Step 4 — Upload the ontology file
+
+Open a normal web browser and go to:
+
+```
+http://localhost:3030
+```
+
+You'll see the Fuseki web interface with a dataset called `pokedex` already
+listed (because we created it with `/pokedex` in Step 3). Click on it, then
+look for an **"add data"** or **"upload files"** option. Select the ontology
+file from this project, `akr_ontology_kilic_rajput_v8.ttl`, and upload it,
+leaving any "graph name" field empty (so the data goes into the default graph,
+which is where the game's queries expect to find it).
+
+> **If the web upload fails** with an error like *"Invalid graph name"* (a
+> known quirk in some Fuseki versions, even when the field is left blank),
+> skip the web interface and upload the file directly from the terminal
+> instead. Open a **new** terminal window, navigate into this project's
+> folder (where the `.ttl` file is), and run:
+>
+> **Windows (PowerShell):**
+> ```
+> curl.exe -X POST -H "Content-Type: text/turtle" --data-binary "@akr_ontology_kilic_rajput_v8.ttl" http://localhost:3030/pokedex/data?default
+> ```
+>
+> **Mac/Linux (Terminal):**
+> ```
+> curl -X POST -H "Content-Type: text/turtle" --data-binary @akr_ontology_kilic_rajput_v8.ttl http://localhost:3030/pokedex/data?default
+> ```
+>
+> This sends the file straight to Fuseki's default graph over HTTP, bypassing
+> the web form entirely. A successful upload replies with something like
+> `{"count": 35174, ...}` — that number should match the ontology's triple
+> count. (On Windows, `curl.exe` — not plain `curl` — is important: PowerShell
+> has its own built-in `curl` that behaves differently and will error out on
+> this command.)
+
+Either way, you can confirm the upload worked by reloading
+`http://localhost:3030` and checking that your dataset now shows a triple
+count instead of being empty.
+
+#### Step 5 — Start the game
+
+Open a **second, new** terminal window (leave the Fuseki one running in the
+background). Navigate into this project's folder, for example:
+
+```
+cd Documents/GitHub/PokeDex-Ontology
+```
+
+Then run:
+
+```
+npm install
+npm run dev
+```
+
+The first command installs everything the game needs (only required once).
+The second one starts the game itself and prints a URL, usually
+`http://localhost:5173` — open that in your browser and play.
 
 ---
 
@@ -129,11 +230,10 @@ src/
 ├── screens/                Title, starter, team, battle, summary, evolution, win, lose
 ├── components/             HP box, HP bar, Pokémon card, move button, type badge
 ├── hooks/
-│   ├── useSparql.js        Sends queries to the endpoint (with offline fallback)
+│   ├── useSparql.js        Sends queries to the live SPARQL endpoint
 │   └── queries.js          All 11 SPARQL queries
 ├── state/gameState.js      State shape, result parsing, sprite URLs, helpers
-├── utils/battle.js         Damage formula, effectiveness, enemy AI, Struggle
-└── mock/                   Bundled ontology data for offline play
+└── utils/battle.js         Damage formula, effectiveness, enemy AI, Struggle
 ```
 
 ---
