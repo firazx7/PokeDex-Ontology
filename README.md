@@ -41,7 +41,7 @@ The project has two halves:
 The triple store we use (Apache Jena Fuseki) is a Java program, so Java needs
 to be on your computer first.
 
-- **Windows:** press `Win + R`, type `cmd`, press Enter. A black window opens.
+- **Windows:** press `Win + R`, type `cmd`, press Enter. 
 - **Mac:** open the **Terminal** app (search for it with Spotlight, `Cmd + Space`).
 
 In that window, type:
